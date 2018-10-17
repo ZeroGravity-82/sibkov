@@ -1,27 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head itemscope itemtype="http://schema.org/WebSite">
-        <meta charset="utf-8" />
+        <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content='ie=edge'>
         <meta name="description" content="{{ metaDesc }}">
         <meta name="keywords" content="{{ metaKey }}">
 
-        <title>{{ pageTitle }}</title>
+        <title>{% block title %}{% endblock %} – Ферма «Сибирский ковчег»</title>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
               integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        {% if imageGallery %}
-            <link rel="stylesheet" href="/css/photoswipe/photoswipe.compressed.css">
-            <link rel="stylesheet" href="/css/photoswipe/skins/default-skin.compressed.css">
-        {% endif %}
-        {% if videoGallery %}
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/css/lightgallery.min.css">
-        {% endif %}
-        {% if map %}
-            <link rel="stylesheet" href="/css/loading.spinner/loading.spinner.compressed.css">
-        {% endif %}
-
         <link rel="stylesheet" href="/css/fontello/fontello.compressed.css">
         <link rel="stylesheet" href="/css/style/style.css">
 
@@ -33,31 +22,14 @@
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="theme-color" content="#ffffff">
 
+        {% block stylesheets %}{% endblock %}
+
         {# jQuery #}
         <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
         {# Yandex.Metrika counter #}
         <script async src="/js/yandex/yandex.metrika.compressed.js"></script>
         <noscript><div><img src="//mc.yandex.ru/watch/21231592" style="position:absolute; left:-9999px;" alt=""></div></noscript>
-
-        {# NivoSlider #}
-        <script defer src="/js/nivo.slider/nivo.slider.compressed.js"></script>
-
-        {# Yandex.Maps #}
-        {% if map %}
-            <script defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-            <script defer src="/js/yandex/yandex.maps.compressed.js"></script>
-        {% endif %}
-
-        {# Galleries #}
-        {% if imageGallery %}
-            <script defer src="/js/photoswipe/photoswipe.compressed.js"></script>
-        {% endif %}
-        {% if videoGallery %}
-            <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/js/lightgallery.min.js"></script>
-            <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/js/lg-video.min.js"></script>
-            <script defer src="/js/light.gallery/light.gallery.compressed.js"></script>
-        {% endif %}
 
         {# Bootstrap #}
         <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
@@ -67,19 +39,7 @@
         {# Sticky nav line #}
         <script defer src="/js/sticky.nav/sticky.nav.compressed.js"></script>
 
-
-
-
-
-
-
-        {#{% block styledsheets %}{% endblock %}#}
-        {#<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />#}
-
-
-
-
-
+        {% block javascripts %}{% endblock %}
     </head>
     <body>
         <div class="container">
@@ -91,12 +51,10 @@
                     </div>
                     <div class="header-name-wrapper">
                         <div id="header-name" class="header-name-content">
-                            <img src="/images/header_name.png" alt='Ферма "Сибирский кролик"'>
+                            <img src="/images/header_name.png" alt='Ферма "Сибирский ковчег"'>
                         </div>
                     </div>
                 </div>
-
-
 
                 <nav class="navbar header-navbar navbar-dark" data-toggle="sticky-onscroll" style="display: none;">
                     <input id="navbar-toggle-cbox" type="checkbox">
@@ -128,7 +86,6 @@
                     </div>
                 </nav>
 
-
                 <nav class="navbar navbar-expand-lg navbar-dark header-navbar" data-toggle="sticky-onscroll">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -147,7 +104,7 @@
                             <li class="nav-item {% if menuItem == "/" %} active {% endif %}">
                                 <a class="nav-link" href="/">Главная <span class="sr-only">(текущий)</span></a>
                             </li>
-                            <li class="nav-item {% if menuItem == "nasha-produkciya" %}">
+                            <li class="nav-item {% if menuItem == "nasha-produkciya" %} active {% endif %}">
                                 <a class="nav-link" href="/nasha-produkciya.php">Наша продукция <span class="sr-only">(текущий)</span></a>
                             </li>
                             <li class="nav-item {% if menuItem == "foto-i-video" %} active {% endif %}">
@@ -166,6 +123,9 @@
                     </div>
                 </nav>
             </header>
+
+            {% block content %}{% endblock %}
+
             <div class="clearfix"></div>
             <footer class="row">
                 <div class="col-sm-4">
@@ -173,11 +133,11 @@
                         <div class="col-md-6 col-xl-4">
                             <p><a href="tel:+79137917783" class="nowrap">8-913-791-77-83</a></p>
                             <p><a href="tel:+79639472148" class="nowrap">8-963-947-21-48</a></p>
-                            <p><a href="mailto:info@sibkrol.ru">info@sibkrol.ru</a></p>
+                            <p><a href="mailto:info@sibkov.ru">info@sibkov.ru</a></p>
                         </div>
                         <div class="col-md-6 col-xl-4 text-md-left">
-                            <p><a href="https://vk.com/sibkrol" target="_blank">ВКонтакте</a></p>
-                            <p><a href="https://ok.ru/sibkrol" target="_blank">Одноклассники</a></p>
+                            <p><a href="https://vk.com/sibkov" target="_blank">ВКонтакте</a></p>
+                            <p><a href="https://ok.ru/sibkov" target="_blank">Одноклассники</a></p>
                             <p><a href="https://www.youtube.com/channel/UCpcePMy4jqhhcW2hIUFwvGw" target="_blank">Youtube</a></p>
                         </div>
                     </div>
@@ -215,54 +175,5 @@
                 </a>
             </footer>
         </div>
-
-        {% if imageGallery %}
-            <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="pswp__bg"></div>
-                <div class="pswp__scroll-wrap">
-                    <div class="pswp__container">
-                        <div class="pswp__item"></div>
-                        <div class="pswp__item"></div>
-                        <div class="pswp__item"></div>
-                    </div>
-                    <div class="pswp__ui pswp__ui--hidden">
-                        <div class="pswp__top-bar">
-                            <div class="pswp__counter"></div>
-                            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                            <button class="pswp__button pswp__button--share" title="Share"></button>
-                            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                            <div class="pswp__preloader">
-                                <div class="pswp__preloader__icn">
-                                    <div class="pswp__preloader__cut">
-                                        <div class="pswp__preloader__donut"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                            <div class="pswp__share-tooltip"></div>
-                        </div>
-                        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-                        </button>
-                        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-                        </button>
-                        <div class="pswp__caption">
-                            <div class="pswp__caption__center"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        {% endif %}
-
-
-
-
-        {#{% block body %}{% endblock %}#}
-        {#{% block javascripts %}{% endblock %}#}
-
-
-
-
     </body>
 </html>
