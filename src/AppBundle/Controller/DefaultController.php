@@ -12,9 +12,7 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('default/index.html.twig', [
-            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
-        ]);
+        return $this->render("default/index.html.twig");
     }
 
     /**
@@ -22,7 +20,7 @@ class DefaultController extends Controller
      */
     public function ourProductsAction()
     {
-
+        return $this->render("default/our_products.html.twig");
     }
 
     /**
@@ -30,7 +28,7 @@ class DefaultController extends Controller
      */
     public function howToOrderAction()
     {
-
+        return $this->render("default/how_to_order.html.twig");
     }
 
     /**
@@ -38,6 +36,6 @@ class DefaultController extends Controller
      */
     public function contactsAction()
     {
-
+        return $this->render("default/contacts.html.twig");
     }
 }

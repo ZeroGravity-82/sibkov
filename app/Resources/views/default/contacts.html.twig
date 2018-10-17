@@ -1,0 +1,75 @@
+{% extends "base.html.twig" %}
+
+{% set metaDesc  = "Контакты фермы «Сибирский ковчег»" %}
+{% set metaKey   = "" %}
+{% set menuItem  = "kontakty" %}
+
+{% block title %} Контакты {% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="/css/loading.spinner/loading.spinner.compressed.css">
+{% endblock %}
+
+{% block content %}
+    <main itemscope itemtype="http://schema.org/Organization" class="contacts">
+        <span hidden itemprop="name">Ферма «Сибирский ковчег»</span>
+        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <h1>Адрес</h1>
+            <p><span hidden itemprop="addressCountry">Россия</span>
+                <span itemprop="addressLocality">с.&nbsp;Локти &ndash; 25 км от Новосибирска</span>, <span itemprop="addressRegion">Мошковский район Новосибирской области</span>.
+            <p><strong>Отправляем инкубационное яйцо в другие регионы России</strong>.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h1>Телефоны</h1>
+                <a href="tel:+79137917783"><span itemprop="telephone">8-913-791-77-83</span></a>
+                <br>
+                <a href="tel:+79639472148"><span itemprop="telephone">8-963-947-21-48</span></a>
+                <p>контактное лицо &ndash; Игорь</p>
+            </div>
+            <div class="col-md-4">
+                <h1>Электронная почта</h1>
+                <a href="mailto:info@sibkov.ru" itemprop="email">info@sibkov.ru</a>
+            </div>
+            <div class="col-md-4">
+                <h1>Соцсети</h1>
+                <a href="https://vk.com/sibkov" target="_blank" rel="nofollow noreferrer noopener">ВКонтакте</a>
+                <br>
+                <a href="https://ok.ru/sibkov" target="_blank" rel="nofollow noreferrer noopener">Одноклассники</a>
+                <br>
+                <a href="https://www.youtube.com/channel/UCpcePMy4jqhhcW2hIUFwvGw" target="_blank" rel="nofollow noreferrer noopener">Youtube</a>
+            </div>
+        </div>
+
+        <div itemprop="location" itemscope itemtype="http://schema.org/Place">
+            <h1>Схема проезда</h1>
+            <div id="map">
+                <div hidden class="overlay">
+                    <div class="spinner center">
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                    </div>
+                </div>
+                <noscript>
+                    <p class="text-danger font-weight-bold">Чтобы увидеть схему проезда, пожалуйста, разрешите использование JavaScript в браузере.</p>
+                </noscript>
+            </div>
+            <p itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                <span id="coordinates">Координаты: широта 55°17"01.3"N (55.283686)<br>долгота 83°10"46.4"E (83.179561)</span>
+                <meta itemprop="latitude" content="55.283686">
+                <meta itemprop="longitude" content="83.179561">
+            </p>
+        </div>
+    </main>
+{% endblock %}

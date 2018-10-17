@@ -1,8 +1,66 @@
-{% extends 'base.html.twig' %}
+{% extends "base.html.twig" %}
 
-{% block body %}
-{% endblock %}
+{% set metaDesc  = "Официальный сайты фермы «Сибирский ковчег»" %}
+{% set metaKey   = "мясо-яичные породы кур, купить инкубационное яйцо породных кур" %}
+{% set menuItem  = "/" %}
+
+{% block title %} Купить инкубационное яйцо в Новосибирске, породные куры {% endblock %}
 
 {% block stylesheets %}
     <link rel="stylesheet" href="/css/nivo.slider/nivo.slider.compressed.css" media="screen">
+{% endblock %}
+
+{% block javascripts %}
+    <script defer src="/js/nivo.slider/nivo.slider.compressed.js"></script>
+{% endblock %}
+
+{% block content %}
+    <main>
+        <aside class="slider-wrapper d-none d-md-block">
+            <div id="slider" class="slider-content">
+                <img class="img-fluid" src="/images/slider-5fr2g8ivxv.jpg" data-src="/images/slider-5fr2g8ivxv.jpg" alt="">
+                <img src="" data-src="/images/slider-erw4dtsqt4.jpg" alt="">
+                <img src="" data-src="/images/slider-n904ze4vez.jpg" alt="">
+                <img src="" data-src="/images/slider-wojh6ptgez.jpg" alt="">
+                <img src="" data-src="/images/slider-c4vznus7gl.jpg" alt="">
+                <img src="" data-src="/images/slider-nodudqv39a.jpg" alt="">
+                <img src="" data-src="/images/slider-b2l7pigeq5.jpg" alt="">
+            </div>
+            <noscript>
+                <div class="slider-content">
+                    <img class="img-fluid" src="/images/slider-lwiqjmchoz.jpg" alt="">
+                </div>
+            </noscript>
+        </aside>
+        <h1 class="text-center">О хозяйстве</h1>
+        <p class="no-padding-bottom">Мы находимся в с. Локти Мошковского района Новосибирской области, 25 км от Новосибирска.</p>
+        <p class="no-padding-bottom">Работа в хозяйстве ведётся по племенному птицеводству, в основе &ndash; мясо-яичные породы кур. У нас вы можете купить инкубационное яйцо и сделать заказ на суточных цыплят породных кур:</p>
+        <div class="breed-list">
+            <div class="row">
+                <ul class="col-sm-6 col-lg-5 offset-lg-1">
+                    <li><strong><a href="/nasha-produkciya.php#zagorskaya-lososevaya">загорская лососёвая</a></strong>,</li>
+                    <li><strong><a href="/nasha-produkciya.php#avstralorp-chyornyj">австралорп чёрный</a></strong>,</li>
+                    <li><strong><a href="/nasha-produkciya.php#susseks">суссекс колумбийский</a></strong>,</li>
+                    <li><strong><a href="/nasha-produkciya.php#pushkinskaya">пушкинская</a></strong>,</li>
+                    <li><strong><a href="/nasha-produkciya.php#ameraukana">амераукана</a></strong> (пасхальная курица),</li>
+                    <li><strong><a href="/nasha-produkciya.php#livenskaya-sittsevaya">ливенская ситцевая</a></strong>,</li>
+                </ul>
+                <ul class="col-sm-6">
+                    <li><strong><a href="/nasha-produkciya.php#barbyozyo">барбёзьё</a></strong>,</li>
+                    <li><strong><a href="/nasha-produkciya.php#barnevelder">барневельдер золотистый чёрно-окаймлённый</a></strong>,</li>
+                    <li><strong><a href="/nasha-produkciya.php#viandot">виандот серебристый чёрно-окаймлённый</a></strong> (стандарт),</li>
+                    <li><strong><a href="/nasha-produkciya.php#faverol">фавероль белая</a></strong>,</li>
+                    <li><strong><a href="/nasha-produkciya.php#mekhelenskaya-kukushka">мехеленская кукушка (малин)</a></strong>,</li>
+                    <li><strong><a href="/nasha-produkciya.php#maran">маран чёрный серебристогривый</a></strong>.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="image-aside">
+            <img class="img-fluid" src="/images/fedorov-igor-gennadevich.jpg" alt="Федоров Игорь Геннадьевич">
+        </div>
+        <p>Хозяйство было образовано в 2007 году Федоровым Игорем Геннадьевичем после окончания Новосибирского государственного аграрного университета. Глава хозяйства имеет квалификацию «Зооинженер» по направлению «Генетика и селекция сельскохозяйственных животных» (диплом с отличием).</p>
+        <p>Начиная с 2015 года хозяйство имеет официальный статус крестьянского (фермерского) хозяйства &ndash; К(Ф)Х. По результатам конкурсного отбора глава хозяйства получил государственную поддержку в виде гранта на создание и развитие К(Ф)Х в рамках ведомственной целевой программы «Развитие сельского хозяйства и регулирование рынков сельскохозяйственной продукции, сырья и продовольствия в Новосибирской области на 2013&ndash;2020 годы». Благодаря государственной поддержке хозяйство было перенесено на новую площадку под Новосибирском &ndash; в с.&nbsp;Локти Мошковского района Новосибирской области.</p>
+        <p>Особое внимание в хозяйстве уделяется профилактическим мероприятиям. Непосредственно перед осенней линькой проводится профилактика колибактериоза, сальмонеллёза, стрептококкоза, микоплазмоза и смешанных инфекций основного стада кур.</p>
+        <p><strong>Отправляем инкубационное яйцо в другие регионы России</strong>.</p>
+    </main>
 {% endblock %}
