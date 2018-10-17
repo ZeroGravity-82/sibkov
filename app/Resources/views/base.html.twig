@@ -1,13 +1,269 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+<html lang="ru">
+    <head itemscope itemtype="http://schema.org/WebSite">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content='ie=edge'>
+        <meta name="description" content="{{ metaDesc }}">
+        <meta name="keywords" content="{{ metaKey }}">
+
+        <title>{{ pageTitle }}</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/nivo.slider/nivo.slider.compressed.css" media="screen">
+        {% if imageGallery %}
+            <link rel="stylesheet" href="/css/photoswipe/photoswipe.compressed.css">
+            <link rel="stylesheet" href="/css/photoswipe/skins/default-skin.compressed.css">
+        {% endif %}
+        {% if videoGallery %}
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/css/lightgallery.min.css">
+        {% endif %}
+        {% if map %}
+            <link rel="stylesheet" href="/css/loading.spinner/loading.spinner.compressed.css">
+        {% endif %}
+
+        <link rel="stylesheet" href="/css/fontello/fontello.compressed.css">
+        <link rel="stylesheet" href="/css/style/style.css">
+
+        {# Site icons #}
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
+
+        {# jQuery #}
+        <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+        {# Yandex.Metrika counter #}
+        <script async src="/js/yandex/yandex.metrika.compressed.js"></script>
+        <noscript><div><img src="//mc.yandex.ru/watch/21231592" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+
+        {# NivoSlider #}
+        <script defer src="/js/nivo.slider/nivo.slider.compressed.js"></script>
+
+        {# Yandex.Maps #}
+        {% if map %}
+            <script defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+            <script defer src="/js/yandex/yandex.maps.compressed.js"></script>
+        {% endif %}
+
+        {# Galleries #}
+        {% if imageGallery %}
+            <script defer src="/js/photoswipe/photoswipe.compressed.js"></script>
+        {% endif %}
+        {% if videoGallery %}
+            <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/js/lightgallery.min.js"></script>
+            <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/js/lg-video.min.js"></script>
+            <script defer src="/js/light.gallery/light.gallery.compressed.js"></script>
+        {% endif %}
+
+        {# Bootstrap #}
+        <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
+
+        {# Sticky nav line #}
+        <script defer src="/js/sticky.nav/sticky.nav.compressed.js"></script>
+
+
+
+
+
+
+
+        {#{% block styledsheets %}{% endblock %}#}
+        {#<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />#}
+
+
+
+
+
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        <div class="container">
+            <header>
+                <div id="header">
+                    <div id="header-phones">
+                        <a href="tel:+79137917783">8-913-791-77-83</a>
+                        <a href="tel:+79639472148">8-963-947-21-48</a>
+                    </div>
+                    <div class="header-name-wrapper">
+                        <div id="header-name" class="header-name-content">
+                            <img src="/images/header_name.png" alt='Ферма "Сибирский кролик"'>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <nav class="navbar header-navbar navbar-dark" data-toggle="sticky-onscroll" style="display: none;">
+                    <input id="navbar-toggle-cbox" type="checkbox">
+                    <label class="navbar-toggler d-lg-none" for="navbar-toggle-cbox" data-toggle="collapse"
+                           data-target="#app-navbar-collapse"></label>
+                    <div class="navbar-section-name d-lg-none">
+                        {% if menuItem == "/" %} Главная {% endif %}
+                        {% if menuItem == "nasha-produkciya" %} Наша продукция {% endif %}
+                        {% if menuItem == "foto-i-video" %} Фото и видео {% endif %}
+                        {% if menuItem == "ptitsevodstvo" %} Птицеводство {% endif %}
+                        {% if menuItem == "kak-zakazat" %} Как заказать {% endif %}
+                        {% if menuItem == "kontakty" %} Контакты {% endif %}
+                    </div>
+                    <div id="app-navbar-collapse" class="collapse navbar-toggleable-md">
+                        <nav class="nav navbar-nav">
+                            <a class="nav-item nav-link {% if menuItem == "/" %} active {% endif %}"
+                               href="/"><span>Главная</span></a>
+                            <a class="nav-item nav-link {% if menuItem == "nasha-produkciya" %} active {% endif %}"
+                               href="/nasha-produkciya.php"><span>Наша продукция</span></a>
+                            <a class="nav-item nav-link {% if menuItem == "foto-i-video" %} active {% endif %}"
+                               href="/foto-i-video.php"><span>Фото и видео</span></a>
+                            <a class="nav-item nav-link {% if menuItem == "ptitsevodstvo" %} active {% endif %}"
+                               href="/ptitsevodstvo.php"><span>Птицеводство</span></a>
+                            <a class="nav-item nav-link {% if menuItem == "kak-zakazat" %} active {% endif %}"
+                               href="/kak-zakazat.php"><span>Как заказать</span></a>
+                            <a class="nav-item nav-link {% if menuItem == "kontakty" %} active {% endif %}"
+                               href="/kontakty.php"><span>Контакты</span></a>
+                        </nav>
+                    </div>
+                </nav>
+
+
+                <nav class="navbar navbar-expand-lg navbar-dark header-navbar" data-toggle="sticky-onscroll">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-section-name d-lg-none">
+                        {% if menuItem == "/" %} Главная {% endif %}
+                        {% if menuItem == "nasha-produkciya" %} Наша продукция {% endif %}
+                        {% if menuItem == "foto-i-video" %} Фото и видео {% endif %}
+                        {% if menuItem == "ptitsevodstvo" %} Птицеводство {% endif %}
+                        {% if menuItem == "kak-zakazat" %} Как заказать {% endif %}
+                        {% if menuItem == "kontakty" %} Контакты {% endif %}
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item {% if menuItem == "/" %} active {% endif %}">
+                                <a class="nav-link" href="/">Главная <span class="sr-only">(текущий)</span></a>
+                            </li>
+                            <li class="nav-item {% if menuItem == "nasha-produkciya" %}">
+                                <a class="nav-link" href="/nasha-produkciya.php">Наша продукция <span class="sr-only">(текущий)</span></a>
+                            </li>
+                            <li class="nav-item {% if menuItem == "foto-i-video" %} active {% endif %}">
+                                <a class="nav-link" href="/foto-i-video.php">Фото и видео <span class="sr-only">(текущий)</span></a>
+                            </li>
+                            <li class="nav-item {% if menuItem == "ptitsevodstvo" %} active {% endif %}">
+                                <a class="nav-link" href="/ptitsevodstvo.php">Птицеводство <span class="sr-only">(текущий)</span></a>
+                            </li>
+                            <li class="nav-item {% if menuItem == "kak-zakazat" %} active {% endif %}">
+                                <a class="nav-link" href="/kak-zakazat.php">Как заказать <span class="sr-only">(текущий)</span></a>
+                            </li>
+                            <li class="nav-item {% if menuItem == "kontakty" %} active {% endif %}">
+                                <a class="nav-link" href="/kontakty.php">Контакты <span class="sr-only">(текущий)</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <div class="clearfix"></div>
+            <footer class="row">
+                <div class="col-sm-4">
+                    <div class="row contact">
+                        <div class="col-md-6 col-xl-4">
+                            <p><a href="tel:+79137917783" class="nowrap">8-913-791-77-83</a></p>
+                            <p><a href="tel:+79639472148" class="nowrap">8-963-947-21-48</a></p>
+                            <p><a href="mailto:info@sibkrol.ru">info@sibkrol.ru</a></p>
+                        </div>
+                        <div class="col-md-6 col-xl-4 text-md-left">
+                            <p><a href="https://vk.com/sibkrol" target="_blank">ВКонтакте</a></p>
+                            <p><a href="https://ok.ru/sibkrol" target="_blank">Одноклассники</a></p>
+                            <p><a href="https://www.youtube.com/channel/UCpcePMy4jqhhcW2hIUFwvGw" target="_blank">Youtube</a></p>
+                        </div>
+                    </div>
+                    <p>с.&nbsp;Локти, Мошковский район Новосибирской области</p>
+                </div>
+                <div class="col-sm-4">
+                    <nav class="row sitemap">
+                        <div class="col-md-6 text-md-right">
+                            <ul>
+                                <li><a href="/">Главная</a><br></li>
+                                <li><a href="/nasha-produkciya.php">Наша продукция</a><br></li>
+                                <li><a href="/foto-i-video.php">Фото и видео</a><br></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 text-md-left">
+                            <ul>
+                                <li><a href="/ptitsevodstvo.php">Птицеводство</a><br></li>
+                                <li><a href="/kak-zakazat.php">Как заказать</a><br></li>
+                                <li><a href="/kontakty.php">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div id="copyright" class="col-sm-4 text-sm-right">
+                    <p>&copy; 2013&ndash;2018.</p>
+                    <p>Дизайн сайта.</p>
+                    <p class="nowrap">Рябков Николай.</p>
+                </div>
+
+                {# Yandex.Metrika informer #}
+                <a href="http://metrika.yandex.ru/stat/?id=21231592&amp;from=informer" target="_blank" rel="nofollow">
+                    <img id="informer" src="//bs.yandex.ru/informer/21231592/3_0_F9D2A2FF_D9B282FF_0_pageviews"
+                         style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика"
+                         onclick='try{Ya.Metrika.informer({i:this,id:21231592,lang:"ru"});return false}catch(e){}'/>
+                </a>
+            </footer>
+        </div>
+
+        {% if imageGallery %}
+            <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="pswp__bg"></div>
+                <div class="pswp__scroll-wrap">
+                    <div class="pswp__container">
+                        <div class="pswp__item"></div>
+                        <div class="pswp__item"></div>
+                        <div class="pswp__item"></div>
+                    </div>
+                    <div class="pswp__ui pswp__ui--hidden">
+                        <div class="pswp__top-bar">
+                            <div class="pswp__counter"></div>
+                            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                            <button class="pswp__button pswp__button--share" title="Share"></button>
+                            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                            <div class="pswp__preloader">
+                                <div class="pswp__preloader__icn">
+                                    <div class="pswp__preloader__cut">
+                                        <div class="pswp__preloader__donut"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                            <div class="pswp__share-tooltip"></div>
+                        </div>
+                        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                        </button>
+                        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                        </button>
+                        <div class="pswp__caption">
+                            <div class="pswp__caption__center"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+
+
+
+
+        {#{% block body %}{% endblock %}#}
+        {#{% block javascripts %}{% endblock %}#}
+
+
+
+
     </body>
 </html>
