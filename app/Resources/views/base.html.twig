@@ -11,8 +11,8 @@
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
               integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="/css/fontello/fontello.compressed.css">
-        <link rel="stylesheet" href="/css/style/style.css">
+        <link rel="stylesheet" href="{{ asset('css/fontello/fontello.compressed.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/style/style.compressed2.css') }}">
 
         {# Site icons #}
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -28,7 +28,7 @@
         <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
         {# Yandex.Metrika counter #}
-        <script async src="/js/yandex/yandex.metrika.compressed.js"></script>
+        <script async src="{{ asset('js/yandex/yandex.metrika.compressed.js') }}"></script>
         <noscript><div><img src="//mc.yandex.ru/watch/21231592" style="position:absolute; left:-9999px;" alt=""></div></noscript>
 
         {# Bootstrap #}
@@ -37,7 +37,7 @@
                 crossorigin="anonymous"></script>
 
         {# Sticky nav line #}
-        <script defer src="/js/sticky.nav/sticky.nav.compressed.js"></script>
+        <script defer src="{{ asset('js/sticky.nav/sticky.nav.compressed.js') }}"></script>
 
         {% block javascripts %}{% endblock %}
     </head>
@@ -51,7 +51,7 @@
                     </div>
                     <div class="header-name-wrapper">
                         <div id="header-name" class="header-name-content">
-                            <img src="/images/header_name.png" alt='Ферма "Сибирский ковчег"'>
+                            <img src="{{ asset('images/header_name.png') }}" alt='Ферма "Сибирский ковчег"'>
                         </div>
                     </div>
                 </div>

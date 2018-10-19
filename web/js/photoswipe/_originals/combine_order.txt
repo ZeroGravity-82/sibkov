@@ -1,0 +1,4 @@
+1. photoswipe.js
+2. photoswipe-ui-default.js
+3. jquery.photoswipe.js
+4. jquery.photoswipe.init.js
