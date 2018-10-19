@@ -16,7 +16,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/nasha-produkciya")
+     * @Route("/nasha-produkciya/")
      */
     public function ourProductsAction()
     {
@@ -24,7 +24,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/kak-zakazat")
+     * @Route("/kak-zakazat/")
      */
     public function howToOrderAction()
     {
@@ -32,7 +32,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/kontakty")
+     * @Route("/kontakty/")
      */
     public function contactsAction()
     {
