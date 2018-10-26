@@ -1,0 +1,79 @@
+{% extends "base.html.twig" %}
+
+{% set metaDesc = "Фотографии фермы «Сибирский ковчег»" %}
+{% set metaKey  = "" %}
+{% set menuItem = "foto-i-video" %}
+
+{% block title %} Птицеводство фото {% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/css/lightgallery.min.css">
+{% endblock %}
+
+{% block javascripts %}
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/js/lightgallery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/js/lg-video.min.js"></script>
+    <script defer src="{{ asset('/js/light.gallery/light.gallery.compressed.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+    <main>
+        <section>
+            <header>
+                <h1 class="text-center">Фотоальбомы</h1>
+            </header>
+            <nav class="row equal">
+                <div class="col-sm-6 col-md-4 col-lg-3 equal-child">
+                    <a href="/foto-i-video_kury" class="album-item">
+                        <img class="img-thumbnail" src="{{ asset('images/ptitsa_thumb.png') }}"
+                             alt="Фотоальбом «Куры»">
+                        <p><span>Куры</span></p>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 equal-child">
+                    <a href="/foto-i-video_boksy-dlya-kur" class="album-item">
+                        <img class="img-thumbnail" src="{{ asset('images/boksy-dlya-kur_thumb.png') }}"
+                             alt="Фотоальбом «Боксы для кур»">
+                        <p><span>Боксы для кур</span></p>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 equal-child">
+                    <a href="/foto-i-video_vystavki" class="album-item">
+                        <img class="img-thumbnail" src="{{ asset('images/vystavki_thumb.png') }}"
+                             alt="Фотоальбом «Выставки»">
+                        <p><span>Участие<br>в выставках</span></p>
+                    </a>
+                </div>
+            </nav>
+        </section>
+        <hr>
+        <section>
+            <header>
+                <h1 class="text-center">Видео</h1>
+            </header>
+            <div id="video-gallery" class="row equal">
+                <div class="col-sm-6 col-md-4 col-lg-3 equal-child">
+                    <a class="album-item" href="https://www.youtube.com/embed/K7AGpLZ3L1w">
+                        <img class="img-thumbnail" src="{{ asset('images/video_interview-2017_2_thumb.png') }}"
+                             alt="Видео Инкубационное яйцо. Репортаж «Вести Новосибирск»">
+                        <p><span>Инкубационное яйцо.<br>Репортаж «Вести Новосибирск»</span></p>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 equal-child">
+                    <a class="album-item" href="https://www.youtube.com/embed/xuwRslYaiHo">
+                        <img class="img-thumbnail" src="{{ asset('images/video_interview-2017_thumb.png') }}"
+                             alt="Видео Разведение кур. Репортаж «Вести Новосибирск»">
+                        <p><span>Разведение кур.<br>Репортаж «Вести Новосибирск»</span></p>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 equal-child">
+                    <a class="album-item" href="https://www.youtube.com/embed/kNX6PrnDwYg">
+                        <img class="img-thumbnail" src="{{ asset('images/video_interview-2014_thumb.png') }}"
+                             alt="Видео Выставка «Сибирская агропромышленная неделя»">
+                        <p><span>Выставка «Сибирская<br>агропромышленная неделя»</span></p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}

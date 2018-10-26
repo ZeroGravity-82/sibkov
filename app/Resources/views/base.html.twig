@@ -3,7 +3,7 @@
     <head itemscope itemtype="http://schema.org/WebSite">
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta http-equiv="x-ua-compatible" content='ie=edge'>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="description" content="{{ metaDesc }}">
         <meta name="keywords" content="{{ metaKey }}">
 
@@ -15,11 +15,11 @@
         <link rel="stylesheet" href="{{ asset('css/style/style.compressed2.css') }}">
 
         {# Site icons #}
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/manifest.json">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16x16.png') }}">
+        <link rel="manifest" href="{{ asset('manifest.json') }}">
+        <link rel="mask-icon" href="{{ asset('safari-pinned-tab.svg') }}" color="#5bbad5">
         <meta name="theme-color" content="#ffffff">
 
         {% block stylesheets %}{% endblock %}
@@ -51,7 +51,7 @@
                     </div>
                     <div class="header-name-wrapper">
                         <div id="header-name" class="header-name-content">
-                            <img src="{{ asset('images/header_name.png') }}" alt='Ферма "Сибирский ковчег"'>
+                            <img src="{{ asset('images/header_name.png') }}" alt="Ферма «Сибирский ковчег»">
                         </div>
                     </div>
                 </div>
@@ -71,17 +71,17 @@
                     <div id="app-navbar-collapse" class="collapse navbar-toggleable-md">
                         <nav class="nav navbar-nav">
                             <a class="nav-item nav-link {% if menuItem == "/" %} active {% endif %}"
-                               href="/"><span>Главная</span></a>
+                               href="{{ url('homepage') }}"><span>Главная</span></a>
                             <a class="nav-item nav-link {% if menuItem == "nasha-produkciya" %} active {% endif %}"
-                               href="/nasha-produkciya/"><span>Наша продукция</span></a>
+                               href="{{ url('product_index') }}"><span>Наша продукция</span></a>
                             <a class="nav-item nav-link {% if menuItem == "foto-i-video" %} active {% endif %}"
-                               href="/foto-i-video/"><span>Фото и видео</span></a>
+                               href="{{ url('media_index') }}"><span>Фото и видео</span></a>
                             <a class="nav-item nav-link {% if menuItem == "ptitsevodstvo" %} active {% endif %}"
-                               href="/ptitsevodstvo/"><span>Птицеводство</span></a>
+                               href="{{ url('book_index') }}"><span>Птицеводство</span></a>
                             <a class="nav-item nav-link {% if menuItem == "kak-zakazat" %} active {% endif %}"
-                               href="/kak-zakazat/"><span>Как заказать</span></a>
+                               href="{{ url('order_index') }}"><span>Как заказать</span></a>
                             <a class="nav-item nav-link {% if menuItem == "kontakty" %} active {% endif %}"
-                               href="/kontakty/"><span>Контакты</span></a>
+                               href="{{ url('contact_index') }}"><span>Контакты</span></a>
                         </nav>
                     </div>
                 </nav>
@@ -102,22 +102,22 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item {% if menuItem == "/" %} active {% endif %}">
-                                <a class="nav-link" href="/">Главная <span class="sr-only">(текущий)</span></a>
+                                <a class="nav-link" href="{{ url('homepage') }}">Главная <span class="sr-only">(текущий)</span></a>
                             </li>
                             <li class="nav-item {% if menuItem == "nasha-produkciya" %} active {% endif %}">
-                                <a class="nav-link" href="/nasha-produkciya/">Наша продукция</a>
+                                <a class="nav-link" href="{{ url('product_index') }}">Наша продукция</a>
                             </li>
                             <li class="nav-item {% if menuItem == "foto-i-video" %} active {% endif %}">
-                                <a class="nav-link" href="/foto-i-video/">Фото и видео</a>
+                                <a class="nav-link" href="{{ url('media_index') }}">Фото и видео</a>
                             </li>
                             <li class="nav-item {% if menuItem == "ptitsevodstvo" %} active {% endif %}">
-                                <a class="nav-link" href="/ptitsevodstvo/">Птицеводство</a>
+                                <a class="nav-link" href="{{ url('book_index') }}">Птицеводство</a>
                             </li>
                             <li class="nav-item {% if menuItem == "kak-zakazat" %} active {% endif %}">
-                                <a class="nav-link" href="/kak-zakazat/">Как заказать</a>
+                                <a class="nav-link" href="{{ url('order_index') }}">Как заказать</a>
                             </li>
                             <li class="nav-item {% if menuItem == "kontakty" %} active {% endif %}">
-                                <a class="nav-link" href="/kontakty/">Контакты</a>
+                                <a class="nav-link" href="{{ url('contact_index') }}">Контакты</a>
                             </li>
                         </ul>
                     </div>
@@ -147,22 +147,22 @@
                     <nav class="row sitemap">
                         <div class="col-md-6 text-md-right">
                             <ul>
-                                <li><a href="/">Главная</a><br></li>
-                                <li><a href="/nasha-produkciya/">Наша продукция</a><br></li>
-                                <li><a href="/foto-i-video/">Фото и видео</a><br></li>
+                                <li><a href="{{ url('homepage') }}">Главная</a><br></li>
+                                <li><a href="{{ url('product_index')}}">Наша продукция</a><br></li>
+                                <li><a href="{{ url('media_index') }}">Фото и видео</a><br></li>
                             </ul>
                         </div>
                         <div class="col-md-6 text-md-left">
                             <ul>
-                                <li><a href="/ptitsevodstvo/">Птицеводство</a><br></li>
-                                <li><a href="/kak-zakazat/">Как заказать</a><br></li>
-                                <li><a href="/kontakty/">Контакты</a></li>
+                                <li><a href="{{ url('book_index') }}">Птицеводство</a><br></li>
+                                <li><a href="{{ url('order_index') }}">Как заказать</a><br></li>
+                                <li><a href="{{ url('contact_index') }}">Контакты</a></li>
                             </ul>
                         </div>
                     </nav>
                 </div>
                 <div id="copyright" class="col-sm-4 text-sm-right">
-                    <p>&copy; 2013&ndash;{{ "now"|date('Y') }}.</p>
+                    <p>&copy; 2013&ndash;{{ "now"|date("Y") }}.</p>
                     <p>Дизайн сайта.</p>
                     <p class="nowrap">Рябков Николай.</p>
                 </div>

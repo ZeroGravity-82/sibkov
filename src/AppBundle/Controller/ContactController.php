@@ -6,18 +6,18 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
 /**
- * Class BookController
+ * Class ContactController
  * @package AppBundle\Controller
  *
- * @Route("/ptitsevodstvo")
+ * @Route("/kontakty")
  */
-class BookController extends Controller
+class ContactController extends Controller
 {
     /**
-     * @Route("/", name="book_index")
+     * @Route("/", name="contact_index")
      */
     public function indexAction()
     {
-        return $this->render("book/index.html.twig");
+        return $this->render("contact/index.html.twig");
     }
 }
