@@ -71,17 +71,17 @@
                     <div id="app-navbar-collapse" class="collapse navbar-toggleable-md">
                         <nav class="nav navbar-nav">
                             <a class="nav-item nav-link {% if menuItem == "/" %} active {% endif %}"
-                               href="{{ url('homepage') }}"><span>Главная</span></a>
+                               href="{{ path('homepage') }}"><span>Главная</span></a>
                             <a class="nav-item nav-link {% if menuItem == "nasha-produkciya" %} active {% endif %}"
-                               href="{{ url('product_index') }}"><span>Наша продукция</span></a>
+                               href="{{ path('product_index') }}"><span>Наша продукция</span></a>
                             <a class="nav-item nav-link {% if menuItem == "foto-i-video" %} active {% endif %}"
-                               href="{{ url('media_index') }}"><span>Фото и видео</span></a>
+                               href="{{ path('media_index') }}"><span>Фото и видео</span></a>
                             <a class="nav-item nav-link {% if menuItem == "ptitsevodstvo" %} active {% endif %}"
-                               href="{{ url('book_index') }}"><span>Птицеводство</span></a>
+                               href="{{ path('book_index') }}"><span>Птицеводство</span></a>
                             <a class="nav-item nav-link {% if menuItem == "kak-zakazat" %} active {% endif %}"
-                               href="{{ url('order_index') }}"><span>Как заказать</span></a>
+                               href="{{ path('order_index') }}"><span>Как заказать</span></a>
                             <a class="nav-item nav-link {% if menuItem == "kontakty" %} active {% endif %}"
-                               href="{{ url('contact_index') }}"><span>Контакты</span></a>
+                               href="{{ path('contact_index') }}"><span>Контакты</span></a>
                         </nav>
                     </div>
                 </nav>
@@ -102,22 +102,22 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item {% if menuItem == "/" %} active {% endif %}">
-                                <a class="nav-link" href="{{ url('homepage') }}">Главная <span class="sr-only">(текущий)</span></a>
+                                <a class="nav-link" href="{{ path('homepage') }}">Главная <span class="sr-only">(текущий)</span></a>
                             </li>
                             <li class="nav-item {% if menuItem == "nasha-produkciya" %} active {% endif %}">
-                                <a class="nav-link" href="{{ url('product_index') }}">Наша продукция</a>
+                                <a class="nav-link" href="{{ path('product_index') }}">Наша продукция</a>
                             </li>
                             <li class="nav-item {% if menuItem == "foto-i-video" %} active {% endif %}">
-                                <a class="nav-link" href="{{ url('media_index') }}">Фото и видео</a>
+                                <a class="nav-link" href="{{ path('media_index') }}">Фото и видео</a>
                             </li>
                             <li class="nav-item {% if menuItem == "ptitsevodstvo" %} active {% endif %}">
-                                <a class="nav-link" href="{{ url('book_index') }}">Птицеводство</a>
+                                <a class="nav-link" href="{{ path('book_index') }}">Птицеводство</a>
                             </li>
                             <li class="nav-item {% if menuItem == "kak-zakazat" %} active {% endif %}">
-                                <a class="nav-link" href="{{ url('order_index') }}">Как заказать</a>
+                                <a class="nav-link" href="{{ path('order_index') }}">Как заказать</a>
                             </li>
                             <li class="nav-item {% if menuItem == "kontakty" %} active {% endif %}">
-                                <a class="nav-link" href="{{ url('contact_index') }}">Контакты</a>
+                                <a class="nav-link" href="{{ path('contact_index') }}">Контакты</a>
                             </li>
                         </ul>
                     </div>
@@ -147,16 +147,16 @@
                     <nav class="row sitemap">
                         <div class="col-md-6 text-md-right">
                             <ul>
-                                <li><a href="{{ url('homepage') }}">Главная</a><br></li>
-                                <li><a href="{{ url('product_index')}}">Наша продукция</a><br></li>
-                                <li><a href="{{ url('media_index') }}">Фото и видео</a><br></li>
+                                <li><a href="{{ path('homepage') }}">Главная</a><br></li>
+                                <li><a href="{{ path('product_index')}}">Наша продукция</a><br></li>
+                                <li><a href="{{ path('media_index') }}">Фото и видео</a><br></li>
                             </ul>
                         </div>
                         <div class="col-md-6 text-md-left">
                             <ul>
-                                <li><a href="{{ url('book_index') }}">Птицеводство</a><br></li>
-                                <li><a href="{{ url('order_index') }}">Как заказать</a><br></li>
-                                <li><a href="{{ url('contact_index') }}">Контакты</a></li>
+                                <li><a href="{{ path('book_index') }}">Птицеводство</a><br></li>
+                                <li><a href="{{ path('order_index') }}">Как заказать</a><br></li>
+                                <li><a href="{{ path('contact_index') }}">Контакты</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -171,7 +171,7 @@
                 <a href="http://metrika.yandex.ru/stat/?id=21231592&amp;from=informer" target="_blank" rel="nofollow">
                     <img id="informer" src="//bs.yandex.ru/informer/21231592/3_0_F9D2A2FF_D9B282FF_0_pageviews"
                          style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика"
-                         onclick='try{Ya.Metrika.informer({i:this,id:21231592,lang:"ru"});return false}catch(e){}'/>
+                         onclick="try{Ya.Metrika.informer({i:this,id:21231592,lang:'ru'});return false}catch(e){}"/>
                 </a>
             </footer>
         </div>
