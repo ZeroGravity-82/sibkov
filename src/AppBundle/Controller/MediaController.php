@@ -3,6 +3,7 @@
 namespace AppBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
@@ -15,6 +16,8 @@ class MediaController extends Controller
 {
     /**
      * @Route("/", name="media_index")
+     *
+     * @return Response
      */
     public function indexAction()
     {
