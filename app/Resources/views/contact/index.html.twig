@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="{{ asset('css/loading.spinner/loading.spinner.compressed.css') }}">
 {% endblock %}
 
+{% block javascripts %}
+    <script defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script defer src="{{ asset('js/yandex/yandex.maps.compressed.js') }}"></script>
+{% endblock %}
+
 {% block content %}
     <main itemscope itemtype="http://schema.org/Organization" class="contacts">
         <span hidden itemprop="name">Ферма «Сибирский ковчег»</span>
