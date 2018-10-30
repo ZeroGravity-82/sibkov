@@ -1,0 +1,213 @@
+{% extends "base.html.twig" %}
+
+{% set metaDesc = "Куры. Описание. Разведение. Уход. Потапова Ю.В." %}
+{% set metaKey  = "разведение кур несушек в домашних условиях, птицеводство в домашних условиях куры" %}
+{% set menuItem = "ptitsevodstvo" %}
+
+{% block title %} Разведение кур в домашних условиях для начинающих, птицеводство читать {% endblock %}
+
+{% block content %}
+    <main>
+        <header>
+            <h1 class="text-center">Птицеводство</h1>
+        </header>
+        <div class="row">
+            <div class="col-sm-4">
+                <img class="book-cover img-fluid"
+                     src="/images/ptitsevodstvo_oblozhka.jpg"
+                     alt="Потапова Ю.В. Куры. Описание. Разведение. Уход">
+                <p class="book-comment">
+                    Потапова Ю.В.<br>
+                    Куры. Описание. Разведение. Уход.<br>
+                    Урожайкины. Школа фермера.<br>
+                    Эксмо, 320 стр., 2013 г.<br>
+                    ISBN 978-5-699-60458-6
+                </p>
+            </div>
+            <nav class="col-sm-8">
+                <ul class="table-of-contents">
+                    <li>
+                        <span OnClick="location.href='/ptitsevodstvo_porody-kur.php#porody-kur'">
+                            <a href='/ptitsevodstvo_porody-kur.php#porody-kur'>Породы кур</a>
+                        </span>
+                        <ul>
+                            <li>
+                                <span OnClick="location.href='/ptitsevodstvo_porody-kur.php#kury-yaichnogo-napravleniya'">
+                                    <a href='/ptitsevodstvo_porody-kur.php#kury-yaichnogo-napravleniya'>Куры яичного направления</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='/ptitsevodstvo_porody-kur.php#kury-myasnogo-napravleniya'">
+                                    <a href='/ptitsevodstvo_porody-kur.php#kury-myasnogo-napravleniya'>Куры мясного направления</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='/ptitsevodstvo_porody-kur.php#kury-myasoyaichnogo-napravleniya'">
+                                    <a href='/ptitsevodstvo_porody-kur.php#kury-myasoyaichnogo-napravleniya'>Куры мясояичного направления</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='/ptitsevodstvo_porody-kur.php#dekorativnye-kury'">
+                                    <a href='/ptitsevodstvo_porody-kur.php#dekorativnye-kury'>Декоративные куры</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='/ptitsevodstvo_porody-kur.php#bojtsovye-porody-kur'">
+                                    <a href='/ptitsevodstvo_porody-kur.php#bojtsovye-porody-kur'>Бойцовые породы кур</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><span OnClick="location.href='/ptitsevodstvo_soderzhanie-kur.php#soderzhanie-kur'">
+                            <a href='/ptitsevodstvo_soderzhanie-kur.php#soderzhanie-kur'>Содержание кур</a>
+                        </span>
+                        <ul>
+                            <li>
+                                <span OnClick="location.href='/ptitsevodstvo_soderzhanie-kur.php#sistemy-soderzhaniya'">
+                                    <a href='/ptitsevodstvo_soderzhanie-kur.php#sistemy-soderzhaniya'>Системы содержания</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='/ptitsevodstvo_soderzhanie-kur.php#obustrojstvo-ptichnika'">
+                                    <a href='/ptitsevodstvo_soderzhanie-kur.php#obustrojstvo-ptichnika'>Обустройство птичника</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='/ptitsevodstvo_soderzhanie-kur.php#dop-oborudovanie'">
+                                    <a href='/ptitsevodstvo_soderzhanie-kur.php#dop-oborudovanie'>Дополнительное оборудование</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='/ptitsevodstvo_soderzhanie-kur.php#mikroklimat'">
+                                    <a href='/ptitsevodstvo_soderzhanie-kur.php#mikroklimat'>Микроклимат в птичнике</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span OnClick="location.href='/ptitsevodstvo_kormlenie-kur.php#kormlenie-kur'">
+                            <a href='/ptitsevodstvo_kormlenie-kur.php#kormlenie-kur'>Кормление кур</a>
+                        </span>
+                        <ul>
+                            <li>
+                                <span OnClick="location.href='/ptitsevodstvo_kormlenie-kur.php#korma'">
+                                    <a href='/ptitsevodstvo_kormlenie-kur.php#korma'>Виды и типы кормов</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='/ptitsevodstvo_kormlenie-kur.php#zagotovka-kormov'">
+                                    <a href='/ptitsevodstvo_kormlenie-kur.php#zagotovka-kormov'>Заготовка кормов</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='/ptitsevodstvo_kormlenie-kur.php#ratsion'">
+                                    <a href='/ptitsevodstvo_kormlenie-kur.php#ratsion'>Рацион кур</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span OnClick="location.href='/ptitsevodstvo_razvedenie-kur.php#razvedenie-kur'">
+                            <a href='/ptitsevodstvo_razvedenie-kur.php#razvedenie-kur'>Разведение кур</a>
+                        </span>
+                        <ul>
+                            <li>
+                                <span OnClick="location.href='/ptitsevodstvo_razvedenie-kur.php#razmnozhenie'">
+                                    <a href='/ptitsevodstvo_razvedenie-kur.php#razmnozhenie'>Особенности размножения кур</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='/ptitsevodstvo_razvedenie-kur.php#oplodotvorenie-i-noska-yaits'">
+                                    <a href='/ptitsevodstvo_razvedenie-kur.php#oplodotvorenie-i-noska-yaits'>Оплодотворение и носка яиц</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='/ptitsevodstvo_razvedenie-kur.php#naklev-tsyplyat'">
+                                    <a href='/ptitsevodstvo_razvedenie-kur.php#naklev-tsyplyat'>Наклев цыплят</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='/ptitsevodstvo_razvedenie-kur.php#otbor-yaits'">
+                                    <a href='/ptitsevodstvo_razvedenie-kur.php#otbor-yaits'>Отбор яиц для инкубации</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='/ptitsevodstvo_razvedenie-kur.php#nasizhivanie-yaits'">
+                                    <a href='/ptitsevodstvo_razvedenie-kur.php#nasizhivanie-yaits'>Насиживание яиц</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='/ptitsevodstvo_razvedenie-kur.php#iskusstvennaya-inkubatsiya'">
+                                    <a href='/ptitsevodstvo_razvedenie-kur.php#iskusstvennaya-inkubatsiya'>Искусственная инкубация</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='/ptitsevodstvo_razvedenie-kur.php#vyrashhivanie-molodnyaka'">
+                                    <a href='/ptitsevodstvo_razvedenie-kur.php#vyrashhivanie-molodnyaka'>Выращивание молодняка</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='/ptitsevodstvo_razvedenie-kur.php#transportirovka-ptitsy'">
+                                    <a href='/ptitsevodstvo_razvedenie-kur.php#transportirovka-ptitsy'>Транспортировка птицы</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='/ptitsevodstvo_razvedenie-kur.php#metody-selektsii'">
+                                    <a href='/ptitsevodstvo_razvedenie-kur.php#metody-selektsii'>Методы селекции в домашнем птицеводстве</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span OnClick="location.href='/ptitsevodstvo_profilaktika-i-lechenie.php#profilaktika-i-lechenie'">
+                            <a href='/ptitsevodstvo_profilaktika-i-lechenie.php#profilaktika-i-lechenie'>Профилактика и лечение заболеваний кур</a>
+                        </span>
+                        <ul>
+                            <li>
+                                <span OnClick="location.href='/ptitsevodstvo_profilaktika-i-lechenie.php#profilakticheskie-meropriyatiya'">
+                                    <a href='/ptitsevodstvo_profilaktika-i-lechenie.php#profilakticheskie-meropriyatiya'>Профилактические мероприятия</a>
+                                </span></li>
+                            <li>
+                                <span OnClick="location.href='/ptitsevodstvo_profilaktika-i-lechenie.php#osmotr-ptitsy'">
+                                    <a href='/ptitsevodstvo_profilaktika-i-lechenie.php#osmotr-ptitsy'>Осмотр птицы на предмет заболеваний</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='/ptitsevodstvo_profilaktika-i-lechenie.php#nezaraznye-bolezni'">
+                                    <a href='/ptitsevodstvo_profilaktika-i-lechenie.php#nezaraznye-bolezni'>Незаразные болезни кур</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='/ptitsevodstvo_profilaktika-i-lechenie.php#zaraznye-bolezni'">
+                                    <a href='/ptitsevodstvo_profilaktika-i-lechenie.php#zaraznye-bolezni'>Заразные болезни кур</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span OnClick="location.href='/ptitsevodstvo_pererabotka-produktov.php#pererabotka-produktov'">
+                            <a href='/ptitsevodstvo_pererabotka-produktov.php#pererabotka-produktov'>Переработка продуктов куроводства</a>
+                        </span>
+                        <ul>
+                            <li>
+                                <span OnClick="location.href='/ptitsevodstvo_pererabotka-produktov.php#zaboj-ptitsy-i-pererabotka-myasa'">
+                                    <a href='/ptitsevodstvo_pererabotka-produktov.php#zaboj-ptitsy-i-pererabotka-myasa'>Забой птицы и переработка мяса</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='/ptitsevodstvo_pererabotka-produktov.php#poluchenie-pera-i-pukha'">
+                                    <a href='/ptitsevodstvo_pererabotka-produktov.php#poluchenie-pera-i-pukha'>Получение пера и пуха</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='/ptitsevodstvo_pererabotka-produktov.php#ptichij-navoz-kak-udobrenie'">
+                                    <a href='/ptitsevodstvo_pererabotka-produktov.php#ptichij-navoz-kak-udobrenie'>Птичий навоз как удобрение</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+{% endblock %}
