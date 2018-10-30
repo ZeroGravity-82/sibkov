@@ -25,11 +25,11 @@ class MediaController extends Controller
     }
 
     /**
-     * @Route("/kury", name="media_album_kury")
+     * @Route("/kury/", name="media_album_kury")
      *
      * @return Response
      */
-    public function showPhotoAlbumAction()
+    public function showAlbumKuryAction()
     {
         return $this->render("media/album_kury.html.twig");
     }
