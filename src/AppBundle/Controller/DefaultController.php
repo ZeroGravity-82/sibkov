@@ -8,6 +8,8 @@ use Symfony\Component\Routing\Annotation\Route;
 /**
  * Class DefaultController
  * @package AppBundle\Controller
+ *
+ * @Route("/")
  */
 class DefaultController extends Controller
 {
