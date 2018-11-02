@@ -15,7 +15,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class MediaController extends Controller
 {
     /**
-     * @Route("/", name="media_index")
+     * @Route("", name="media_index")
      *
      * @return Response
      */
@@ -25,7 +25,7 @@ class MediaController extends Controller
     }
 
     /**
-     * @Route("/kury/", name="media_album_kury")
+     * @Route("/kury", name="media_album_kury")
      *
      * @return Response
      */
@@ -35,7 +35,7 @@ class MediaController extends Controller
     }
 
     /**
-     * @Route("/boksy-dlya-kur/", name="media_album_boksy_dlya_kur")
+     * @Route("/boksy-dlya-kur", name="media_album_boksy_dlya_kur")
      *
      * @return Response
      */
@@ -45,7 +45,7 @@ class MediaController extends Controller
     }
 
     /**
-     * @Route("/vystavki/", name="media_album_vystavki")
+     * @Route("/vystavki", name="media_album_vystavki")
      *
      * @return Response
      */

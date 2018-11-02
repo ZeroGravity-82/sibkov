@@ -15,7 +15,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class BookController extends Controller
 {
     /**
-     * @Route("/", name="book_index")
+     * @Route("", name="book_index")
      *
      * @return Response
      */

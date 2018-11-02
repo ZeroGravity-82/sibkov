@@ -15,7 +15,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class ContactController extends Controller
 {
     /**
-     * @Route("/", name="contact_index")
+     * @Route("", name="contact_index")
      *
      * @return Response
      */
