@@ -1,3 +1,11 @@
+{% set currentRoute = app.request.get("_route") %}
+{% set sectionHomepage = currentRoute starts with "homepage" %}
+{% set sectionProduct  = currentRoute starts with "product" %}
+{% set sectionMedia    = currentRoute starts with "media" %}
+{% set sectionBook     = currentRoute starts with "book" %}
+{% set sectionOrder    = currentRoute starts with "order" %}
+{% set sectionContact  = currentRoute starts with "contact" %}
+
 <header>
     <div id="header">
         <div id="header-phones">
@@ -16,26 +24,26 @@
         <label class="navbar-toggler d-lg-none" for="navbar-toggle-cbox" data-toggle="collapse"
                data-target="#app-navbar-collapse"></label>
         <div class="navbar-section-name d-lg-none">
-            {% if menuItem == "/" %} Главная {% endif %}
-            {% if menuItem == "nasha-produkciya" %} Наша продукция {% endif %}
-            {% if menuItem == "foto-i-video" %} Фото и видео {% endif %}
-            {% if menuItem == "ptitsevodstvo" %} Птицеводство {% endif %}
-            {% if menuItem == "kak-zakazat" %} Как заказать {% endif %}
-            {% if menuItem == "kontakty" %} Контакты {% endif %}
+            {% if sectionHomepage %} Главная {% endif %}
+            {% if sectionProduct %} Наша продукция {% endif %}
+            {% if sectionMedia %} Фото и видео {% endif %}
+            {% if sectionBook %} Птицеводство {% endif %}
+            {% if sectionOrder %} Как заказать {% endif %}
+            {% if sectionContact %} Контакты {% endif %}
         </div>
         <div id="app-navbar-collapse" class="collapse navbar-toggleable-md">
             <nav class="nav navbar-nav">
-                <a class="nav-item nav-link {% if menuItem == "/" %} active {% endif %}"
+                <a class="nav-item nav-link {% if sectionHomepage %} active {% endif %}"
                    href="{{ path('homepage') }}"><span>Главная</span></a>
-                <a class="nav-item nav-link {% if menuItem == "nasha-produkciya" %} active {% endif %}"
+                <a class="nav-item nav-link {% if sectionProduct %} active {% endif %}"
                    href="{{ path('product_index') }}"><span>Наша продукция</span></a>
-                <a class="nav-item nav-link {% if menuItem == "foto-i-video" %} active {% endif %}"
+                <a class="nav-item nav-link {% if sectionMedia %} active {% endif %}"
                    href="{{ path('media_index') }}"><span>Фото и видео</span></a>
-                <a class="nav-item nav-link {% if menuItem == "ptitsevodstvo" %} active {% endif %}"
+                <a class="nav-item nav-link {% if sectionBook %} active {% endif %}"
                    href="{{ path('book_index') }}"><span>Птицеводство</span></a>
-                <a class="nav-item nav-link {% if menuItem == "kak-zakazat" %} active {% endif %}"
+                <a class="nav-item nav-link {% if sectionOrder %} active {% endif %}"
                    href="{{ path('order_index') }}"><span>Как заказать</span></a>
-                <a class="nav-item nav-link {% if menuItem == "kontakty" %} active {% endif %}"
+                <a class="nav-item nav-link {% if sectionContact %} active {% endif %}"
                    href="{{ path('contact_index') }}"><span>Контакты</span></a>
             </nav>
         </div>
@@ -47,31 +55,31 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-section-name d-lg-none">
-            {% if menuItem == "/" %} Главная {% endif %}
-            {% if menuItem == "nasha-produkciya" %} Наша продукция {% endif %}
-            {% if menuItem == "foto-i-video" %} Фото и видео {% endif %}
-            {% if menuItem == "ptitsevodstvo" %} Птицеводство {% endif %}
-            {% if menuItem == "kak-zakazat" %} Как заказать {% endif %}
-            {% if menuItem == "kontakty" %} Контакты {% endif %}
+            {% if sectionHomepage %} Главная {% endif %}
+            {% if sectionProduct %} Наша продукция {% endif %}
+            {% if sectionMedia %} Фото и видео {% endif %}
+            {% if sectionBook %} Птицеводство {% endif %}
+            {% if sectionOrder %} Как заказать {% endif %}
+            {% if sectionContact %} Контакты {% endif %}
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item {% if menuItem == "/" %} active {% endif %}">
+                <li class="nav-item {% if sectionHomepage %} active {% endif %}">
                     <a class="nav-link" href="{{ path('homepage') }}">Главная</a>
                 </li>
-                <li class="nav-item {% if menuItem == "nasha-produkciya" %} active {% endif %}">
+                <li class="nav-item {% if sectionProduct %} active {% endif %}">
                     <a class="nav-link" href="{{ path('product_index') }}">Наша продукция</a>
                 </li>
-                <li class="nav-item {% if menuItem == "foto-i-video" %} active {% endif %}">
+                <li class="nav-item {% if sectionMedia %} active {% endif %}">
                     <a class="nav-link" href="{{ path('media_index') }}">Фото и видео</a>
                 </li>
-                <li class="nav-item {% if menuItem == "ptitsevodstvo" %} active {% endif %}">
+                <li class="nav-item {% if sectionBook %} active {% endif %}">
                     <a class="nav-link" href="{{ path('book_index') }}">Птицеводство</a>
                 </li>
-                <li class="nav-item {% if menuItem == "kak-zakazat" %} active {% endif %}">
+                <li class="nav-item {% if sectionOrder %} active {% endif %}">
                     <a class="nav-link" href="{{ path('order_index') }}">Как заказать</a>
                 </li>
-                <li class="nav-item {% if menuItem == "kontakty" %} active {% endif %}">
+                <li class="nav-item {% if sectionContact %} active {% endif %}">
                     <a class="nav-link" href="{{ path('contact_index') }}">Контакты</a>
                 </li>
             </ul>
