@@ -14,7 +14,7 @@
         <div class="row">
             <div class="col-sm-4">
                 <img class="book-cover img-fluid"
-                     src="/images/ptitsevodstvo_oblozhka.jpg"
+                     src="{{ asset('images/ptitsevodstvo_oblozhka.jpg') }}"
                      alt="Потапова Ю.В. Куры. Описание. Разведение. Уход">
                 <p class="book-comment">
                     Потапова Ю.В.<br>
@@ -27,181 +27,180 @@
             <nav class="col-sm-8">
                 <ul class="table-of-contents">
                     <li>
-                        <span OnClick="location.href='/ptitsevodstvo_porody-kur.php#porody-kur'">
-                            <a href='/ptitsevodstvo_porody-kur.php#porody-kur'>Породы кур</a>
+                        <span OnClick="location.href='{{ path('book_ptitsevodstvo_porody_kur') }}'">
+                            <a href="{{ path('book_ptitsevodstvo_porody_kur') }}">Породы кур</a>
                         </span>
                         <ul>
-                            <li>
-                                <span OnClick="location.href='/ptitsevodstvo_porody-kur.php#kury-yaichnogo-napravleniya'">
-                                    <a href='/ptitsevodstvo_porody-kur.php#kury-yaichnogo-napravleniya'>Куры яичного направления</a>
+                            <li><span OnClick="location.href='{{ path('book_ptitsevodstvo_porody_kur') }}#kury-yaichnogo-napravleniya'">
+                                    <a href="{{ path('book_ptitsevodstvo_porody_kur') }}#kury-yaichnogo-napravleniya">Куры яичного направления</a>
                                 </span>
                             </li>
                             <li>
-                                <span OnClick="location.href='/ptitsevodstvo_porody-kur.php#kury-myasnogo-napravleniya'">
-                                    <a href='/ptitsevodstvo_porody-kur.php#kury-myasnogo-napravleniya'>Куры мясного направления</a>
+                                <span OnClick="location.href='{{ path('book_ptitsevodstvo_porody_kur') }}#kury-myasnogo-napravleniya'">
+                                    <a href="{{ path('book_ptitsevodstvo_porody_kur') }}#kury-myasnogo-napravleniya">Куры мясного направления</a>
                                 </span>
                             </li>
                             <li>
-                                <span OnClick="location.href='/ptitsevodstvo_porody-kur.php#kury-myasoyaichnogo-napravleniya'">
-                                    <a href='/ptitsevodstvo_porody-kur.php#kury-myasoyaichnogo-napravleniya'>Куры мясояичного направления</a>
+                                <span OnClick="location.href='{{ path('book_ptitsevodstvo_porody_kur') }}#kury-myasoyaichnogo-napravleniya'">
+                                    <a href="{{ path('book_ptitsevodstvo_porody_kur') }}#kury-myasoyaichnogo-napravleniya">Куры мясояичного направления</a>
                                 </span>
                             </li>
                             <li>
-                                <span OnClick="location.href='/ptitsevodstvo_porody-kur.php#dekorativnye-kury'">
-                                    <a href='/ptitsevodstvo_porody-kur.php#dekorativnye-kury'>Декоративные куры</a>
+                                <span OnClick="location.href='{{ path('book_ptitsevodstvo_porody_kur') }}#dekorativnye-kury'">
+                                    <a href="{{ path('book_ptitsevodstvo_porody_kur') }}#dekorativnye-kury">Декоративные куры</a>
                                 </span>
                             </li>
                             <li>
-                                <span OnClick="location.href='/ptitsevodstvo_porody-kur.php#bojtsovye-porody-kur'">
-                                    <a href='/ptitsevodstvo_porody-kur.php#bojtsovye-porody-kur'>Бойцовые породы кур</a>
+                                <span OnClick="location.href='{{ path('book_ptitsevodstvo_porody_kur') }}#bojtsovye-porody-kur'">
+                                    <a href="{{ path('book_ptitsevodstvo_porody_kur') }}#bojtsovye-porody-kur">Бойцовые породы кур</a>
                                 </span>
                             </li>
                         </ul>
                     </li>
-                    <li><span OnClick="location.href='/ptitsevodstvo_soderzhanie-kur.php#soderzhanie-kur'">
-                            <a href='/ptitsevodstvo_soderzhanie-kur.php#soderzhanie-kur'>Содержание кур</a>
+                    <li><span OnClick="location.href='{{ path('book_ptitsevodstvo_soderzhanie_kur') }}'">
+                            <a href="{{ path('book_ptitsevodstvo_soderzhanie_kur') }}">Содержание кур</a>
                         </span>
                         <ul>
                             <li>
-                                <span OnClick="location.href='/ptitsevodstvo_soderzhanie-kur.php#sistemy-soderzhaniya'">
-                                    <a href='/ptitsevodstvo_soderzhanie-kur.php#sistemy-soderzhaniya'>Системы содержания</a>
+                                <span OnClick="location.href='{{ path('book_ptitsevodstvo_soderzhanie_kur') }}#sistemy-soderzhaniya'">
+                                    <a href="{{ path('book_ptitsevodstvo_soderzhanie_kur') }}#sistemy-soderzhaniya">Системы содержания</a>
                                 </span>
                             </li>
                             <li>
-                                <span OnClick="location.href='/ptitsevodstvo_soderzhanie-kur.php#obustrojstvo-ptichnika'">
-                                    <a href='/ptitsevodstvo_soderzhanie-kur.php#obustrojstvo-ptichnika'>Обустройство птичника</a>
+                                <span OnClick="location.href='{{ path('book_ptitsevodstvo_soderzhanie_kur') }}#obustrojstvo-ptichnika'">
+                                    <a href="{{ path('book_ptitsevodstvo_soderzhanie_kur') }}#obustrojstvo-ptichnika">Обустройство птичника</a>
                                 </span>
                             </li>
                             <li>
-                                <span OnClick="location.href='/ptitsevodstvo_soderzhanie-kur.php#dop-oborudovanie'">
-                                    <a href='/ptitsevodstvo_soderzhanie-kur.php#dop-oborudovanie'>Дополнительное оборудование</a>
+                                <span OnClick="location.href='{{ path('book_ptitsevodstvo_soderzhanie_kur') }}#dop-oborudovanie'">
+                                    <a href="{{ path('book_ptitsevodstvo_soderzhanie_kur') }}#dop-oborudovanie">Дополнительное оборудование</a>
                                 </span>
                             </li>
                             <li>
-                                <span OnClick="location.href='/ptitsevodstvo_soderzhanie-kur.php#mikroklimat'">
-                                    <a href='/ptitsevodstvo_soderzhanie-kur.php#mikroklimat'>Микроклимат в птичнике</a>
-                                </span>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span OnClick="location.href='/ptitsevodstvo_kormlenie-kur.php#kormlenie-kur'">
-                            <a href='/ptitsevodstvo_kormlenie-kur.php#kormlenie-kur'>Кормление кур</a>
-                        </span>
-                        <ul>
-                            <li>
-                                <span OnClick="location.href='/ptitsevodstvo_kormlenie-kur.php#korma'">
-                                    <a href='/ptitsevodstvo_kormlenie-kur.php#korma'>Виды и типы кормов</a>
-                                </span>
-                            </li>
-                            <li>
-                                <span OnClick="location.href='/ptitsevodstvo_kormlenie-kur.php#zagotovka-kormov'">
-                                    <a href='/ptitsevodstvo_kormlenie-kur.php#zagotovka-kormov'>Заготовка кормов</a>
-                                </span>
-                            </li>
-                            <li>
-                                <span OnClick="location.href='/ptitsevodstvo_kormlenie-kur.php#ratsion'">
-                                    <a href='/ptitsevodstvo_kormlenie-kur.php#ratsion'>Рацион кур</a>
+                                <span OnClick="location.href='{{ path('book_ptitsevodstvo_soderzhanie_kur') }}#mikroklimat'">
+                                    <a href="{{ path('book_ptitsevodstvo_soderzhanie_kur') }}#mikroklimat">Микроклимат в птичнике</a>
                                 </span>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <span OnClick="location.href='/ptitsevodstvo_razvedenie-kur.php#razvedenie-kur'">
-                            <a href='/ptitsevodstvo_razvedenie-kur.php#razvedenie-kur'>Разведение кур</a>
+                        <span OnClick="location.href='{{ path('book_ptitsevodstvo_kormlenie_kur') }}'">
+                            <a href="{{ path('book_ptitsevodstvo_kormlenie_kur') }}">Кормление кур</a>
                         </span>
                         <ul>
                             <li>
-                                <span OnClick="location.href='/ptitsevodstvo_razvedenie-kur.php#razmnozhenie'">
-                                    <a href='/ptitsevodstvo_razvedenie-kur.php#razmnozhenie'>Особенности размножения кур</a>
+                                <span OnClick="location.href='{{ path('book_ptitsevodstvo_kormlenie_kur') }}#korma'">
+                                    <a href="{{ path('book_ptitsevodstvo_kormlenie_kur') }}#korma">Виды и типы кормов</a>
                                 </span>
                             </li>
                             <li>
-                                <span OnClick="location.href='/ptitsevodstvo_razvedenie-kur.php#oplodotvorenie-i-noska-yaits'">
-                                    <a href='/ptitsevodstvo_razvedenie-kur.php#oplodotvorenie-i-noska-yaits'>Оплодотворение и носка яиц</a>
+                                <span OnClick="location.href='{{ path('book_ptitsevodstvo_kormlenie_kur') }}#zagotovka-kormov'">
+                                    <a href="{{ path('book_ptitsevodstvo_kormlenie_kur') }}#zagotovka-kormov">Заготовка кормов</a>
                                 </span>
                             </li>
                             <li>
-                                <span OnClick="location.href='/ptitsevodstvo_razvedenie-kur.php#naklev-tsyplyat'">
-                                    <a href='/ptitsevodstvo_razvedenie-kur.php#naklev-tsyplyat'>Наклев цыплят</a>
-                                </span>
-                            </li>
-                            <li>
-                                <span OnClick="location.href='/ptitsevodstvo_razvedenie-kur.php#otbor-yaits'">
-                                    <a href='/ptitsevodstvo_razvedenie-kur.php#otbor-yaits'>Отбор яиц для инкубации</a>
-                                </span>
-                            </li>
-                            <li>
-                                <span OnClick="location.href='/ptitsevodstvo_razvedenie-kur.php#nasizhivanie-yaits'">
-                                    <a href='/ptitsevodstvo_razvedenie-kur.php#nasizhivanie-yaits'>Насиживание яиц</a>
-                                </span>
-                            </li>
-                            <li>
-                                <span OnClick="location.href='/ptitsevodstvo_razvedenie-kur.php#iskusstvennaya-inkubatsiya'">
-                                    <a href='/ptitsevodstvo_razvedenie-kur.php#iskusstvennaya-inkubatsiya'>Искусственная инкубация</a>
-                                </span>
-                            </li>
-                            <li>
-                                <span OnClick="location.href='/ptitsevodstvo_razvedenie-kur.php#vyrashhivanie-molodnyaka'">
-                                    <a href='/ptitsevodstvo_razvedenie-kur.php#vyrashhivanie-molodnyaka'>Выращивание молодняка</a>
-                                </span>
-                            </li>
-                            <li>
-                                <span OnClick="location.href='/ptitsevodstvo_razvedenie-kur.php#transportirovka-ptitsy'">
-                                    <a href='/ptitsevodstvo_razvedenie-kur.php#transportirovka-ptitsy'>Транспортировка птицы</a>
-                                </span>
-                            </li>
-                            <li>
-                                <span OnClick="location.href='/ptitsevodstvo_razvedenie-kur.php#metody-selektsii'">
-                                    <a href='/ptitsevodstvo_razvedenie-kur.php#metody-selektsii'>Методы селекции в домашнем птицеводстве</a>
+                                <span OnClick="location.href='{{ path('book_ptitsevodstvo_kormlenie_kur') }}#ratsion'">
+                                    <a href="{{ path('book_ptitsevodstvo_kormlenie_kur') }}#ratsion">Рацион кур</a>
                                 </span>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <span OnClick="location.href='/ptitsevodstvo_profilaktika-i-lechenie.php#profilaktika-i-lechenie'">
-                            <a href='/ptitsevodstvo_profilaktika-i-lechenie.php#profilaktika-i-lechenie'>Профилактика и лечение заболеваний кур</a>
+                        <span OnClick="location.href='{{ path('book_ptitsevodstvo_razvedenie_kur') }}'">
+                            <a href="{{ path('book_ptitsevodstvo_razvedenie_kur') }}">Разведение кур</a>
                         </span>
                         <ul>
                             <li>
-                                <span OnClick="location.href='/ptitsevodstvo_profilaktika-i-lechenie.php#profilakticheskie-meropriyatiya'">
-                                    <a href='/ptitsevodstvo_profilaktika-i-lechenie.php#profilakticheskie-meropriyatiya'>Профилактические мероприятия</a>
+                                <span OnClick="location.href='{{ path('book_ptitsevodstvo_razvedenie_kur') }}#razmnozhenie'">
+                                    <a href="{{ path('book_ptitsevodstvo_razvedenie_kur') }}#razmnozhenie">Особенности размножения кур</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='{{ path('book_ptitsevodstvo_razvedenie_kur') }}#oplodotvorenie-i-noska-yaits'">
+                                    <a href="{{ path('book_ptitsevodstvo_razvedenie_kur') }}#oplodotvorenie-i-noska-yaits">Оплодотворение и носка яиц</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='{{ path('book_ptitsevodstvo_razvedenie_kur') }}#naklev-tsyplyat'">
+                                    <a href="{{ path('book_ptitsevodstvo_razvedenie_kur') }}#naklev-tsyplyat">Наклев цыплят</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='{{ path('book_ptitsevodstvo_razvedenie_kur') }}#otbor-yaits'">
+                                    <a href="{{ path('book_ptitsevodstvo_razvedenie_kur') }}#otbor-yaits">Отбор яиц для инкубации</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='{{ path('book_ptitsevodstvo_razvedenie_kur') }}#nasizhivanie-yaits'">
+                                    <a href="{{ path('book_ptitsevodstvo_razvedenie_kur') }}#nasizhivanie-yaits">Насиживание яиц</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='{{ path('book_ptitsevodstvo_razvedenie_kur') }}#iskusstvennaya-inkubatsiya'">
+                                    <a href="{{ path('book_ptitsevodstvo_razvedenie_kur') }}#iskusstvennaya-inkubatsiya">Искусственная инкубация</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='{{ path('book_ptitsevodstvo_razvedenie_kur') }}#vyrashhivanie-molodnyaka-kur'">
+                                    <a href="{{ path('book_ptitsevodstvo_razvedenie_kur') }}#vyrashhivanie-molodnyaka">Выращивание молодняка</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='{{ path('book_ptitsevodstvo_razvedenie_kur') }}#transportirovka-ptitsy'">
+                                    <a href="{{ path('book_ptitsevodstvo_razvedenie_kur') }}#transportirovka-ptitsy">Транспортировка птицы</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='{{ path('book_ptitsevodstvo_razvedenie_kur') }}#metody-selektsii'">
+                                    <a href="{{ path('book_ptitsevodstvo_razvedenie_kur') }}#metody-selektsii">Методы селекции в домашнем птицеводстве</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span OnClick="location.href='{{ path('book_ptitsevodstvo_profilaktika_i_lechenie') }}'">
+                            <a href="{{ path('book_ptitsevodstvo_profilaktika_i_lechenie') }}">Профилактика и лечение заболеваний кур</a>
+                        </span>
+                        <ul>
+                            <li>
+                                <span OnClick="location.href='{{ path('book_ptitsevodstvo_profilaktika_i_lechenie') }}#profilakticheskie-meropriyatiya'">
+                                    <a href="{{ path('book_ptitsevodstvo_profilaktika_i_lechenie') }}#profilakticheskie-meropriyatiya">Профилактические мероприятия</a>
                                 </span></li>
                             <li>
-                                <span OnClick="location.href='/ptitsevodstvo_profilaktika-i-lechenie.php#osmotr-ptitsy'">
-                                    <a href='/ptitsevodstvo_profilaktika-i-lechenie.php#osmotr-ptitsy'>Осмотр птицы на предмет заболеваний</a>
+                                <span OnClick="location.href='{{ path('book_ptitsevodstvo_profilaktika_i_lechenie') }}#osmotr-ptitsy'">
+                                    <a href="{{ path('book_ptitsevodstvo_profilaktika_i_lechenie') }}#osmotr-ptitsy">Осмотр птицы на предмет заболеваний</a>
                                 </span>
                             </li>
                             <li>
-                                <span OnClick="location.href='/ptitsevodstvo_profilaktika-i-lechenie.php#nezaraznye-bolezni'">
-                                    <a href='/ptitsevodstvo_profilaktika-i-lechenie.php#nezaraznye-bolezni'>Незаразные болезни кур</a>
+                                <span OnClick="location.href='{{ path('book_ptitsevodstvo_profilaktika_i_lechenie') }}#nezaraznye-bolezni'">
+                                    <a href="{{ path('book_ptitsevodstvo_profilaktika_i_lechenie') }}#nezaraznye-bolezni">Незаразные болезни кур</a>
                                 </span>
                             </li>
                             <li>
-                                <span OnClick="location.href='/ptitsevodstvo_profilaktika-i-lechenie.php#zaraznye-bolezni'">
-                                    <a href='/ptitsevodstvo_profilaktika-i-lechenie.php#zaraznye-bolezni'>Заразные болезни кур</a>
+                                <span OnClick="location.href='{{ path('book_ptitsevodstvo_profilaktika_i_lechenie') }}#zaraznye-bolezni'">
+                                    <a href="{{ path('book_ptitsevodstvo_profilaktika_i_lechenie') }}#zaraznye-bolezni">Заразные болезни кур</a>
                                 </span>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <span OnClick="location.href='/ptitsevodstvo_pererabotka-produktov.php#pererabotka-produktov'">
-                            <a href='/ptitsevodstvo_pererabotka-produktov.php#pererabotka-produktov'>Переработка продуктов куроводства</a>
+                        <span OnClick="location.href='{{ path('book_ptitsevodstvo_pererabotka_produktov') }}'">
+                            <a href="{{ path('book_ptitsevodstvo_pererabotka_produktov') }}">Переработка продуктов куроводства</a>
                         </span>
                         <ul>
                             <li>
-                                <span OnClick="location.href='/ptitsevodstvo_pererabotka-produktov.php#zaboj-ptitsy-i-pererabotka-myasa'">
-                                    <a href='/ptitsevodstvo_pererabotka-produktov.php#zaboj-ptitsy-i-pererabotka-myasa'>Забой птицы и переработка мяса</a>
+                                <span OnClick="location.href='{{ path('book_ptitsevodstvo_pererabotka_produktov') }}#zaboj-ptitsy-i-pererabotka-myasa'">
+                                    <a href="{{ path('book_ptitsevodstvo_pererabotka_produktov') }}#zaboj-ptitsy-i-pererabotka-myasa">Забой птицы и переработка мяса</a>
                                 </span>
                             </li>
                             <li>
-                                <span OnClick="location.href='/ptitsevodstvo_pererabotka-produktov.php#poluchenie-pera-i-pukha'">
-                                    <a href='/ptitsevodstvo_pererabotka-produktov.php#poluchenie-pera-i-pukha'>Получение пера и пуха</a>
+                                <span OnClick="location.href='{{ path('book_ptitsevodstvo_pererabotka_produktov') }}#poluchenie-pera-i-pukha'">
+                                    <a href="{{ path('book_ptitsevodstvo_pererabotka_produktov') }}#poluchenie-pera-i-pukha">Получение пера и пуха</a>
                                 </span>
                             </li>
                             <li>
-                                <span OnClick="location.href='/ptitsevodstvo_pererabotka-produktov.php#ptichij-navoz-kak-udobrenie'">
-                                    <a href='/ptitsevodstvo_pererabotka-produktov.php#ptichij-navoz-kak-udobrenie'>Птичий навоз как удобрение</a>
+                                <span OnClick="location.href='{{ path('book_ptitsevodstvo_pererabotka_produktov') }}#ptichij-navoz-kak-udobrenie'">
+                                    <a href="{{ path('book_ptitsevodstvo_pererabotka_produktov') }}#ptichij-navoz-kak-udobrenie">Птичий навоз как удобрение</a>
                                 </span>
                             </li>
                         </ul>
