@@ -1,0 +1,48 @@
+<div class="clearfix"></div>
+<footer class="row">
+    <div class="col-sm-4">
+        <div class="row contact">
+            <div class="col-md-6 col-xl-4">
+                <p><a href="tel:+79137917783" class="nowrap">8-913-791-77-83</a></p>
+                <p><a href="tel:+79639472148" class="nowrap">8-963-947-21-48</a></p>
+                <p><a href="mailto:info@sibkov.ru">info@sibkov.ru</a></p>
+            </div>
+            <div class="col-md-6 col-xl-4 text-md-left">
+                <p><a href="https://vk.com/sibkov" target="_blank">ВКонтакте</a></p>
+                <p><a href="https://ok.ru/sibkov" target="_blank">Одноклассники</a></p>
+                <p><a href="https://www.youtube.com/channel/UCpcePMy4jqhhcW2hIUFwvGw" target="_blank">Youtube</a></p>
+            </div>
+        </div>
+        <p>с.&nbsp;Локти, Мошковский район Новосибирской области</p>
+    </div>
+    <div class="col-sm-4">
+        <nav class="row sitemap">
+            <div class="col-md-6 text-md-right">
+                <ul>
+                    <li><a href="{{ path('homepage') }}">Главная</a><br></li>
+                    <li><a href="{{ path('product_index')}}">Наша продукция</a><br></li>
+                    <li><a href="{{ path('media_index') }}">Фото и видео</a><br></li>
+                </ul>
+            </div>
+            <div class="col-md-6 text-md-left">
+                <ul>
+                    <li><a href="{{ path('book_index') }}">Птицеводство</a><br></li>
+                    <li><a href="{{ path('order_index') }}">Как заказать</a><br></li>
+                    <li><a href="{{ path('contact_index') }}">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div id="copyright" class="col-sm-4 text-sm-right">
+        <p>&copy; 2013&ndash;{{ "now"|date("Y") }}.</p>
+        <p>Дизайн сайта.</p>
+        <p class="nowrap">Рябков Николай.</p>
+    </div>
+
+    {# Yandex.Metrika informer #}
+    <a href="http://metrika.yandex.ru/stat/?id=21231592&amp;from=informer" target="_blank" rel="nofollow">
+        <img id="informer" src="//bs.yandex.ru/informer/21231592/3_0_F9D2A2FF_D9B282FF_0_pageviews"
+             style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика"
+             onclick="try{Ya.Metrika.informer({i:this,id:21231592,lang:'ru'});return false}catch(e){}"/>
+    </a>
+</footer>
