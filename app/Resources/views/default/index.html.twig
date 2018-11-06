@@ -7,11 +7,17 @@
 
 {% block stylesheets %}
     {{ parent() }}
+
+    {# TODO: use automatic minification #}
+
     <link rel="stylesheet" href="{{ asset('css/nivo.slider/nivo.slider.compressed.css') }}" media="screen">
 {% endblock %}
 
 {% block javascripts %}
     {{ parent() }}
+
+    {# TODO: revert back slider nav and freeze on mouse pointer hover #}
+
     {#<script src="{{ asset('js/nivo.slider/nivo.slider.compressed.js') }}"></script>#}
     <script src="{{ asset('js/nivo.slider/_originals/jquery.nivo.slider.fade.js') }}"></script>
     <script src="{{ asset('js/nivo.slider/_originals/jquery.nivo.slider.init.js') }}"></script>
