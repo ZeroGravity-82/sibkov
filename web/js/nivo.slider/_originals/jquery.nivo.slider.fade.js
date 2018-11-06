@@ -44,7 +44,7 @@
             if (next >= kids.length || next < 0) { next = 0; }
             var img = $(kids[next]);
             img.attr('src', img.data('src'));
-        }
+        };
 
         // Set startSlide
         if(settings.startSlide >= vars.totalSlides) { settings.startSlide = vars.totalSlides - 1; }
@@ -89,7 +89,7 @@
             // Preload the next image (when found)
             preload_next_image();
             // Restart the timer
-            if (timer == '' ) {
+            if (timer === '' ) {
                 timer = setInterval(function(){ nivoRun(slider, kids, settings); }, settings.pauseTime);
             }
         });

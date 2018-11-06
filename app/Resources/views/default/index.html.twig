@@ -6,11 +6,15 @@
 {% block title %} Купить инкубационное яйцо в Новосибирске, породные куры {% endblock %}
 
 {% block stylesheets %}
+    {{ parent() }}
     <link rel="stylesheet" href="{{ asset('css/nivo.slider/nivo.slider.compressed.css') }}" media="screen">
 {% endblock %}
 
 {% block javascripts %}
-    <script defer src="{{ asset('js/nivo.slider/nivo.slider.compressed.js') }}"></script>
+    {{ parent() }}
+    {#<script src="{{ asset('js/nivo.slider/nivo.slider.compressed.js') }}"></script>#}
+    <script src="{{ asset('js/nivo.slider/_originals/jquery.nivo.slider.fade.js') }}"></script>
+    <script src="{{ asset('js/nivo.slider/_originals/jquery.nivo.slider.init.js') }}"></script>
 {% endblock %}
 
 {% block content %}

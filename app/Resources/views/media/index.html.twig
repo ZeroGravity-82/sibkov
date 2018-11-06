@@ -6,13 +6,15 @@
 {% block title %} Птицеводство фото {% endblock %}
 
 {% block stylesheets %}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/css/lightgallery.min.css">
+    {{ parent() }}
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/css/lightgallery.min.css">
 {% endblock %}
 
 {% block javascripts %}
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/js/lightgallery.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/js/lg-video.min.js"></script>
-    <script defer src="{{ asset('/js/light.gallery/light.gallery.compressed.js') }}"></script>
+    {{ parent() }}
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/js/lightgallery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/js/lg-video.min.js"></script>
+    <script src="{{ asset('/js/light.gallery/light.gallery.compressed.js') }}"></script>
 {% endblock %}
 
 {% block content %}

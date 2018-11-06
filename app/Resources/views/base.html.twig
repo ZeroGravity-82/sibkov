@@ -9,11 +9,13 @@
 
         <title>{% block title %}{% endblock %} – Ферма «Сибирский ковчег»</title>
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-              crossorigin="anonymous">
-        <link rel="stylesheet" href="{{ asset('css/fontello/fontello.compressed.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/style/style.compressed2.css') }}">
+        {% block stylesheets %}
+            <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+                  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+                  crossorigin="anonymous">
+            <link rel="stylesheet" href="{{ asset('css/fontello/fontello.compressed.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/style/style.compressed2.css') }}">
+        {% endblock %}
 
         {# Site icons #}
         <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
@@ -22,25 +24,6 @@
         <link rel="manifest" href="{{ asset('manifest.json') }}">
         <link rel="mask-icon" href="{{ asset('safari-pinned-tab.svg') }}" color="#5bbad5">
         <meta name="theme-color" content="#ffffff">
-
-        {% block stylesheets %}{% endblock %}
-
-        {# jQuery #}
-        <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
-        {# Yandex.Metrika counter #}
-        <script async src="{{ asset('js/yandex/yandex.metrika.compressed.js') }}"></script>
-        <noscript><div><img src="//mc.yandex.ru/watch/21231592" style="position:absolute; left:-9999px;" alt=""></div></noscript>
-
-        {# Bootstrap #}
-        <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-                crossorigin="anonymous"></script>
-
-        {# Sticky nav line #}
-        <script defer src="{{ asset('js/sticky.nav/sticky.nav.compressed.js') }}"></script>
-
-        {% block javascripts %}{% endblock %}
     </head>
     <body>
         <div class="container">
@@ -49,6 +32,26 @@
             {% block content %}{% endblock %}
 
             {% include '_footer.html.twig' %}
+
+            {% block javascripts %}
+                {# jQuery #}
+                <script src="//code.jquery.com/jquery-3.3.1.min.js"
+                        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                        crossorigin="anonymous"></script>
+
+                {# Bootstrap #}
+                <script src="//stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+                        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                        crossorigin="anonymous"></script>
+
+                {# Sticky nav line #}
+                {#<script src="{{ asset('js/sticky.nav/sticky.nav.compressed.js') }}"></script>#}
+                <script src="{{ asset('js/sticky.nav/_originals/sticky.nav.js') }}"></script>
+
+                {# Yandex.Metrika counter #}
+                <script async src="{{ asset('js/yandex/yandex.metrika.compressed.js') }}"></script>
+                <noscript><div><img src="//mc.yandex.ru/watch/21231592" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+            {% endblock %}
         </div>
     </body>
 </html>
