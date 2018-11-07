@@ -32,3 +32,6 @@
 
 # Embedded web-server pid file
 /.web-server-pid
+
+# Managed by NodeJS
+/node_modules/
