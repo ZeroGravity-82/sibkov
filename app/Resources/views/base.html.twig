@@ -45,11 +45,10 @@
                         crossorigin="anonymous"></script>
 
                 {# Sticky nav line #}
-                {#<script src="{{ asset('js/sticky.nav/sticky.nav.compressed.js') }}"></script>#}
-                <script src="{{ asset('js/sticky.nav/_originals/sticky.nav.js') }}"></script>
+                <script src="{{ asset('build/sticky.nav.js') }}"></script>
 
                 {# Yandex.Metrika counter #}
-                <script async src="{{ asset('js/yandex/yandex.metrika.compressed.js') }}"></script>
+                <script async src="{{ asset('js/yandex/yandex.metrika.counter.js') }}"></script>
                 <noscript><div><img src="//mc.yandex.ru/watch/21231592" style="position:absolute; left:-9999px;" alt=""></div></noscript>
             {% endblock %}
         </div>

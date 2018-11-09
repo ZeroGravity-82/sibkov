@@ -8,7 +8,10 @@
 
 {% block javascripts %}
     {{ parent() }}
-    <script src="{{ asset('js/photoswipe/photoswipe.compressed.js') }}"></script>
+    <script src="{{ asset('js/photoswipe/photoswipe.js') }}"></script>
+    <script src="{{ asset('js/photoswipe/photoswipe-ui-default.js') }}"></script>
+    <script src="{{ asset('js/photoswipe/jquery.photoswipe.js') }}"></script>
+    <script src="{{ asset('js/photoswipe/jquery.photoswipe.init.js') }}"></script>
 {% endblock %}
 
 {% block content %}
