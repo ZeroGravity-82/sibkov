@@ -1,1 +1,1 @@
-{"entrypoints":{"light.gallery":{"js":["build/light.gallery.js"]},"sticky.nav":{"js":["build/sticky.nav.js"]}}}
+{"entrypoints":{"homepage":{"css":["build/homepage.css"],"js":["build/homepage.js"]},"light.gallery":{"js":["build/light.gallery.js"]},"sticky.nav":{"js":["build/sticky.nav.js"]}}}

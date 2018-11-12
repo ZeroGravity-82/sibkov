@@ -1,4 +1,6 @@
 {
+  "build/homepage.js": "/build/homepage.js",
   "build/light.gallery.js": "/build/light.gallery.js",
-  "build/sticky.nav.js": "/build/sticky.nav.js"
+  "build/sticky.nav.js": "/build/sticky.nav.js",
+  "build/homepage.css": "/build/homepage.css"
 }

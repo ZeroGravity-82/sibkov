@@ -10,7 +10,8 @@
 
     {# TODO: use automatic minification #}
 
-    <link rel="stylesheet" href="{{ asset('css/nivo.slider/nivo.slider.compressed.css') }}" media="screen">
+    {#<link rel="stylesheet" href="{{ asset('css/nivo.slider/nivo.slider.compressed.css') }}" media="screen">#}
+    <link rel="stylesheet" href="{{ asset('build/homepage.css') }}" media="screen">
 {% endblock %}
 
 {% block javascripts %}
@@ -18,21 +19,28 @@
 
     {# TODO: revert back slider nav and freeze on mouse pointer hover #}
 
-    <script src="{{ asset('js/nivo.slider/jquery.nivo.slider.fade.js') }}"></script>
-    <script src="{{ asset('js/nivo.slider/jquery.nivo.slider.init.js') }}"></script>
+    {#<script src="{{ asset('js/nivo.slider/jquery.nivo.slider.fade.js') }}"></script>#}
+    {#<script src="{{ asset('js/nivo.slider/jquery.nivo.slider.init.js') }}"></script>#}
 {% endblock %}
 
 {% block content %}
     <main>
         <aside class="slider-wrapper d-none d-md-block">
-            <div id="slider" class="slider-content">
-                <img class="img-fluid" src="{{ asset('images/slider-5fr2g8ivxv.jpg') }}" data-src="{{ asset('images/slider-5fr2g8ivxv.jpg') }}" alt="">
-                <img src="" data-src="{{ asset('images/slider-erw4dtsqt4.jpg') }}" alt="">
-                <img src="" data-src="{{ asset('images/slider-n904ze4vez.jpg') }}" alt="">
-                <img src="" data-src="{{ asset('images/slider-wojh6ptgez.jpg') }}" alt="">
-                <img src="" data-src="{{ asset('images/slider-c4vznus7gl.jpg') }}" alt="">
-                <img src="" data-src="{{ asset('images/slider-nodudqv39a.jpg') }}" alt="">
-                <img src="" data-src="{{ asset('images/slider-b2l7pigeq5.jpg') }}" alt="">
+            <div class="glide slider-content">
+                <div data-glide-el="track" class="glide__track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">0</li>
+                        <li class="glide__slide">1</li>
+                        <li class="glide__slide">2</li>
+                        {#<img class="img-fluid" src="{{ asset('images/slider-5fr2g8ivxv.jpg') }}" data-src="{{ asset('images/slider-5fr2g8ivxv.jpg') }}" alt="">#}
+                        {#<img src="" data-src="{{ asset('images/slider-erw4dtsqt4.jpg') }}" alt="">#}
+                        {#<img src="" data-src="{{ asset('images/slider-n904ze4vez.jpg') }}" alt="">#}
+                        {#<img src="" data-src="{{ asset('images/slider-wojh6ptgez.jpg') }}" alt="">#}
+                        {#<img src="" data-src="{{ asset('images/slider-c4vznus7gl.jpg') }}" alt="">#}
+                        {#<img src="" data-src="{{ asset('images/slider-nodudqv39a.jpg') }}" alt="">#}
+                        {#<img src="" data-src="{{ asset('images/slider-b2l7pigeq5.jpg') }}" alt="">#}
+                    </ul>
+                </div>
             </div>
         </aside>
         <h1 class="text-center">О хозяйстве</h1>
