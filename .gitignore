@@ -4,9 +4,6 @@
 # Parameters
 /app/config/parameters.yml
 
-# Build data
-/build/
-
 // PHPUnit
 /phpunit.xml
 
@@ -26,6 +23,9 @@
 # Assets and user uploads
 /web/bundles/
 /web/uploads/
+
+# Build data
+/web/build/
 
 # Backup entities generated with doctrine:generate:entities command
 **/Entity/*~
