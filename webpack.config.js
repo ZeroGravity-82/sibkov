@@ -17,9 +17,9 @@ Encore
      * Each entry will result in one JavaScript file (e.g. app.js)
      * and one CSS file (e.g. app.css) if you JavaScript imports CSS.
      */
-    .addEntry('homepage', './assets/js/homepage/homepage.js')
-    .addEntry('light.gallery', './assets/js/light.gallery/light.gallery.init.js')
-    .addEntry('sticky.nav', './assets/js/sticky.nav/sticky.nav.js')
+    .addEntry('homepage', './assets/js/homepage.js')
+    // .addEntry('light.gallery', './assets/js/light.gallery/light.gallery.init.js')
+    // .addEntry('sticky.nav', './assets/js/sticky.nav/sticky.nav.js')
     //.addEntry('page1', './assets/js/page1.js')
     //.addEntry('page2', './assets/js/page2.js')
 ;
