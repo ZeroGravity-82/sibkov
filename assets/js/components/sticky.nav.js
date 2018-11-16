@@ -36,12 +36,7 @@ $(document).ready(function() {
 });
 
 // Compensation of the sticky nav height
-document = window.document;
-history  = window.history;
-location = window.location;
-
 var HISTORY_SUPPORT = !!(history && history.pushState);
-
 var anchorScrolls = {
     ANCHOR_REGEX: /^#[^ ]+$/,
 	OFFSET_HEIGHT_PX: 42,
@@ -95,7 +90,7 @@ var anchorScrolls = {
      * Attempt to scroll to the current location's hash.
      */
     scrollToCurrent: function(e) {
-        if (this.scrollIfAnchor(window.location.hash) && e) {
+        if (this.scrollIfAnchor(location.hash) && e) {
             e.preventDefault();
         }
     },
