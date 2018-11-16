@@ -35,7 +35,7 @@ $(document).ready(function() {
     });
 });
 
-// Компенсация высоты строки липкой навигации
+// Compensation of the sticky nav height
 document = window.document;
 history  = window.history;
 location = window.location;

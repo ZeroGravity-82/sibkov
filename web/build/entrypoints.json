@@ -1,1 +1,1 @@
-{"entrypoints":{"homepage":{"css":["build/homepage.css"],"js":["build/homepage.js"]}}}
+{"entrypoints":{"layout":{"js":["build/layout.js"]},"homepage":{"css":["build/homepage.css"],"js":["build/homepage.js"]}}}

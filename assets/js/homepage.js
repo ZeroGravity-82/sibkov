@@ -7,7 +7,7 @@ const $ = require('jquery');
 require('slick-carousel');
 
 $(document).ready(function () {
-    $('.slider-content').slick({
+    $('.js-slider').slick({
         infinite: true,
         dots: true,
         autoplay: true,

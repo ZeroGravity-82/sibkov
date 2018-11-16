@@ -1,6 +1,7 @@
 {
-  "build/homepage.js": "/build/homepage.js",
   "build/homepage.css": "/build/homepage.css",
+  "build/homepage.js": "/build/homepage.js",
+  "build/layout.js": "/build/layout.js",
   "build/fonts/slick.woff": "/build/fonts/slick.b7c9e1e4.woff",
   "build/fonts/slick.eot": "/build/fonts/slick.ced611da.eot",
   "build/fonts/slick.ttf": "/build/fonts/slick.d41f55a7.ttf",
