@@ -30,14 +30,12 @@
             {% block content %}{% endblock %}
 
             {% include '_footer.html.twig' %}
-
-            {% block javascripts %}
-                <script src="{{ asset('build/layout.js') }}"></script>
-
-                {# Yandex.Metrika counter #}
-                <script async src="{{ asset('js/yandex/yandex.metrika.counter.js') }}"></script>
-                <noscript><div><img src="//mc.yandex.ru/watch/21231592" style="position:absolute; left:-9999px;" alt=""></div></noscript>
-            {% endblock %}
         </div>
+        {% block javascripts %}
+            <script src="{{ asset('build/layout.js') }}"></script>
+
+            {# Yandex.Metrika counter #}
+            <script async src="{{ asset('js/yandex/yandex.metrika.counter.js') }}"></script>
+        {% endblock %}
     </body>
 </html>
