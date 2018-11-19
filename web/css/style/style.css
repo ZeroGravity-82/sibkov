@@ -128,23 +128,12 @@ body {
     background-color: #d9b282;
     color: #593304;
 }
-.navbar-toggler:before {
-    display: inline-block;
-    content: '\e802';		/* Иконка "Меню" */
-    font-family: "fontello";
-    font-style: normal;
-    font-weight: normal;
-    width: 1rem;
-    margin-right: .2rem;
-    text-align: center;
+#navbar-toggle-cbox:checked ~ .collapse {
+    display:block;
+}
 
-    font-variant: normal;
-    text-transform: none;
-
-    line-height: 1rem;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+#navbar-toggle-cbox {
+    display: none;
 }
 
 
