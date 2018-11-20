@@ -99,6 +99,7 @@ body {
 		display: none;
 	}
 }
+
 /* Site navigation */
 .navbar {
     padding: 0;
@@ -108,6 +109,8 @@ body {
 .navbar-content {
     background-color: #593304;
     border-bottom: 3px solid #d9b282;
+    color: white;
+    position: relative;
     width: 100%;
 }
 .nav-item {
@@ -128,12 +131,46 @@ body {
     background-color: #d9b282;
     color: #593304;
 }
-#navbar-toggle-cbox:checked ~ .collapse {
-    display:block;
-}
+
 
 #navbar-toggle-cbox {
     display: none;
+}
+@media only screen and (max-width: 991px) {
+    #navbar-toggle-cbox:checked ~ .collapse {
+        display:block;
+    }
+}
+.navbar-toggler {
+    cursor: pointer;
+    font-weight: bold;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -moz-appearance: none!important;
+    -webkit-appearance: none!important;
+}
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+    text-shadow: 0 0 0.25rem white;
+}
+.navbar-toggler[aria-expanded='true'],
+#navbar-toggle-cbox:checked ~ .navbar-toggler {				/* этот селектор используется, когда JS отключен */
+    color: rgba(217,178,130,0.5);							/* соответствует цвету #d9b282 */
+}
+.navbar-toggler[aria-expanded='true']:hover,
+.navbar-toggler[aria-expanded='true']:focus,
+#navbar-toggle-cbox:checked ~ .navbar-toggler:hover,		/* этот селектор используется, когда JS отключен */
+#navbar-toggle-cbox:checked ~ .navbar-toggler:focus {
+    text-shadow: 0 0 0.25rem #d9b282;
+}
+.navbar-section-title {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    line-height: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
 }
 
 
@@ -148,31 +185,8 @@ body {
 	/*width: 100%;*/
 /*}*/
 /*!**/
-/*#navbar-toggle-cbox {*/
-	/*display: none;*/
-/*}*/
-/*.navbar-toggler {*/
-	/*position: absolute;*/
-	/*left: 0;*/
-	/*top: 0;*/
-	/*cursor: pointer;*/
-	/*-webkit-appearance: none!important;*/
-    /*-moz-appearance: none!important;*/
-/*}*/
-/*.navbar-toggler:hover,*/
-/*.navbar-toggler:focus {*/
-	/*text-shadow: 0 0 0.25rem white;*/
-/*}*/
-/*.navbar-toggler[aria-expanded='true'],*/
-/*#navbar-toggle-cbox:checked ~ .navbar-toggler {				// этот селектор используется, когда JS отключен*/
-	/*color: rgba(217,178,130,0.5);							// соответствует цвету #d9b282*/
-/*}*/
-/*.navbar-toggler[aria-expanded='true']:hover,*/
-/*.navbar-toggler[aria-expanded='true']:focus,*/
-/*#navbar-toggle-cbox:checked ~ .navbar-toggler:hover,		// этот селектор используется, когда JS отключен*/
-/*#navbar-toggle-cbox:checked ~ .navbar-toggler:focus {*/
-	/*text-shadow: 0 0 0.25rem #d9b282;*/
-/*}*/
+
+
 /*.navbar-toggler:before {*/
 	/*display: inline-block;*/
 	/*content: '\e802';		// Иконка "Меню"*/
@@ -196,14 +210,7 @@ body {
 	/*content: '\e803';*/
 /*}*/
 /**!*/
-/*.navbar-section-name {*/
-	/*padding-top: 0.625rem;*/
-	/*padding-bottom: 0.625rem;*/
-	/*height: 39px;*/
-	/*font-weight: bold;*/
-	/*text-align: center;*/
-	/*margin: 0 auto;*/
-/*}*/
+
 /*!**/
 /*.navbar-toggler[aria-expanded='true'] ~ .navbar-section-name,*/
 /*#navbar-toggle-cbox:checked ~ .navbar-section-name {		// этот селектор используется, когда JS отключен*/
