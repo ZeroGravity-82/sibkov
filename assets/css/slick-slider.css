@@ -1,0 +1,31 @@
+.slick-dots {
+    bottom: 0;
+    height: 2rem;
+    left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+.slick-dots li {
+    background: Transparent;
+    border: 2px solid #593304;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 1rem;
+    margin: 0 0.75rem;
+    position: relative;
+    transition: all 0.5s;
+    width: 1rem;
+    -webkit-border-radius: 50%;
+    -webkit-transition: all 0.5s;
+}
+.slick-dots li.slick-active {
+    background: #593304;
+}
+.slick-dots li button {
+    display: none;
+}
