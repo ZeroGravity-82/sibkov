@@ -17,6 +17,7 @@ $(document).ready(function () {
         fade: true,
         infinite: true,
         pauseOnHover: true,
+        pauseOnFocus: false,
         speed: 750,
     });
 });
