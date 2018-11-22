@@ -179,76 +179,80 @@ body {
 }
 
 /* Footer */
-footer {
-	flex: none;
-	padding-bottom: 0.25rem;
+.footer {
+	background-color: #d9b282;
     border-left: 3px solid #593304;
     border-right: 3px solid #593304;
-	position: relative;
+	color: #593304;
+	flex: none;
+	font-size: 0.8rem;
 	height: auto;
 	line-height: 1rem;
-	font-size: 0.8rem;
-	color: #593304;
-	background-color: #d9b282;
-	overflow: hidden;
-}
-footer a:link,
-footer a:visited {
-	color: #593304;
-	border-bottom: 1px solid rgba(89,51,04,0.2);	/* соответствует цвету #593304 */
-}
-footer a:hover,
-footer a:focus {
-	color: white;
-	border-bottom: 1px solid rgba(255,255,255,0.2);
-}
-footer nav.sitemap {
-	padding-top: 0.25rem;
-	padding-bottom: 0.25rem;
-}
-footer nav.sitemap ul {
-	padding: 0;
 	margin: 0;
+	overflow: hidden;
+	padding-bottom: 0.25rem;
+	position: relative;
 }
-footer nav.sitemap li {
+.footer a:link,
+.footer a:visited {
+	border-bottom: 1px solid rgba(89,51,04,0.2);	/* color #593304 */
+	color: #593304;
+}
+.footer a:hover,
+.footer a:focus {
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	color: white;
+}
+.footer nav.sitemap {
+	padding-bottom: 0.25rem;
+	padding-top: 0.25rem;
+}
+.footer nav.sitemap ul {
+	margin: 0;
+	padding: 0;
+}
+.footer nav.sitemap li {
 	list-style-type: none;
-	margin-top: 0.5rem;
 	margin-bottom: 0.5rem;
+	margin-top: 0.5rem;
 }
-footer p {
-	margin-top: 0.25rem;
+.footer nav.sitemap li:last-child {
+	margin-bottom: 0;
+}
+.footer p {
 	margin-bottom: 0.25rem;
+	margin-top: 0.25rem;
 	padding: 0;
 	text-align: left;
 }
-footer .contact p {
+.footer .contact p {
 	margin-top: 0.5rem;
 }
-footer .nowrap {
+.footer .nowrap {
 	white-space: nowrap;
 }
-footer .contact {
+.footer .contact {
 	padding-top: 0.25rem;
 }
-#copyright {
+.copyright {
 	color: #593304;
 	padding-bottom: 0.5rem;
 }
-#copyright p {
+.copyright p {
 	display: inline-block;
 	text-align: right;
 	margin: 0;
 }
-#copyright p:first-child {
+.copyright p:first-child {
 	margin-top: 0.75rem;
 }
 @media only screen and (max-width: 767px) {
-	#copyright p {
+	.copyright p {
 		display: block;
 	}
 }
 @media only screen and (max-width: 543px) {
-	#copyright p {
+	.copyright p {
 			text-align: left;
 		}
 }
