@@ -234,29 +234,28 @@ body {
 .footer .contact {
 	padding-top: 0.25rem;
 }
-.copyright {
+.footer .copyright {
 	color: #593304;
 	padding-bottom: 0.5rem;
 }
-.copyright p {
+.footer .copyright p {
 	display: inline-block;
 	text-align: right;
-	margin: 0;
 }
-.copyright p:first-child {
+.footer .copyright p:first-child {
 	margin-top: 0.75rem;
 }
 @media only screen and (max-width: 767px) {
-	.copyright p {
+	.footer .copyright p {
 		display: block;
 	}
 }
 @media only screen and (max-width: 543px) {
-	.copyright p {
+	.footer .copyright p {
 			text-align: left;
 		}
 }
-#informer {
+.footer #informer {
 	position: absolute;
 	bottom: 0;
 	right: 0;
