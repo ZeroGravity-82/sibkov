@@ -1,3 +1,6 @@
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
 .slick-dots {
     bottom: -28px;
     right: -12px;
