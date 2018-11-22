@@ -23,16 +23,6 @@ body {
 }
 
 /* Header */
-/*.container > header {*/
-	/*background-color: white;*/
-	/*flex: none;*/
-
-/*}*/
-/*@media only screen and (max-width: 767px) {*/
-	/*.container > header {*/
-		/*background-color: #593304;*/
-	/*}*/
-/*}*/
 #header {
     background-color: #593304;
     border-left: 3px solid #593304;
