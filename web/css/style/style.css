@@ -23,7 +23,7 @@ body {
 }
 
 /* Header */
-#header {
+.header {
     background-color: #593304;
     border-left: 3px solid #593304;
     border-right: 3px solid #593304;
