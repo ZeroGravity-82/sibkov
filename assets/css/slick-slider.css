@@ -22,8 +22,12 @@
     opacity: 0;
     width: 0.75rem;
 }
+.slick-dots li:hover button:before,
 .slick-dots li button:hover:before,
 .slick-dots li.slick-active button:before {
     background-color: #d9b282;
     opacity: 1;
+    transition: background-color .5s, opacity 0.5s;
+    -o-transition: background-color .5s, opacity .5s;
+    -webkit-transition: background-color .5s, opacity .5s;
 }
