@@ -333,14 +333,21 @@ ol li {
 	padding-bottom: 0.5rem;
 }
 
-/* Главная*/
+/* Главная */
 div.breed-list {
-	padding-left: 1.2em;
-	padding-right: 1.2em;
+	padding-left: 1.2rem;
+	padding-right: 1.2rem;
+	margin-bottom: 0.5rem;
+	margin-top: 0.5rem;
 }
-
 div.breed-list ul {
-	margin-bottom: 0.5em;
+	margin-bottom: 0.5rem;
+}
+div.breed-list li:first-child {
+    margin-top: 0;
+}
+div.breed-list li:last-child {
+    margin-bottom: 0;
 }
 
 /* Слайдер */
