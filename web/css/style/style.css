@@ -2,6 +2,7 @@ html {
     height: 100%;
 }
 body {
+	display: flex;
     background: #a4c182 url('/images/background.jpg') repeat fixed left top;
     color: black;
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
@@ -14,7 +15,12 @@ body {
         background-image: none;
     }
 }
-.container main {
+.container {
+	display: flex;
+	flex-direction: column;
+}
+.content {
+	flex-grow: 1;
     background-color: white;
     border-left: 3px solid #593304;
     border-right: 3px solid #593304;
@@ -24,6 +30,7 @@ body {
 
 /* Header */
 .header {
+    flex-shrink: 0;
     background-color: #593304;
     border-left: 3px solid #593304;
     border-right: 3px solid #593304;
@@ -92,6 +99,7 @@ body {
 
 /* Site navigation */
 .navbar {
+	flex-shrink: 0;
     padding: 0;
     border-left: 3px solid #593304;
     border-right: 3px solid #593304;
@@ -180,11 +188,11 @@ body {
 
 /* Footer */
 .footer {
+	flex-shrink: 0;
 	background-color: #d9b282;
     border-left: 3px solid #593304;
     border-right: 3px solid #593304;
 	color: #593304;
-	flex: none;
 	font-size: 0.8rem;
 	height: auto;
 	line-height: 1rem;
