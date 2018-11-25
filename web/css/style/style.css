@@ -10,7 +10,7 @@ body {
     background: #a4c182 url('/images/background.jpg') repeat fixed left top;
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
 }
-@media only screen and (max-width: 543px) {
+@media only screen and (max-width: 543px) {sfs
     body {
         background-image: none;
     }
@@ -97,7 +97,7 @@ body {
 	}
 }
 
-/* Site navigation */
+/* Navigation */
 .navbar {
 	flex-shrink: 0;
     padding: 0;
