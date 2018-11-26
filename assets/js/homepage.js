@@ -3,6 +3,7 @@
 require('slick-carousel/slick/slick.css');
 require('slick-carousel/slick/slick-theme.css');
 require('../css/slick-slider.css');
+require('../css/homepage.css');
 
 const $ = require('jquery');
 require('slick-carousel');

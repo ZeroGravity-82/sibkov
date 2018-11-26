@@ -1,4 +1,6 @@
 {
+  "build/contact.css": "/build/contact.css",
+  "build/contact.js": "/build/contact.js",
   "build/homepage.css": "/build/homepage.css",
   "build/homepage.js": "/build/homepage.js",
   "build/layout.css": "/build/layout.css",

@@ -1,1 +1,1 @@
-{"entrypoints":{"layout":{"css":["build/layout.css"],"js":["build/layout.js"]},"homepage":{"css":["build/homepage.css"],"js":["build/homepage.js"]}}}
+{"entrypoints":{"layout":{"css":["build/layout.css"],"js":["build/layout.js"]},"homepage":{"css":["build/homepage.css"],"js":["build/homepage.js"]},"contact":{"css":["build/contact.css"],"js":["build/contact.js"]}}}

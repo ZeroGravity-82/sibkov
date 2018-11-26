@@ -19,6 +19,7 @@ Encore
      */
     .addEntry('layout', './assets/js/layout.js')
     .addEntry('homepage', './assets/js/homepage.js')
+    .addEntry('contact', './assets/js/contact.js')
 ;
 
 module.exports = Encore.getWebpackConfig();
