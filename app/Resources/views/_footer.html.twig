@@ -19,16 +19,16 @@
         <nav class="row sitemap">
             <div class="col-md-6 text-md-right">
                 <ul>
-                    <li><a href="{{ path('homepage') }}">Главная</a><br></li>
-                    <li><a href="{{ path('product_index')}}">Наша продукция</a><br></li>
-                    <li><a href="{{ path('media_index') }}">Фото и видео</a><br></li>
+                    <li><a href="{{ path('homepage') }}">     {{ sectionHomepageTitle }} </a><br></li>
+                    <li><a href="{{ path('product_index')}}"> {{ sectionProductTitle }}  </a><br></li>
+                    <li><a href="{{ path('media_index') }}">  {{ sectionMediaTitle }}    </a><br></li>
                 </ul>
             </div>
             <div class="col-md-6 text-md-left">
                 <ul>
-                    <li><a href="{{ path('book_index') }}">Птицеводство</a><br></li>
-                    <li><a href="{{ path('order_index') }}">Как заказать</a><br></li>
-                    <li><a href="{{ path('contact_index') }}">Контакты</a></li>
+                    <li><a href="{{ path('book_index') }}">    {{ sectionBookTitle }}    </a><br></li>
+                    <li><a href="{{ path('order_index') }}">   {{ sectionOrderTitle }}   </a><br></li>
+                    <li><a href="{{ path('contact_index') }}"> {{ sectionContactTitle }} </a></li>
                 </ul>
             </div>
         </nav>
