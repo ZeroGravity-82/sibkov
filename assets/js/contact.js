@@ -1,11 +1,18 @@
 'use strict';
 
+// TODO: refactor all code
+
 require('../css/components/loading.spinner.css');
 require('../css/contact.css');
 
 import ymaps from 'ymaps';
 
-ymaps.load().then(maps => {
+ymaps.load('https://api-maps.yandex.ru/2.1/?lang=ru_RU').then(maps => {
+    // Перерисовка карты при изменении размера экрана
+    window.addEventListener("resize", function() {
+        myMap.setBounds(getProperBounds());
+    });
+
     // Глобальные переменные
     const mapId = 'map';
     const targetCoords = [55.2840756069201,83.17942334357161];
