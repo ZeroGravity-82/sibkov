@@ -10,10 +10,10 @@ body {
     background: #a4c182 url('/images/background.jpg') repeat fixed left top;
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
 }
-@media only screen and (max-width: 543px) {sfs
-body {
-    background-image: none;
-}
+@media only screen and (max-width: 543px) {
+    body {
+        background-image: none;
+    }
 }
 .container {
     display: flex;
