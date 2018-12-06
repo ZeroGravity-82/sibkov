@@ -37,7 +37,7 @@ div.breed-list li:last-child {
     }
 }
 .image-aside img {
-    margin: auto;
+    margin: 0 1rem;
     box-shadow: 1px 1px 7px #593304;
 }
 .image-aside a:hover img,
