@@ -70,14 +70,14 @@ body {
     position: absolute;
     right: 0;
     top: 0;
-    padding: 0.75rem 1rem 0.2rem 0;
+    padding: 0.7rem 1rem 0.2rem 0;
 }
 #header-phones a {
     display: block;
     line-height: 1.2;
     border-bottom: 1px solid rgba(255,255,255,0.2);
     color: white;
-    font-size: 1.35em;
+    font-size: 1.55em;
     font-weight: bold;
 }
 #header-phones a:hover,
@@ -85,10 +85,18 @@ body {
     border-bottom: 1px solid rgba(217,178,130,0.2);		/* color #d9b282 */
     color: #d9b282;
 }
+@media only screen and (max-width: 1199px) {
+    #header-phones {
+        padding-top: 0.85rem;
+    }
+    #header-phones a {
+        font-size: 1.35em;
+    }
+}
 @media only screen and (max-width: 991px) {
     #header-phones {
         position: static;
-        padding-top: 0.9rem;
+        padding-top: 0.9125rem;
         float: right;
     }
     #header-phones a {
