@@ -1,18 +1,3 @@
-.album-section-name,
-.product-section-name {
-	padding-top: 1rem;
-	margin-bottom: 0;
-	font-size: 1.125rem;
-	font-style: italic;
-	font-weight: bold;
-	color: #651b00;
-}
-@media only screen and (min-width: 1200px) {
-	.album-section-name,
-	.product-section-name {
-		padding-left: 0.75rem;
-	}
-}
 @media only screen and (min-width: 544px) and (max-width: 767px) {
 	.equal > .equal-child:nth-child(2n+1) {
 		clear: left;

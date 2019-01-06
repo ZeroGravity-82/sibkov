@@ -352,3 +352,16 @@ ul li {
 ol li {
     padding-bottom: 0.5rem;
 }
+.section-name {
+    padding-top: 1rem;
+    margin-bottom: 0;
+    font-size: 1.125rem;
+    font-style: italic;
+    font-weight: bold;
+    color: #651b00;
+}
+@media only screen and (min-width: 1200px) {
+    .section-name {
+        padding-left: 0.75rem;
+    }
+}
