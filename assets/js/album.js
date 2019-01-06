@@ -1,22 +1,24 @@
 'use strict';
 
+// TODO: refactor all code
+
 require('photoswipe/dist/photoswipe.css');
 require('photoswipe/dist/default-skin/default-skin.css');
 require('../css/media.css');
 require('../css/album.css');
 
-const $ = require('jquery');
-const PhotoSwipe = require('photoswipe');
-const PhotoSwipeUI_Default = require('photoswipe/dist/photoswipe-ui-default.js');
+var $ = require('jquery');
+var PhotoSwipe = require('photoswipe');
+var PhotoSwipeUI_Default = require('photoswipe/dist/photoswipe-ui-default.js');
 
-(function( $ ) {
-    $.fn.photoswipe = function(options){
+(function($) {
+    $.fn.photoswipe = function(options) {
         var galleries = [],
             _options = options;
 
-        var init = function($this){
+        var init = function($this) {
             galleries = [];
-            $this.each(function(i, gallery){
+            $this.each(function(i, gallery) {
                 galleries.push({
                     id: i,
                     items: []
@@ -25,7 +27,7 @@ const PhotoSwipeUI_Default = require('photoswipe/dist/photoswipe-ui-default.js')
                 $(gallery).find('a').each(function(k, link) {
                     var $link = $(link),
                         size = $link.data('size').split('x');
-                    if (size.length !== 2){
+                    if (size.length !== 2) {
                         throw SyntaxError("Missing data-size attribute.");
                     }
                     $link.data('gallery-id',i+1);
@@ -44,7 +46,7 @@ const PhotoSwipeUI_Default = require('photoswipe/dist/photoswipe-ui-default.js')
 
                 });
 
-                $(gallery).on('click', 'a', function(e){
+                $(gallery).on('click', 'a', function(e) {
                     e.preventDefault();
                     var gid = $(this).data('gallery-id'),
                         pid = $(this).data('photo-id');
@@ -84,7 +86,7 @@ const PhotoSwipeUI_Default = require('photoswipe/dist/photoswipe-ui-default.js')
             return params;
         };
 
-        var openGallery = function(gid,pid){
+        var openGallery = function(gid,pid) {
             var pswpElement = document.querySelectorAll('.pswp')[0],
                 items = galleries[gid-1].items,
                 options = {
@@ -114,14 +116,16 @@ const PhotoSwipeUI_Default = require('photoswipe/dist/photoswipe-ui-default.js')
 
         return this;
     };
-}( $ ));
+})($);
 
-$('.gallery').photoswipe({
-    bgOpacity: 0.85,
-    loop: false,
-    shareEl: false,
-    closeOnScroll: false,
-    history: false,
-    showAnimationDuration : 0,
-    hideAnimationDuration : 0
+$(document).ready(function () {
+    $('.gallery').photoswipe({
+        bgOpacity: 0.85,
+        loop: false,
+        shareEl: false,
+        closeOnScroll: false,
+        history: false,
+        showAnimationDuration : 0,
+        hideAnimationDuration : 0
+    });
 });
