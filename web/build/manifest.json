@@ -5,6 +5,8 @@
   "build/homepage.js": "/build/homepage.js",
   "build/layout.css": "/build/layout.css",
   "build/layout.js": "/build/layout.js",
+  "build/media.css": "/build/media.css",
+  "build/media.js": "/build/media.js",
   "build/product.css": "/build/product.css",
   "build/product.js": "/build/product.js",
   "build/fonts/slick.woff": "/build/fonts/slick.b7c9e1e4.woff",

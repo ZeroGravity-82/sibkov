@@ -24,6 +24,14 @@
         "build/product.js"
       ]
     },
+    "media": {
+      "css": [
+        "build/media.css"
+      ],
+      "js": [
+        "build/media.js"
+      ]
+    },
     "contact": {
       "css": [
         "build/contact.css"
