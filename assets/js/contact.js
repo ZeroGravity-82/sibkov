@@ -7,6 +7,10 @@ require('../css/contact.css');
 
 import ymaps from 'ymaps';
 
+// Отображение индикатора загрузки карты
+const overlay = document.getElementsByClassName('overlay')[0];
+overlay.removeAttribute('hidden');
+
 ymaps.load('https://api-maps.yandex.ru/2.1/?lang=ru_RU').then(maps => {
     // Перерисовка карты при изменении размера экрана
     window.addEventListener("resize", function() {
