@@ -1,4 +1,36 @@
-/* Главная */
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+.slick-dots {
+    bottom: -28px;
+    right: -12px;
+    width: auto;
+}
+.slick-dots li button {
+    border: 2px solid #d9b282;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #d9b282;
+    height: 4px;
+    opacity: .7;
+    width: 4px;
+}
+.slick-dots li button:before {
+    border-radius: 50%;
+    content: '';
+    height: 0.75rem;
+    margin: 1px 0 0 1px;
+    opacity: 0;
+    width: 0.75rem;
+}
+.slick-dots li:hover button:before,
+.slick-dots li button:hover:before,
+.slick-dots li.slick-active button:before {
+    background-color: #d9b282;
+    opacity: 1;
+    transition: background-color .5s, opacity 0.5s;
+    -o-transition: background-color .5s, opacity .5s;
+    -webkit-transition: background-color .5s, opacity .5s;
+}
 div.breed-list {
     padding-left: 1.2rem;
     padding-right: 1.2rem;
@@ -29,6 +61,10 @@ div.breed-list li:last-child {
     width: 100%;
     margin-bottom: 1rem;
 }
+.image-aside img {
+    margin: auto;
+    box-shadow: 1px 1px 7px #593304;
+}
 @media only screen and (min-width: 768px) {
     .image-aside {
         max-width: 50%!important;
@@ -36,9 +72,10 @@ div.breed-list li:last-child {
         float: right;
     }
 }
-.image-aside img {
-    margin: 0 1rem;
-    box-shadow: 1px 1px 7px #593304;
+@media only screen and (min-width: 1200px) {
+    .image-aside img {
+        margin-left: 1rem;
+    }
 }
 .image-aside a:hover img,
 .image-aside a:focus img {
