@@ -15,8 +15,8 @@
   "build/fonts/slick.eot": "/build/fonts/slick.ced611da.eot",
   "build/fonts/slick.ttf": "/build/fonts/slick.d41f55a7.ttf",
   "build/images/ajax-loader.gif": "/build/images/ajax-loader.c5cd7f53.gif",
-  "build/images/slick.svg": "/build/images/slick.f97e3bbf.svg",
   "build/images/default-skin.svg": "/build/images/default-skin.b257fa9c.svg",
   "build/images/default-skin.png": "/build/images/default-skin.e3f799c6.png",
-  "build/images/preloader.gif": "/build/images/preloader.e34aafbb.gif"
+  "build/images/preloader.gif": "/build/images/preloader.e34aafbb.gif",
+  "build/images/slick.svg": "/build/images/slick.f97e3bbf.svg"
 }

@@ -17,12 +17,12 @@ Encore
      * Each entry will result in one JavaScript file (e.g. app.js)
      * and one CSS file (e.g. app.css) if you JavaScript imports CSS.
      */
-    .addEntry('layout', './assets/js/layout.js')
+    .addEntry('layout',   './assets/js/layout.js')
     .addEntry('homepage', './assets/js/homepage.js')
-    .addEntry('product', './assets/js/product.js')
-    .addEntry('media', './assets/js/media.js')
-    .addEntry('album', './assets/js/album.js')
-    .addEntry('contact', './assets/js/contact.js')
+    .addEntry('product',  './assets/js/product.js')
+    .addEntry('media',    './assets/js/media.js')
+    .addEntry('album',    './assets/js/album.js')
+    .addEntry('contact',  './assets/js/contact.js')
 ;
 
 module.exports = Encore.getWebpackConfig();
