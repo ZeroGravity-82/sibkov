@@ -13,35 +13,14 @@
         clear: left;
     }
 }
-.album-item,
-.product-image a {
+.album-item {
 	display: block;
 	position: relative;
 	text-align: center;
 	padding-top: 0.75rem;
 	border-bottom-style: none;
 }
-.product-image {
-	margin-bottom: 0.75rem;
-}
-@media only screen and (max-width: 767px) {
-	.product-image {
-		margin-bottom: 0;
-	}
-}
 
-.img-thumbnail {
-	padding: 0;
-	border-style: none;
-	border-radius: 0;
-	box-shadow: 1px 1px 7px #593304;
-}
-.album-item:hover .img-thumbnail,
-.album-item:focus .img-thumbnail,
-.product-image a:hover .img-thumbnail,
-.product-image a:focus .img-thumbnail {
-	box-shadow: 1px 1px 16px #593304;
-}
 .img-thumbnail + p {
 	font-weight: normal;
 	line-height: 1.2rem;
@@ -52,17 +31,7 @@
 	border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
-.product-price {
-	display: inline-block;
-	padding: 0.5rem 0.25rem 0 0.25rem;
-}
-.product-price img {
-	width: 35px;
-	height: 35px;
-}
-.product-description {
-	padding-top: 0.5rem;
-}
+
 
 .album-item:hover .img-thumbnail + p span,
 .album-item:focus .img-thumbnail + p span {
@@ -74,6 +43,22 @@
 .gallery h1 {
 	margin-bottom: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Книга */
 .book-cover {

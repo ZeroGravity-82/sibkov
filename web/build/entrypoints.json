@@ -16,6 +16,14 @@
         "build/homepage.js"
       ]
     },
+    "product": {
+      "css": [
+        "build/product.css"
+      ],
+      "js": [
+        "build/product.js"
+      ]
+    },
     "contact": {
       "css": [
         "build/contact.css"

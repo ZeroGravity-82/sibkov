@@ -365,3 +365,16 @@ ol li {
         padding-left: 0.75rem;
     }
 }
+.img-thumbnail {
+    padding: 0;
+    border-style: none;
+    border-radius: 0;
+    box-shadow: 1px 1px 7px #593304;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+div a:hover .img-thumbnail,
+div a:focus .img-thumbnail {
+    box-shadow: 1px 1px 16px #593304;
+}

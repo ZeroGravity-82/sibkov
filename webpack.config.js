@@ -19,6 +19,7 @@ Encore
      */
     .addEntry('layout', './assets/js/layout.js')
     .addEntry('homepage', './assets/js/homepage.js')
+    .addEntry('product', './assets/js/product.js')
     .addEntry('contact', './assets/js/contact.js')
 ;
 

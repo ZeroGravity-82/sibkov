@@ -5,6 +5,11 @@
 
 {% block title %} Купить инкубационное яйцо, породы несушек кур, загорская лососёвая {% endblock %}
 
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('build/product.css') }}">
+{% endblock %}
+
 {% block content %}
     <main class="content">
         <header>
