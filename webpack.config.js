@@ -21,6 +21,7 @@ Encore
     .addEntry('homepage', './assets/js/homepage.js')
     .addEntry('product', './assets/js/product.js')
     .addEntry('media', './assets/js/media.js')
+    .addEntry('album', './assets/js/album.js')
     .addEntry('contact', './assets/js/contact.js')
 ;
 

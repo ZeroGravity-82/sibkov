@@ -1,8 +1,19 @@
+'use strict';
+
+require('photoswipe/dist/photoswipe.css');
+require('photoswipe/dist/default-skin/default-skin.css');
+require('../css/media.css');
+require('../css/album.css');
+
+const $ = require('jquery');
+const PhotoSwipe = require('photoswipe');
+const PhotoSwipeUI_Default = require('photoswipe/dist/photoswipe-ui-default.js');
+
 (function( $ ) {
     $.fn.photoswipe = function(options){
         var galleries = [],
             _options = options;
-        
+
         var init = function($this){
             galleries = [];
             $this.each(function(i, gallery){
@@ -14,7 +25,7 @@
                 $(gallery).find('a').each(function(k, link) {
                     var $link = $(link),
                         size = $link.data('size').split('x');
-                    if (size.length != 2){
+                    if (size.length !== 2){
                         throw SyntaxError("Missing data-size attribute.");
                     }
                     $link.data('gallery-id',i+1);
@@ -27,10 +38,10 @@
                         h: parseInt(size[1],10),
                         title: $link.children('figcaption').html(),
                         el: link
-                    }
-                        
+                    };
+
                     galleries[i].items.push(item);
-                    
+
                 });
 
                 $(gallery).on('click', 'a', function(e){
@@ -40,11 +51,11 @@
                     openGallery(gid,pid);
                 });
             });
-        }
-        
+        };
+
         var parseHash = function() {
             var hash = window.location.hash.substring(1),
-            params = {};
+                params = {};
 
             if(hash.length < 5) {
                 return params;
@@ -55,10 +66,10 @@
                 if(!vars[i]) {
                     continue;
                 }
-                var pair = vars[i].split('=');  
+                var pair = vars[i].split('=');
                 if(pair.length < 2) {
                     continue;
-                }           
+                }
                 params[pair[0]] = pair[1];
             }
 
@@ -72,7 +83,7 @@
             params.pid = parseInt(params.pid, 10);
             return params;
         };
-        
+
         var openGallery = function(gid,pid){
             var pswpElement = document.querySelectorAll('.pswp')[0],
                 items = galleries[gid-1].items,
@@ -82,7 +93,7 @@
                     getThumbBoundsFn: function(index) {
                         var thumbnail = items[index].el.children[0],
                             pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
-                            rect = thumbnail.getBoundingClientRect(); 
+                            rect = thumbnail.getBoundingClientRect();
 
                         return {x:rect.left, y:rect.top + pageYScroll, w:rect.width};
                     }
@@ -90,17 +101,27 @@
             $.extend(options,_options);
             var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
             gallery.init();
-        }
-        
+        };
+
         // initialize
         init(this);
-        
+
         // Parse URL and open gallery if it contains #&pid=3&gid=1
         var hashData = parseHash();
         if(hashData.pid > 0 && hashData.gid > 0) {
             openGallery(hashData.gid,hashData.pid);
         }
-        
+
         return this;
     };
-}( jQuery ));
+}( $ ));
+
+$('.gallery').photoswipe({
+    bgOpacity: 0.85,
+    loop: false,
+    shareEl: false,
+    closeOnScroll: false,
+    history: false,
+    showAnimationDuration : 0,
+    hideAnimationDuration : 0
+});

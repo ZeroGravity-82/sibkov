@@ -18,9 +18,3 @@
 .album-item:focus .img-thumbnail + p span {
     border-bottom: 1px solid rgba(217,178,130,0.2);		/* Соответствует цвету #d9b282 */
 }
-.gallery figcaption {
-    display: none;
-}
-.gallery h1 {
-    margin-bottom: 0;
-}

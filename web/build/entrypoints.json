@@ -32,6 +32,14 @@
         "build/media.js"
       ]
     },
+    "album": {
+      "css": [
+        "build/album.css"
+      ],
+      "js": [
+        "build/album.js"
+      ]
+    },
     "contact": {
       "css": [
         "build/contact.css"

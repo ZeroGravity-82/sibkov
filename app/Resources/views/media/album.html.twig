@@ -2,17 +2,12 @@
 
 {% block stylesheets %}
     {{ parent() }}
-    <link rel="stylesheet" href="{{ asset('css/photoswipe/photoswipe.compressed.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/photoswipe/skins/default-skin.compressed.css') }}">
-    <link rel="stylesheet" href="{{ asset('build/media.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/album.css') }}">
 {% endblock %}
 
 {% block javascripts %}
     {{ parent() }}
-    <script src="{{ asset('js/photoswipe/photoswipe.js') }}"></script>
-    <script src="{{ asset('js/photoswipe/photoswipe-ui-default.js') }}"></script>
-    <script src="{{ asset('js/photoswipe/jquery.photoswipe.js') }}"></script>
-    <script src="{{ asset('js/photoswipe/jquery.photoswipe.init.js') }}"></script>
+    <script src="{{ asset('build/album.js') }}"></script>
 {% endblock %}
 
 {% block content %}
@@ -27,10 +22,10 @@
             <div class="pswp__ui pswp__ui--hidden">
                 <div class="pswp__top-bar">
                     <div class="pswp__counter"></div>
-                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                    <button class="pswp__button pswp__button--share" title="Share"></button>
-                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <button class="pswp__button pswp__button--close" title="Закрыть (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Поделиться"></button>
+                    <button class="pswp__button pswp__button--fs" title="Полноэкранный режим"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Увеличить/уменьшить"></button>
                     <div class="pswp__preloader">
                         <div class="pswp__preloader__icn">
                             <div class="pswp__preloader__cut">
@@ -42,9 +37,9 @@
                 <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
                     <div class="pswp__share-tooltip"></div>
                 </div>
-                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                <button class="pswp__button pswp__button--arrow--left" title="Назад (стрелка влево)">
                 </button>
-                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                <button class="pswp__button pswp__button--arrow--right" title="Вперёд (стрелка вправо)">
                 </button>
                 <div class="pswp__caption">
                     <div class="pswp__caption__center"></div>
