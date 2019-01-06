@@ -1,6 +1,8 @@
 {
   "build/album.css": "/build/album.css",
   "build/album.js": "/build/album.js",
+  "build/book.css": "/build/book.css",
+  "build/book.js": "/build/book.js",
   "build/contact.css": "/build/contact.css",
   "build/contact.js": "/build/contact.js",
   "build/homepage.css": "/build/homepage.css",

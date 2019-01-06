@@ -5,6 +5,11 @@
 
 {% block title %} Разведение кур в домашних условиях для начинающих, птицеводство читать {% endblock %}
 
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('build/book.css') }}">
+{% endblock %}
+
 {% block content %}
     <main class="content">
         <header>

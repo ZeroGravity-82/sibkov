@@ -1,0 +1,131 @@
+.book-cover {
+    margin-top: 0.5rem;
+    box-shadow: 1px 1px 7px #593304;
+}
+@media only screen and (max-width: 543px) {
+    .book-cover {
+        float: left;
+        max-height: 12rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+.book-comment {
+    padding-top: 0.3125rem;
+    font-size: 0.7rem;
+    line-height: 0.85rem;
+    text-align: left;
+}
+ul.table-of-contents {
+    padding-left: 0;
+    list-style-type: none;
+    line-height: 1.25rem;
+    clear: left;
+}
+ul.table-of-contents > li {
+    font-weight: bold;
+}
+ul.table-of-contents > li ul {
+    padding-left: 1.25rem;
+    list-style-type: none;
+    font-weight: normal;
+}
+ul.table-of-contents a {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+ul.table-of-contents li span {
+    display: inline-block;
+    padding: 0.25rem;
+}
+ul.table-of-contents li span:hover,
+ul.table-of-contents li span:focus {
+    cursor: pointer;
+    background-color: #d9b282;
+}
+ul.table-of-contents li span:hover a,
+ul.table-of-contents li span:focus a {
+    color: #593304;
+}
+ul.table-of-contents a:hover,
+ul.table-of-contents a:focus {
+    color: #593304;
+    background-color: #d9b282;
+}
+.book h1,
+.book h2,
+.book h3 {
+    padding-bottom: 0.3125rem;
+    margin: 0;
+    text-align: center;
+}
+.book h2,
+.book h3 {
+    padding-top: 1rem;
+}
+.book .subtitle {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-style: italic;
+    font-weight: bold;
+}
+.book ul {
+    padding-bottom: 0.3125rem;
+    margin-bottom: 0;
+}
+.book ul li {
+    margin: 0;
+}
+.book p {
+    padding-top: 0.5rem;
+    padding-bottom: 0;
+}
+@media only screen and (min-width: 544px) {
+    .book p {
+        padding-top: 0;
+        text-indent: 1.5625rem;
+    }
+    .book .remark {
+        padding-left: 4rem;
+    }
+    .book .table-number {
+        padding-left: 1.5625rem;
+    }
+    .book .table-number+p {
+        padding-left: 1.5625rem;
+    }
+}
+.book img {
+    display: block;
+    padding-top: 1rem;
+    margin: auto;
+}
+.book .img-number {
+    text-align: center;
+    font-style: italic;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.625rem;
+}
+.book .remark {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    font-style: italic;
+    text-indent: 1.5625rem;
+}
+.book .table-number {
+    text-align: left;
+    font-style: italic;
+    padding-top: 0.625rem;
+    text-indent: 0;
+}
+.book .table-number+p {
+    text-align: left;
+    font-style: italic;
+    padding-top: 0;
+    padding-bottom: 0.625rem;
+    text-indent: 0;
+}
+.book .table-number+p+img {
+    padding-top: 0;
+    padding-bottom: 0.625rem;
+}

@@ -40,6 +40,14 @@
         "build/album.js"
       ]
     },
+    "book": {
+      "css": [
+        "build/book.css"
+      ],
+      "js": [
+        "build/book.js"
+      ]
+    },
     "contact": {
       "css": [
         "build/contact.css"
