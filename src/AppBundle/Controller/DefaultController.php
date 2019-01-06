@@ -9,13 +9,11 @@ use Symfony\Component\Routing\Annotation\Route;
 /**
  * Class DefaultController
  * @package AppBundle\Controller
- *
- * @Route("/")
  */
 class DefaultController extends Controller
 {
     /**
-     * @Route("", name="homepage")
+     * @Route("/", name="homepage")
      *
      * @return Response
      */

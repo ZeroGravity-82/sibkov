@@ -15,7 +15,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class OrderController extends Controller
 {
     /**
-     * @Route("", name="order_index")
+     * @Route("/", name="order_index")
      *
      * @return Response
      */

@@ -15,7 +15,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class BookController extends Controller
 {
     /**
-     * @Route("", name="book_index")
+     * @Route("/", name="book_index")
      *
      * @return Response
      */
@@ -25,7 +25,7 @@ class BookController extends Controller
     }
 
     /**
-     * @Route("/porody-kur", name="book_ptitsevodstvo_porody_kur")
+     * @Route("/porody-kur/", name="book_ptitsevodstvo_porody_kur")
      *
      * @return Response
      */
@@ -35,7 +35,7 @@ class BookController extends Controller
     }
 
     /**
-     * @Route("/soderzhanie-kur", name="book_ptitsevodstvo_soderzhanie_kur")
+     * @Route("/soderzhanie-kur/", name="book_ptitsevodstvo_soderzhanie_kur")
      *
      * @return Response
      */
@@ -45,7 +45,7 @@ class BookController extends Controller
     }
 
     /**
-     * @Route("/kormlenie-kur", name="book_ptitsevodstvo_kormlenie_kur")
+     * @Route("/kormlenie-kur/", name="book_ptitsevodstvo_kormlenie_kur")
      *
      * @return Response
      */
@@ -55,7 +55,7 @@ class BookController extends Controller
     }
 
     /**
-     * @Route("/razvedenie-kur", name="book_ptitsevodstvo_razvedenie_kur")
+     * @Route("/razvedenie-kur/", name="book_ptitsevodstvo_razvedenie_kur")
      *
      * @return Response
      */
@@ -65,7 +65,7 @@ class BookController extends Controller
     }
 
     /**
-     * @Route("/profilaktika-i-lechenie", name="book_ptitsevodstvo_profilaktika_i_lechenie")
+     * @Route("/profilaktika-i-lechenie/", name="book_ptitsevodstvo_profilaktika_i_lechenie")
      *
      * @return Response
      */
@@ -75,7 +75,7 @@ class BookController extends Controller
     }
 
     /**
-     * @Route("/pererabotka-produktov", name="book_ptitsevodstvo_pererabotka_produktov")
+     * @Route("/pererabotka-produktov/", name="book_ptitsevodstvo_pererabotka_produktov")
      *
      * @return Response
      */

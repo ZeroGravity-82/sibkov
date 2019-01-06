@@ -15,7 +15,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class MediaController extends Controller
 {
     /**
-     * @Route("", name="media_index")
+     * @Route("/", name="media_index")
      *
      * @return Response
      */

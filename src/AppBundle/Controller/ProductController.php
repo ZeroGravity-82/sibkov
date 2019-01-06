@@ -15,7 +15,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class ProductController extends Controller
 {
     /**
-     * @Route("", name="product_index")
+     * @Route("/", name="product_index")
      *
      * @return Response
      */
