@@ -7,15 +7,12 @@
 
 {% block stylesheets %}
     {{ parent() }}
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/css/lightgallery.min.css">
     <link rel="stylesheet" href="{{ asset('build/media.css') }}">
 {% endblock %}
 
 {% block javascripts %}
     {{ parent() }}
-    <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/js/lightgallery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/js/lg-video.min.js"></script>
-    {#<script src="{{ asset('build/light.gallery.js') }}"></script>#}
+    <script src="{{ asset('build/media.js') }}"></script>
 {% endblock %}
 
 {% block content %}
@@ -25,21 +22,21 @@
                 <h1 class="text-center">Фотоальбомы</h1>
             </header>
             <nav class="row equal">
-                <div class="col-sm-6 col-md-4 col-lg-3 equal-child">
+                <div class="col-sm-6 col-md-4 col-lg-3">
                     <a href="{{ path('media_album_kury') }}" class="album-item">
                         <img class="img-thumbnail" src="{{ asset('images/ptitsa_thumb.png') }}"
                              alt="Фотоальбом «Куры»">
                         <p><span>Куры</span></p>
                     </a>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3 equal-child">
+                <div class="col-sm-6 col-md-4 col-lg-3">
                     <a href="{{ path('media_album_boksy_dlya_kur') }}" class="album-item">
                         <img class="img-thumbnail" src="{{ asset('images/boksy-dlya-kur_thumb.png') }}"
                              alt="Фотоальбом «Боксы для кур»">
                         <p><span>Боксы для кур</span></p>
                     </a>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3 equal-child">
+                <div class="col-sm-6 col-md-4 col-lg-3">
                     <a href="{{ path('media_album_vystavki') }}" class="album-item">
                         <img class="img-thumbnail" src="{{ asset('images/vystavki_thumb.png') }}"
                              alt="Фотоальбом «Выставки»">
@@ -54,21 +51,21 @@
                 <h1 class="text-center">Видео</h1>
             </header>
             <div id="video-gallery" class="row equal">
-                <div class="col-sm-6 col-md-4 col-lg-3 equal-child">
+                <div class="col-sm-6 col-md-4 col-lg-3">
                     <a class="album-item" href="https://www.youtube.com/embed/K7AGpLZ3L1w">
                         <img class="img-thumbnail" src="{{ asset('images/video_interview-2017_2_thumb.png') }}"
                              alt="Видео Инкубационное яйцо. Репортаж «Вести Новосибирск»">
                         <p><span>Инкубационное яйцо.<br>Репортаж «Вести Новосибирск»</span></p>
                     </a>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3 equal-child">
+                <div class="col-sm-6 col-md-4 col-lg-3">
                     <a class="album-item" href="https://www.youtube.com/embed/xuwRslYaiHo">
                         <img class="img-thumbnail" src="{{ asset('images/video_interview-2017_thumb.png') }}"
                              alt="Видео Разведение кур. Репортаж «Вести Новосибирск»">
                         <p><span>Разведение кур.<br>Репортаж «Вести Новосибирск»</span></p>
                     </a>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3 equal-child">
+                <div class="col-sm-6 col-md-4 col-lg-3">
                     <a class="album-item" href="https://www.youtube.com/embed/kNX6PrnDwYg">
                         <img class="img-thumbnail" src="{{ asset('images/video_interview-2014_thumb.png') }}"
                              alt="Видео Выставка «Сибирская агропромышленная неделя»">

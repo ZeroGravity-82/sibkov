@@ -3297,7 +3297,7 @@ isobject@^3.0.0, isobject@^3.0.1:
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
   integrity sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
 
-jquery@^3.3.1:
+jquery@>=1.7.0, jquery@^3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
   integrity sha512-Ubldcmxp5np52/ENotGxlLe6aGMvmF4R8S6tZjsP6Knsaxd/xp3Zrh50cG93lR6nPXyUFwzN3ZSOQI0wRJNdGg==
@@ -3426,6 +3426,20 @@ lcid@^2.0.0:
   integrity sha512-avPEb8P8EGnwXKClwsNUgryVjllcRqtMYa49NTsbQagYuT1DcXnl1915oxWjoyGrXR6zH/Y0Zc96xWsPcoDKeA==
   dependencies:
     invert-kv "^2.0.0"
+
+lg-video@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/lg-video/-/lg-video-1.2.2.tgz#f9d0a320d20bafb126a40edb35790d3aba3ef41b"
+  integrity sha1-+dCjINILr7EmpA7bNXkNOro+9Bs=
+  dependencies:
+    jquery ">=1.7.0"
+
+lightgallery@^1.6.11:
+  version "1.6.11"
+  resolved "https://registry.yarnpkg.com/lightgallery/-/lightgallery-1.6.11.tgz#01a15dab1bbad15ae727c495adbf80b59619183d"
+  integrity sha1-AaFdqxu60VrnJ8SVrb+AtZYZGD0=
+  dependencies:
+    jquery ">=1.7.0"
 
 load-json-file@^2.0.0:
   version "2.0.0"

@@ -11,12 +11,20 @@
   "build/media.js": "/build/media.js",
   "build/product.css": "/build/product.css",
   "build/product.js": "/build/product.js",
+  "build/fonts/lg.ttf?n1z373": "/build/fonts/lg.4fe6f9ca.ttf",
+  "build/fonts/lg.woff?n1z373": "/build/fonts/lg.5fd4c338.woff",
+  "build/fonts/lg.eot?n1z373": "/build/fonts/lg.ecff1170.eot",
   "build/fonts/slick.woff": "/build/fonts/slick.b7c9e1e4.woff",
   "build/fonts/slick.eot": "/build/fonts/slick.ced611da.eot",
   "build/fonts/slick.ttf": "/build/fonts/slick.d41f55a7.ttf",
   "build/images/ajax-loader.gif": "/build/images/ajax-loader.c5cd7f53.gif",
   "build/images/default-skin.svg": "/build/images/default-skin.b257fa9c.svg",
   "build/images/default-skin.png": "/build/images/default-skin.e3f799c6.png",
+  "build/images/lg.svg?n1z373": "/build/images/lg.98d62b1e.svg",
+  "build/images/loading.gif": "/build/images/loading.bbdac9cd.gif",
   "build/images/preloader.gif": "/build/images/preloader.e34aafbb.gif",
-  "build/images/slick.svg": "/build/images/slick.f97e3bbf.svg"
+  "build/images/slick.svg": "/build/images/slick.f97e3bbf.svg",
+  "build/images/video-play.png": "/build/images/video-play.dc34cc9c.png",
+  "build/images/vimeo-play.png": "/build/images/vimeo-play.dfe7764b.png",
+  "build/images/youtube-play.png": "/build/images/youtube-play.e6f0c233.png"
 }
