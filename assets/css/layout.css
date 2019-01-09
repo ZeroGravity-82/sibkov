@@ -378,3 +378,10 @@ div a:hover .img-thumbnail,
 div a:focus .img-thumbnail {
     box-shadow: 1px 1px 16px #593304;
 }
+.anchor::before {
+    display: block;
+    content: '';
+    height: 42px;
+    margin-top: -42px;
+    visibility: hidden;
+}
