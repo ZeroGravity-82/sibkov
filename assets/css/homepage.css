@@ -2,34 +2,31 @@
     margin-bottom: 0;
 }
 .slick-dots {
-    bottom: -28px;
-    right: -12px;
+    bottom: -1.75rem;
+    right: -0.75rem;
     width: auto;
 }
-.slick-dots li button {
-    border: 2px solid #d9b282;
-    border-radius: 50%;
-    box-shadow: 0 0 5px #d9b282;
-    height: 4px;
-    opacity: .7;
-    width: 4px;
+.slick-dots li button::before {
+    font-size: 0.55rem;
+    color: #d9b282;
+    opacity: 0.5;
 }
-.slick-dots li button:before {
-    border-radius: 50%;
-    content: '';
-    height: 0.75rem;
-    margin: 1px 0 0 1px;
-    opacity: 0;
-    width: 0.75rem;
+.slick-dots li.slick-active button::before {
+    font-size: 0.75rem;
+    color: #d9b282;
 }
-.slick-dots li:hover button:before,
-.slick-dots li button:hover:before,
-.slick-dots li.slick-active button:before {
-    background-color: #d9b282;
-    opacity: 1;
-    transition: background-color .5s, opacity 0.5s;
-    -o-transition: background-color .5s, opacity .5s;
-    -webkit-transition: background-color .5s, opacity .5s;
+.slick-arrow {
+    z-index: 100;
+}
+.slick-arrow::before {
+    font-size: 1.5rem;
+    opacity: 0.625;
+}
+.slick-prev {
+    left: 0.75rem;
+}
+.slick-next {
+    right: 0.75rem;
 }
 div.breed-list {
     padding-left: 1.2rem;
@@ -46,8 +43,6 @@ div.breed-list li:first-child {
 div.breed-list li:last-child {
     margin-bottom: 0;
 }
-
-/* Слайдер */
 .slider {
     width: 100%;
     box-shadow: 1px 1px 7px #593304;
@@ -55,7 +50,9 @@ div.breed-list li:last-child {
 .slider-wrapper {
     padding-top: 1.25em;
 }
-/* Изображения */
+.slider img[src=''] {
+    display: none;
+}
 .image-aside {
     display: block;
     width: 100%;
