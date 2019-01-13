@@ -385,3 +385,53 @@ div a:focus .img-thumbnail {
     margin-top: -42px;
     visibility: hidden;
 }
+
+/* Errors */
+.error404 {
+    color: rgba(0,0,0,0.4);
+    font-size: 1.125em;
+    line-height: 1.25rem;
+}
+.error404 img {
+    float: left;
+    padding-top: 1.5rem;
+    padding-right: 2rem;
+}
+@media only screen and (max-width: 991px) {
+    .error404 img {
+        max-width: 50%!important;
+    }
+}
+.error404 #did-you-know {
+    padding-top: 1.5rem;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: bold;
+}
+.error404 #seriously {
+    padding-top: 2rem;
+}
+.error404 #error {
+    color: black;
+    padding-bottom: 0;
+    font-size: 1.75em;
+    font-weight: bold;
+    line-height: 2rem;
+}
+.error404 #page-not-found {
+    color: black;
+}
+.error404 #main-page {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.error404 #main-page a:link,
+.error404 #main-page a:visited {
+    color: rgba(0,0,0,0.4);
+}
+.error404 #main-page a:hover,
+.error404 #main-page a:active {
+    color: #d9b282;
+}
