@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% set metaDesc = "Внутренняя ошибка сервера" %}
+{% set metaKey  = "Внутренняя ошибка сервера" %}
+
+{% block title %} Внутренняя ошибка сервера {% endblock %}
+
+{% block content %}
+    <main class="content">
+        <div class="error404">
+            <p class="error-message">Произошла ошибка 500.</p>
+            <p class="error-desc">Внутренняя ошибка сервера.</p>
+            <p class="guidelines">Приносим свои извинения за доставленные неудобства. Мы уже работаем над устранением этой проблемы. Пожалуйста, попробуйте обновить страницу.</p>
+        </div>
+    </main>
+{% endblock %}
