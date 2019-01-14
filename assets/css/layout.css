@@ -389,50 +389,57 @@ div a:focus .img-thumbnail {
 
 /* Errors */
 .error404 {
+    padding-top: 1.5rem;
     color: rgba(0,0,0,0.4);
     font-size: 1.125em;
     line-height: 1.25rem;
 }
 .error404 img {
     float: left;
-    padding-top: 1.5rem;
     padding-right: 2rem;
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 767px) {
     .error404 img {
         max-width: 50%!important;
     }
 }
-.error404 #did-you-know {
-    padding-top: 1.5rem;
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .error404 img {
+        max-width: 33%!important;
+    }
+}
+.error404 .did-you-know {
+    padding-top: 0;
     text-align: left;
     text-transform: uppercase;
     font-size: 2.5rem;
     line-height: 2.5rem;
     font-weight: bold;
 }
-.error404 #seriously {
+.error404 .seriously {
     padding-top: 2rem;
+    padding-bottom: 0;
 }
-.error404 #error {
+.error404 .error-message {
     color: black;
+    padding-top: 0.625rem;
     padding-bottom: 0;
     font-size: 1.75em;
     font-weight: bold;
     line-height: 2rem;
 }
-.error404 #page-not-found {
+.error404 .error-desc {
     color: black;
 }
-.error404 #main-page {
+.error404 .guidelines {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
-.error404 #main-page a:link,
-.error404 #main-page a:visited {
+.error404 .guidelines a:link,
+.error404 .guidelines a:visited {
     color: rgba(0,0,0,0.4);
 }
-.error404 #main-page a:hover,
-.error404 #main-page a:active {
+.error404 .guidelines a:hover,
+.error404 .guidelines a:active {
     color: #d9b282;
 }
