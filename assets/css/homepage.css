@@ -11,9 +11,13 @@
     color: #d9b282;
     opacity: 0.5;
 }
+.slick-dots li.slick-active:hover button::before {
+    opacity: 1;
+}
 .slick-dots li.slick-active button::before {
     font-size: 0.75rem;
     color: #d9b282;
+    opacity: 0.5;
 }
 .slick-arrow {
     z-index: 100;
