@@ -24,6 +24,8 @@ Encore
     .addEntry('album',    './assets/js/album.js')
     .addEntry('book',     './assets/js/book.js')
     .addEntry('contact',  './assets/js/contact.js')
+
+    .enableBuildNotifications()
 ;
 
 module.exports = Encore.getWebpackConfig();
