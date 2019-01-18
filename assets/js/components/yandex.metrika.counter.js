@@ -1,3 +1,5 @@
+'use strict';
+
 (function (d, w, c) {
 	(w[c] = w[c] || []).push(function() {
 		try {
