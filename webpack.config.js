@@ -30,6 +30,7 @@ Encore
     .addEntry('contact',  './assets/js/contact.js')
 
     .enableBuildNotifications()
+    .enableSourceMaps(!Encore.isProduction())
 ;
 
 module.exports = Encore.getWebpackConfig();
