@@ -28,6 +28,7 @@ Encore
     .addEntry('album',    './assets/js/album.js')
     .addEntry('book',     './assets/js/book.js')
     .addEntry('contact',  './assets/js/contact.js')
+    .splitEntryChunks()
 
     .enableBuildNotifications()
     .enableSourceMaps(!Encore.isProduction())

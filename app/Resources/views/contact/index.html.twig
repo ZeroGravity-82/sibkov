@@ -7,12 +7,14 @@
 
 {% block stylesheets %}
     {{ parent() }}
-    <link rel="stylesheet" href="{{ asset('build/contact.css') }}">
+
+    {{ encore_entry_link_tags('contact') }}
 {% endblock %}
 
 {% block javascripts %}
     {{ parent() }}
-    <script src="{{ asset('build/contact.js') }}"></script>
+
+    {{ encore_entry_script_tags('contact') }}
 {% endblock %}
 
 {% block content %}

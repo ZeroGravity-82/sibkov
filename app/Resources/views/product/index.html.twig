@@ -7,7 +7,8 @@
 
 {% block stylesheets %}
     {{ parent() }}
-    <link rel="stylesheet" href="{{ asset('build/product.css') }}">
+
+    {{ encore_entry_link_tags('product') }}
 {% endblock %}
 
 {% block content %}

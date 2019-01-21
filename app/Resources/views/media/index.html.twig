@@ -7,12 +7,14 @@
 
 {% block stylesheets %}
     {{ parent() }}
-    <link rel="stylesheet" href="{{ asset('build/media.css') }}">
+
+    {{ encore_entry_link_tags('media') }}
 {% endblock %}
 
 {% block javascripts %}
     {{ parent() }}
-    <script src="{{ asset('build/media.js') }}"></script>
+
+    {{ encore_entry_script_tags('media') }}
 {% endblock %}
 
 {% block content %}

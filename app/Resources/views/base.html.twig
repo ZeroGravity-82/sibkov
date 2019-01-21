@@ -24,7 +24,7 @@
         <title>{% block title %}{% endblock %} – Ферма «Сибирский ковчег»</title>
 
         {% block stylesheets %}
-            <link rel="stylesheet" href="{{ asset('build/layout.css') }}">
+            {{ encore_entry_link_tags('layout') }}
         {% endblock %}
 
         {# Site icons #}
@@ -44,7 +44,7 @@
             {% include '_footer.html.twig' %}
         </div>
         {% block javascripts %}
-            <script src="{{ asset('build/layout.js') }}"></script>
+            {{ encore_entry_script_tags('layout') }}
         {% endblock %}
     </body>
 </html>

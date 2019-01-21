@@ -2,12 +2,14 @@
 
 {% block stylesheets %}
     {{ parent() }}
-    <link rel="stylesheet" href="{{ asset('build/album.css') }}">
+
+    {{ encore_entry_link_tags('album') }}
 {% endblock %}
 
 {% block javascripts %}
     {{ parent() }}
-    <script src="{{ asset('build/album.js') }}"></script>
+
+    {{ encore_entry_script_tags('album') }}
 {% endblock %}
 
 {% block content %}
