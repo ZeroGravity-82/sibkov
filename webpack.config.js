@@ -5,12 +5,13 @@ Encore
     .setOutputPath('web/build/')
     // public path used by the web server to access the output path
     .setPublicPath('/build')
-    // only needed for CDN's or sub-directory deploy
-    //.setManifestKeyPrefix('build/')
+    .cleanupOutputBeforeBuild()
     .copyFiles({
         from: './assets/images/static',
         to: 'images/static/[path][name].[ext]'
     })
+    // only needed for CDN's or sub-directory deploy
+    //.setManifestKeyPrefix('build/')
 
     /*
      * ENTRY CONFIG
