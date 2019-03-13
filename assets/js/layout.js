@@ -2,6 +2,7 @@
 
 require('bootstrap/dist/css/bootstrap.css');
 require('../css/layout.css');
+require('../css/yandex.metrika.css');
 
 require('bootstrap');
-require('./components/yandex.metrika.counter');
+require('./yandex.metrika.js');
