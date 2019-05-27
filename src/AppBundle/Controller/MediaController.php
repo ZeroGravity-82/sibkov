@@ -43,14 +43,4 @@ class MediaController extends Controller
     {
         return $this->render("media/album_boksy_dlya_kur.html.twig");
     }
-
-    /**
-     * @Route("/vystavki", name="media_album_vystavki")
-     *
-     * @return Response
-     */
-    public function showAlbumVystavki()
-    {
-        return $this->render("media/album_vystavki.html.twig");
-    }
 }
