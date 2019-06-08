@@ -24,3 +24,102 @@
 .product-description {
     padding-top: 0.5rem;
 }
+.table {
+    margin: auto auto 1rem auto;
+    font-size: 1rem;
+    border-style: none;
+}
+.table caption {
+    caption-side: top;
+    padding-top: 0;
+    padding-bottom: 0.375rem;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+}
+.table thead th,
+.table tbody td {
+    vertical-align: middle;
+    text-align: center;
+    line-height: normal;
+    border: 2px solid darkgrey;
+    color: black;
+    background-color: rgba(0,0,0,0);		/* Прозрачный задний фон */
+}
+.table tbody td a {
+    color: black;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.table tbody td:first-child  {
+    text-align: left;
+}
+.table {
+    max-width: 80%;
+}
+@media only screen and (min-width: 992px) {
+    .table-width-50 {
+        max-width: 50%;
+    }
+    .table-width-65 {
+        max-width: 65%;
+    }
+}
+@media only screen and (max-width: 543px) {
+    .table {
+        width: 100%;
+    }
+    .table thead {
+        display: none;
+    }
+    .table tbody tr {
+        display: block;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        border: 2px solid darkgrey;
+        margin-bottom: 0.625rem;
+    }
+    .table tbody td {
+        text-align: right;
+        border-style: none;
+        border-bottom: 1px solid darkgrey;
+    }
+    .table tbody td:first-child {
+        text-align: center;
+        border-style: none;
+    }
+    .table tbody td,
+    .table tbody td:first-child	{
+        display: block;
+        width: 100%;
+        font-weight: bold;
+    }
+    .table tbody td:before {
+        content: attr(data-label);
+        float: left;
+        text-align: left;
+        font-weight: normal;
+    }
+    .table tbody td:first-child:before {
+        display: block;
+        float: none;
+        text-align: center;
+    }
+    .table tbody td:last-child {
+        border-style: none;
+    }
+}
+.table tbody tr:hover,
+.table tbody tr:focus {
+    cursor: pointer;
+    background-color: #d9b282;
+}
+.table tbody tr:hover td,
+.table tbody tr:focus td {
+    color: #593304;
+}
+.table tbody tr:hover td a,
+.table tbody tr:focus td a {
+    color: #593304;
+    border-bottom: 1px solid rgba(89,51,04,0.2);		/* Соответствует цвету #593304 */
+}
