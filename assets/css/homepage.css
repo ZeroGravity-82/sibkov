@@ -3,7 +3,7 @@
 }
 .slick-dots {
     bottom: -1.75rem;
-    right: -0.75rem;
+    right: -0.5rem;
     width: auto;
 }
 @media only screen and (max-width: 991px) {
