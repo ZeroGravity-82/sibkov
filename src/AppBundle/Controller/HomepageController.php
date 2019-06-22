@@ -7,10 +7,10 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * Class DefaultController
+ * Class HomepageController
  * @package AppBundle\Controller
  */
-class DefaultController extends Controller
+class HomepageController extends Controller
 {
     /**
      * @Route("/", name="homepage")
@@ -19,6 +19,6 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
-        return $this->render("default/index.html.twig");
+        return $this->render("homepage/index.html.twig");
     }
 }
