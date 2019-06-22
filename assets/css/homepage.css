@@ -6,6 +6,12 @@
     right: -0.75rem;
     width: auto;
 }
+@media only screen and (max-width: 991px) {
+    .slick-dots {
+        display: none!important;
+    }
+}
+
 .slick-dots li button::before {
     font-size: 0.55rem;
     color: #d9b282;
