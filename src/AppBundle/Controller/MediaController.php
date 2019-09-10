@@ -25,6 +25,36 @@ class MediaController extends Controller
     }
 
     /**
+     * @Route("/kroliki", name="media_album_kroliki")
+     *
+     * @return Response
+     */
+    public function showAlbumKrolikiAction()
+    {
+        return $this->render("media/album_kroliki.html.twig");
+    }
+
+    /**
+     * @Route("/shkurki", name="media_album_shkurki")
+     *
+     * @return Response
+     */
+    public function showAlbumShkurkiAction()
+    {
+        return $this->render("media/album_shkurki.html.twig");
+    }
+
+    /**
+     * @Route("/kletki-dlya-krolikov", name="media_album_kletki_dlya_krolikov")
+     *
+     * @return Response
+     */
+    public function showAlbumKletkiDlyaKrolikov()
+    {
+        return $this->render("media/album_kletki_dlya_krolikov.html.twig");
+    }
+
+    /**
      * @Route("/kury", name="media_album_kury")
      *
      * @return Response
@@ -42,6 +72,16 @@ class MediaController extends Controller
     public function showAlbumBoksyDlyaKur()
     {
         return $this->render("media/album_boksy_dlya_kur.html.twig");
+    }
+
+    /**
+     * @Route("/vystavki", name="media_album_vystavki")
+     *
+     * @return Response
+     */
+    public function showAlbumVystavki()
+    {
+        return $this->render("media/album_vystavki.html.twig");
     }
 
     /**

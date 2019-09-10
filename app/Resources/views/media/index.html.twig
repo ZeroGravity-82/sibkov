@@ -1,9 +1,9 @@
 {% extends "base.html.twig" %}
 
 {% set metaDesc = "Фотографии фермы «Сибирский ковчег»" %}
-{% set metaKey  = "козы ламанча, породные козы, породные куры" %}
+{% set metaKey  = "кролики рекс фото, выделка шкурок кролика, породные куры" %}
 
-{% block title %} Козоводство и птицеводство фото {% endblock %}
+{% block title %} Кролик рекс фото {% endblock %}
 
 {% block stylesheets %}
     {{ parent() }}
@@ -24,11 +24,32 @@
                 <h1 class="text-center">Фотоальбомы</h1>
             </header>
             <nav class="row equal">
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-sm-6 col-md-4 col-lg-3 d-none">
                     <a href="{{ path('media_album_kozy') }}" class="album-item">
                         <img class="img-thumbnail" src="{{ asset('build/images/static/kozy_thumb.png') }}"
                              alt="Фотоальбом «Козы»">
                         <p><span>Козы</span></p>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="{{ path('media_album_kroliki') }}" class="album-item">
+                        <img class="img-thumbnail" src="{{ asset('build/images/static/kroliki_thumb.png') }}"
+                             alt="Фотоальбом «Кролики»">
+                        <p><span>Кролики</span></p>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="{{ path('media_album_shkurki') }}" class="album-item">
+                        <img class="img-thumbnail" src="{{ asset('build/images/static/shkurki_thumb.png') }}"
+                             alt="Фотоальбом «Шкурки»">
+                        <p><span>Шкурки</span></p>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="{{ path('media_album_kletki_dlya_krolikov') }}" class="album-item">
+                        <img class="img-thumbnail" src="{{ asset('build/images/static/kletki-dlya-krolikov_thumb.png') }}"
+                             alt="Фотоальбом «Клетки для кроликов»">
+                        <p><span>Клетки для кроликов</span></p>
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-3">
@@ -43,6 +64,13 @@
                         <img class="img-thumbnail" src="{{ asset('build/images/static/boksy-dlya-kur_thumb.png') }}"
                              alt="Фотоальбом «Боксы для кур»">
                         <p><span>Боксы для кур</span></p>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="{{ path('media_album_vystavki') }}" class="album-item">
+                        <img class="img-thumbnail" src="{{ asset('build/images/static/vystavki_thumb.png') }}"
+                             alt="Фотоальбом «Выставки»">
+                        <p><span>Участие<br>в выставках</span></p>
                     </a>
                 </div>
             </nav>

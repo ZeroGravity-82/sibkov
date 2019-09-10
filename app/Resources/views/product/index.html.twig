@@ -1,9 +1,9 @@
 {% extends "base.html.twig" %}
 
 {% set metaDesc = "Продукция фермы «Сибирский ковчег»" %}
-{% set metaKey  = "козье молоко, сыры по зарубежным рецептурам, крафтовый сыр, козий сыр, домашний йогурт и творог" %}
+{% set metaKey  = "купить яйцо инкубационное" %}
 
-{% block title %} Купить домашние сыры, йогурт, творог, козье молоко {% endblock %}
+{% block title %} Купить инкубационное яйцо, породы несушек кур, загорская лососёвая {% endblock %}
 
 {% block stylesheets %}
     {{ parent() }}
@@ -14,181 +14,393 @@
 {% block content %}
     <main class="content">
         <header>
-            <h1>Молочная продукция от наших козочек</h1>
+            <h1>Инкубационное яйцо и цыплята</h1>
         </header>
         <article>
-            <p>Молоко коз породы Ламанча не имеет запаха, характерного для обычного козьего молока, и обладает слегка сладковатым пломбирно-сливочным привкусом. Жирность молока этих козочек не менее 4%, идеально подходит для приготовления высококачественных сыров.</p>
-            <p>Сыры мы изготавливаем по зарубежным рецептурам с применением импортных заквасок из Франции!</p>
+            <div class="row">
+                <div class="col-sm-9 col-lg-10">
+                    <p>
+                        У нас вы можете купить инкубационное яйцо и сделать заказ на суточных цыплят породных кур.<br>
+                        <strong>Отправляем инкубационное яйцо в другие регионы России</strong>.
+                    </p>
+                </div>
+            </div>
             <section>
-                <header id="moloko" class="anchor">
-                    <h3 class="section-name text-center text-sm-left">Цельное козье молоко</h3>
+                <header id="kuchinskaya_yubilejnaya" class="anchor">
+                    <h3 class="section-name text-center text-sm-left">Кучинская юбилейная</h3>
                 </header>
                 <div class="row">
                     <div class="col-sm-5 col-md-4 col-lg-3 product-image">
-                        <a href="#">
-                            <img class="img-thumbnail" src="{{ asset('build/images/static/nasha-produkciya-moloko-8zn4ytyshn_thumb.png') }}"
-                                 alt="Цельное козье молоко">
+                        <a href="{{ path('media_album_kury') }}#kuchinskaya_yubilejnaya" title="Посмотреть фотографии породы">
+                            <img class="img-thumbnail" src="{{ asset('build/images/static/nasha-produkciya-kuchinskaya-yubilejnaya_thumb.png') }}"
+                                 alt="Кучинская юбилейная">
                         </a>
                         <div class="text-center" style="text-align: center">
                             <div class="product-price">
-                                <div>150 руб./л</div>
+                                <div><img src="{{ asset('build/images/static/icon-egg.png') }}" title="Инкубационное яйцо" alt=""></div>
+                                <div>50 руб.</div>
+                            </div>
+                            <div class="product-price">
+                                <div><img src="{{ asset('build/images/static/icon-chick.png') }}" title="Суточный цыплёнок" alt=""></div>
+                                <div>100 руб.</div>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-7 col-md-8 col-lg-9 product-description">
-                        <p>Козье молоко &ndash; это легко усваиваемый гипоаллергенный продукт. По составу белков, жиров, лактозы, минералов и витаминов оно наиболее приближено к материнскому молоку.</p>
-                        <p>Наше козье молоко богато витаминами групп PP, B, A и D, микроэлементами, альбумином, бета-казеином и полезными полиненасыщенными жирами.</p>
-                        <p>В отличие от коровьего молока, в нашем козьем молоке практически отсутствует альфа-S1-казеин, который является основной причиной аллергической реакции на молоко у людей.</p>
+                        <p>Мясо-яичного направления. Создана на гос. птицеводческом заводе «Кучинский» в г. Балашиха.</p>
+                        <p>Живой вес петухов 4&ndash;4,5 кг, куры 3&ndash;3,5 кг. Яйценоскость 200&ndash;220 яиц в год. Яйца светло-коричневого цвета, достигают в среднем 60 г. Начинают нестись куры примерно через 5&ndash;5,5 месяцев.</p>
+                        <p>Порода имеет высокие показатели оплодотворения и выведения молодняка. Выживаемость птенцов составляет до 95 %. Цыплята быстро набирают мышечную массу.</p>
                     </div>
                 </div>
             </section>
             <hr>
             <section>
-                <header id="jogurt-naturalnyj" class="anchor">
-                    <h3 class="section-name text-center text-sm-left">Натуральный йогурт</h3>
+                <header id="zagorskaya-lososevaya" class="anchor">
+                    <h3 class="section-name text-center text-sm-left">Загорская лососёвая</h3>
                 </header>
                 <div class="row">
                     <div class="col-sm-5 col-md-4 col-lg-3 product-image">
-                        <a href="#">
-                            <img class="img-thumbnail" src="{{ asset('build/images/static/nasha-produkciya-jogurt-naturalnyj-r95rm9oy1t_thumb.png') }}"
-                                 alt="Натуральный йогурт">
+                        <a href="{{ path('media_album_kury') }}#zagorskaya-lososevaya" title="Посмотреть фотографии породы">
+                            <img class="img-thumbnail" src="{{ asset('build/images/static/nasha-produkciya-zagorskaya-lososevaya_thumb.png') }}"
+                                 alt="Загорская лососёвая">
                         </a>
                         <div class="text-center" style="text-align: center">
                             <div class="product-price">
-                                <div>270 руб./л</div>
+                                <div><img src="{{ asset('build/images/static/icon-egg.png') }}" title="Инкубационное яйцо" alt=""></div>
+                                <div>50 руб.</div>
+                            </div>
+                            <div class="product-price">
+                                <div><img src="{{ asset('build/images/static/icon-chick.png') }}" title="Суточный цыплёнок" alt=""></div>
+                                <div>100 руб.</div>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-7 col-md-8 col-lg-9 product-description">
-                        <p>Йогурт считается намного более ценным для человеческого организма продуктом, нежели цельное молоко. Ферментированный под воздействием полезных бактерий он не только с легкостью усваивается, но и насыщает кишечник незаменимой микрофлорой.</p>
-                        <p>В нашем натуральном йогурте содержится ряд витаминов (А, группы В, С), минеральных солей (кальций, фосфор, калий, натрий), высокоусвояемые белковые соединения, ферменты, полезные бактерии.</p>
-                        <p>Для приготовления йогурта мы используем импортную закваску из Дании. Благодаря болгарской палочке, наш натуральный йогурт обладает уникальной способностью освобождать пищеварительную систему от патогенной микрофлоры, гнилостных бактерий, болезнетворных микроорганизмов. Мы не добавляем в наш йогурт консерванты, загустители, ароматизаторы, красители и прочую химию.</p>
+                        <p>Мясо-яичного направления. Порода была получена во ВНИТИП Сергиева Посада (в то время он назывался Загорском, откуда и произошла первая часть их названия) в 1950-х годах.</p>
+                        <p>Живой вес петухов 3&ndash;3,7 кг, куры 2,5&ndash;2,7 кг. Яйценоскость 220&ndash;260 яиц в год. Яйца светло-коричневого цвета, весят около 60&ndash;65 г (это значение достигается постепенно со временем, а сначала масса яиц составляет примерно 45 г). Начинают нестись куры примерно через 5&ndash;5,5 месяцев.</p>
+                        <p>Цыплята стремительно набирают вес: в трёхмесячном возрасте петухи весят примерно 2 кг.</p>
                     </div>
                 </div>
             </section>
             <hr>
             <section>
-                <header id="jogurt-s-yagodami" class="anchor">
-                    <h3 class="section-name text-center text-sm-left">Йогурт с добавлением ягод (виктория)</h3>
+                <header id="avstralorp-chyornyj" class="anchor">
+                    <h3 class="section-name text-center text-sm-left">Австралорп чёрный</h3>
                 </header>
                 <div class="row">
                     <div class="col-sm-5 col-md-4 col-lg-3 product-image">
-                        <a href="#">
-                            <img class="img-thumbnail" src="{{ asset('build/images/static/nasha-produkciya-jogurt-s-yagodami-i7pi0v0dg8_thumb.png') }}"
-                                 alt="Йогурт с добавлением ягод (виктория)">
+                        <a href="{{ path('media_album_kury') }}#avstralorp-chyornyj" title="Посмотреть фотографии породы">
+                            <img class="img-thumbnail" src="{{ asset('build/images/static/nasha-produkciya-avstralorp-chyornyj_thumb.png') }}"
+                                 alt="Австралорп чёрный">
                         </a>
                         <div class="text-center" style="text-align: center">
                             <div class="product-price">
-                                <div>300 руб./л</div>
+                                <div><img src="{{ asset('build/images/static/icon-egg.png') }}" title="Инкубационное яйцо" alt=""></div>
+                                <div>50 руб.</div>
+                            </div>
+                            <div class="product-price">
+                                <div><img src="{{ asset('build/images/static/icon-chick.png') }}" title="Суточный цыплёнок" alt=""></div>
+                                <div>100 руб.</div>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-7 col-md-8 col-lg-9 product-description">
-                        <p>Этот кисломолочный продукт сочетает в себе лучшие качества натурального йогурта и ягодного десерта.</p>
-                        <p>Для его приготовления мы используем ягоды виктории, выращенные на нашей ферме.</p>
+                        <p>Мясо-яичного направления. Разведение было начато в Австралии в 1820-х годах.</p>
+                        <p>Петухи к 8 месяцу имеют массу 3,6&ndash;3,9 кг, куры &ndash; 2,7&ndash;2,9 кг. Яйценоскость 200&ndash;240 яиц в год. Начинают нестись куры примерно через 5 месяцев. Яйца светло-коричневого цвета, весят в среднем 58 г.</p>
+                        <p>Выживаемость молодняка до 95 %. Цыплята хорошо набирают вес.</p>
                     </div>
                 </div>
             </section>
             <hr>
             <section>
-                <header id="tvorog" class="anchor">
-                    <h3 class="section-name text-center text-sm-left">Творог из цельного молока (жирность не менее 24%)</h3>
+                <header id="susseks" class="anchor">
+                    <h3 class="section-name text-center text-sm-left">Суссекс колумбийский</h3>
                 </header>
                 <div class="row">
                     <div class="col-sm-5 col-md-4 col-lg-3 product-image">
-                        <a href="#">
-                            <img class="img-thumbnail" src="{{ asset('build/images/static/nasha-produkciya-tvorog-5hspf4gvo2_thumb.png') }}"
-                                 alt="Творог из цельного молока (жирность не менее 24%)">
+                        <a href="{{ path('media_album_kury') }}#susseks" title="Посмотреть фотографии породы">
+                            <img class="img-thumbnail" src="{{ asset('build/images/static/nasha-produkciya-susseks_thumb.png') }}"
+                                 alt="Суссекс колумбийский">
                         </a>
                         <div class="text-center" style="text-align: center">
                             <div class="product-price">
-                                <div>700 руб./кг</div>
+                                <div><img src="{{ asset('build/images/static/icon-egg.png') }}" title="Инкубационное яйцо" alt=""></div>
+                                <div>60 руб.</div>
+                            </div>
+                            <div class="product-price">
+                                <div><img src="{{ asset('build/images/static/icon-chick.png') }}" title="Суточный цыплёнок" alt=""></div>
+                                <div>120 руб.</div>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-7 col-md-8 col-lg-9 product-description">
-                        <p>Козий творог &ndash; это ценнейший диетический продукт, обладающий уникальным составом. Он содержит до 20% легко усваиваемого животного белка, в нём в достаточном количестве присутствуют фосфор и кальций, оказывающие благотворное влияние на работу сердца.</p>
-                        <p>Наш творог из цельного козьего молока богат довольно редкими витаминными группами В2 и В12, аминокислотами, способствующими улучшению работы почек и печени, а также снижению уровня «вредного» холестерина.</p>
-                        <p>Козий творог считается превосходным источником калиция, незаменимого для опорно-двигательной и костной системы человека. Также в нём содержатся не менее ценные минеральные соединения &ndash; медь и магний. Включение творога из козьего молока в ежедневный рацион способствует укреплению организма в целом.</p>
+                        <p>Мясо-яичного направления. Своё название куры получили по названию графства Суссекс в Англии. Суссексов относят к древней породе &ndash; эти птицы встречались уже во времена Римской империи в 43 г. н.э.</p>
+                        <p>Живой вес петухов 3,5&ndash;4 кг, куры 2,5&ndash;3 кг. Яйценоскость 230&ndash;250 яиц в год. Начинают нестись куры примерно через 5&ndash;5,5 месяцев. Цвет яиц в основном светло-бежевый, масса 60 г.</p>
+                        <p>Выживаемость молодой птицы до 98 %. В возрасте 70 дней их масса достигает 1,5 кг. Мясо нежное, с большим содержанием белка.</p>
                     </div>
                 </div>
             </section>
             <hr>
             <section>
-                <header id="syr-kachotta" class="anchor">
-                    <h3 class="section-name text-center text-sm-left">Сыр Качотта классический</h3>
+                <header id="pushkinskaya" class="anchor">
+                    <h3 class="section-name text-center text-sm-left">Пушкинская</h3>
                 </header>
                 <div class="row">
                     <div class="col-sm-5 col-md-4 col-lg-3 product-image">
-                        <a href="#">
-                            <img class="img-thumbnail" src="{{ asset('build/images/static/nasha-produkciya-syr-kachotta-jb2w47nbdz_thumb.png') }}"
-                                 alt="Сыр Качотта классический">
+                        <a href="{{ path('media_album_kury') }}#pushkinskaya" title="Посмотреть фотографии породы">
+                            <img class="img-thumbnail" src="{{ asset('build/images/static/nasha-produkciya-pushkinskaya_thumb.png') }}"
+                                 alt="Пушкинская">
                         </a>
                         <div class="text-center" style="text-align: center">
                             <div class="product-price">
-                                <div>1500 руб./кг</div>
+                                <div><img src="{{ asset('build/images/static/icon-egg.png') }}" title="Инкубационное яйцо" alt=""></div>
+                                <div>80 руб.</div>
+                            </div>
+                            <div class="product-price">
+                                <div><img src="{{ asset('build/images/static/icon-chick.png') }}" title="Суточный цыплёнок" alt=""></div>
+                                <div>160 руб.</div>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-7 col-md-8 col-lg-9 product-description">
-                        <p>Качотта &ndash; это итальянский столовый сыр жёлтого цвета с белым краем, имеющий мягкую текстуру и умеренный аромат. Вкус его зависит от времени выдержки. Молодой качотта &ndash; сыр с нежным сладковатым привкусом и лёгким ореховым ароматом. Оставляет приятное послевкусие. Чем больше срок выдержки, тем более пикантным становится вкус сыра и насыщеннее цвет.</p>
-                        <p>Мы рекомендуем употреблять наш сыр качотта свежим с помидорами или оливками, чтобы по достоинству оценить его чуть сладковатый нежный молочный вкус. Кроме того, качотта отлично плавится и поэтому хорошо подходит для приготовления горячих бутербродов и самых различных блюд традиционной итальянской кухни &ndash; пиццы, пасты, ризотто, а можно нарезать его на тонкие полоски и добавить в салаты.</p>
-                        <p>Подходящие сорта вин &ndash; белые итальянские вина с выраженным фруктовым вкусом: Вердиччио, Фраскати.</p>
+                        <p>Мясо-яичного направления. Порода создана в городе Пушкин Ленинградской области в НИИ генетики и разведения сельскохозяйственных животных. Возникла она ориентировочно в 1995 году, хотя официально принята лишь в 2007 году.</p>
+                        <p>Живой вес петухов до 5 кг, куры 3&ndash;3,5 кг. Яйценоскость 200&ndash;220 яиц в год. Начинают нестись куры примерно через 5&ndash;5,5 месяцев. Цвет яиц белый, иногда светло-бежевый (слоновой кости), масса 65&ndash;75&nbsp;г.</p>
+                        <p>Выживаемость молодняка до 94 %, взрослой птицы около 88 %. Благодаря прилитию крови Московского бройлера мясо имеет приятный нежный вкус.</p>
                     </div>
                 </div>
             </section>
             <hr>
             <section>
-                <header id="syr-maasdam" class="anchor">
-                    <h3 class="section-name text-center text-sm-left">Сыр Маасдам</h3>
+                <header id="ameraukana" class="anchor">
+                    <h3 class="section-name text-center text-sm-left">Амераукана (пасхальная курица)</h3>
                 </header>
                 <div class="row">
                     <div class="col-sm-5 col-md-4 col-lg-3 product-image">
-                        <a href="#">
-                            <img class="img-thumbnail" src="{{ asset('build/images/static/nasha-produkciya-syr-maasdam-yhdrrjsr20_thumb.png') }}"
-                                 alt="Сыр Маасдам">
+                        <a href="{{ path('media_album_kury') }}#ameraukana" title="Посмотреть фотографии породы">
+                            <img class="img-thumbnail" src="{{ asset('build/images/static/nasha-produkciya-ameraukana_thumb.png') }}"
+                                 alt="Амераукана (пасхальная курица)">
                         </a>
                         <div class="text-center" style="text-align: center">
                             <div class="product-price">
-                                <div>2000 руб./кг</div>
+                                <div><img src="{{ asset('build/images/static/icon-egg.png') }}" title="Инкубационное яйцо" alt=""></div>
+                                <div>100 руб.</div>
+                            </div>
+                            <div class="product-price">
+                                <div><img src="{{ asset('build/images/static/icon-chick.png') }}" title="Суточный цыплёнок" alt=""></div>
+                                <div>200 руб.</div>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-7 col-md-8 col-lg-9 product-description">
-                        <p>Маасдам &ndash; это голландский твёрдый сыр с большими глазками и запоминающимся сладковато-ореховым вкусом. Изготавливаемый нами сыр маасдам имеет очень пластичную структуру, превосходен в нарезке, отлично плавится и может применяться во многих кулинарных блюдах.</p>
-                        <p>Он прекрасен как самостоятельная закуска, отличный ингредиент в рецептах различных блюд, хорошо сочетается с фруктами, овощами и орехами. Его добавляют в различные запеканки, картошку фри, вкусную пиццу, салаты и другие блюда. Также можно его положить в горячие бутерброды и чизбургеры. Маасдам используется в рецептах соусов, которые сочетаются с мясом и рыбой. На основе маасдама готовится знаменитое сырное фондю.</p>
-                        <p>Подходящие сорта вин &ndash; Zinfandel, Gewurztraminer, Chardonnay, Merlot, Sauvignon Blanc, Chianti.</p>
+                        <p>Мясо-яичного направления. Родом эти особи из Америки. В 1970 году селекционерам удалось скрестить кур Араукана с местными американскими курами. Так появилась новая порода под названием Амераукана, которая сразу же завоевала любовь птицеводов не только в Америке, но и во многих странах мира.</p>
+                        <p>Живой вес петухов 3&ndash;3,5 кг, куры 2&ndash;2,5 кг. Яйценоскость 200&ndash;250 яиц в год. Начинают нестись куры примерно через 5 месяцев. Цвет яиц голубой, зелёный, бирюзовый, оливковый.  Стандартный вес яиц &ndash; 60 г.</p>
+                        <p>По некоторым источникам, яйца обладают диетическими свойствами и прекрасным вкусом. Выживаемость молодняка до 90 %, взрослой птицы до 86 %. Мясо обладает прекрасными вкусовыми качествами.</p>
                     </div>
                 </div>
             </section>
             <hr>
             <section>
-                <header id="syr-gauda" class="anchor">
-                    <h3 class="section-name text-center text-sm-left">Сыр Гауда</h3>
+                <header id="livenskaya-sittsevaya" class="anchor">
+                    <h3 class="section-name text-center text-sm-left">Ливенская ситцевая</h3>
                 </header>
                 <div class="row">
                     <div class="col-sm-5 col-md-4 col-lg-3 product-image">
-                        <a href="#">
-                            <img class="img-thumbnail" src="{{ asset('build/images/static/nasha-produkciya-syr-gauda-iirw52zzuo_thumb.png') }}"
-                                 alt="Сыр Гауда">
+                        <a href="{{ path('media_album_kury') }}#livenskaya-sittsevaya" title="Посмотреть фотографии породы">
+                            <img class="img-thumbnail" src="{{ asset('build/images/static/nasha-produkciya-livenskaya-sittsevaya_thumb.png') }}"
+                                 alt="Ливенская ситцевая">
                         </a>
                         <div class="text-center" style="text-align: center">
                             <div class="product-price">
-                                <div>2000 руб./кг</div>
+                                <div><img src="{{ asset('build/images/static/icon-egg.png') }}" title="Инкубационное яйцо" alt=""></div>
+                                <div>100 руб.</div>
+                            </div>
+                            <div class="product-price">
+                                <div><img src="{{ asset('build/images/static/icon-chick.png') }}" title="Суточный цыплёнок" alt=""></div>
+                                <div>200 руб.</div>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-7 col-md-8 col-lg-9 product-description">
-                        <p>Гауда &ndash; голландский твёрдый сыр, один из самых популярных сыров в мире. Наш сыр гауда можно употреблять в различных горячих блюдах, салатах, супах, соусах, выпечке и сэндвичах. Он отлично поддается плавлению.</p>
-                        <p>Зрелый Гауда займёт почётное место в составе сырной тарелки и будет прекрасно сочетаться с благородными винами. Также зрелый сыр подают с топпингом из яблочного сиропа, а экстра-зрелый предпочитают употреблять в компании с крепким светлым нефильтрованным пивом, элем или даже портвейном.</p>
-                        <p>Подходящие сорта вин &ndash; Riesling, Chenin Blanc с молодым сыром, Merlot, Shiraz с выдержанным Гаудой.</p>
+                        <p>Мясо-яичного направления. Порода кур народной селекции. Нетребовательна в уходе, быстро набирает вес и не сбавляет темпы яйценоскости даже зимой, когда большинство кур берут себе «отпуск».</p>
+                        <p>Живой вес петухов 4,5 кг, куры 3,5 кг. Яйценоскость 200&ndash;220 яиц в год. Начинают нестись куры с 5,5 месяцев. Цвет яиц кремовый. Средний вес яйца около 60 г, хотя очень часто их масса может достигать и 90 г. Не редки случаи, когда яйца могут быть с двумя желтками.</p>
+                        <p>Молодняк отличается быстрым ростом, не прихотлив к условиям содержания. Обладает высокими вкусовыми качествами мяса.</p>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section>
+                <header id="barbyozyo" class="anchor">
+                    <h3 class="section-name text-center text-sm-left">Барбёзьё</h3>
+                </header>
+                <div class="row">
+                    <div class="col-sm-5 col-md-4 col-lg-3 product-image">
+                        <a href="{{ path('media_album_kury') }}#barbyozyo" title="Посмотреть фотографии породы">
+                            <img class="img-thumbnail" src="{{ asset('build/images/static/nasha-produkciya-barbyozyo_thumb.png') }}"
+                                 alt="Барбёзьё">
+                        </a>
+                        <div class="text-center" style="text-align: center">
+                            <div class="product-price">
+                                <div><img src="{{ asset('build/images/static/icon-egg.png') }}" title="Инкубационное яйцо" alt=""></div>
+                                <div>100 руб.</div>
+                            </div>
+                            <div class="product-price">
+                                <div><img src="{{ asset('build/images/static/icon-chick.png') }}" title="Суточный цыплёнок" alt=""></div>
+                                <div>200 руб.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-7 col-md-8 col-lg-9 product-description">
+                        <p>Мясо-яичного направления. Барбёзьё распространились по миру из одноимённого региона Франции. Происхождение связывают с местными курами, прошедшими тщательный отбор одновременно по мясному и яичному направлению.</p>
+                        <p>Живой вес петухов до 4,5 кг, куры 3,5 кг. Яйценоскость 180&ndash;200 яиц в год. Начинают нестись куры с 5,5 месяцев. Вес яиц до 90 граммов. Скорлупа белая. Но эти показатели достигаются со временем, не ранее, чем через 11 месяцев жизни.</p>
+                        <p>Несмотря на то, что Барбёзьё несутся примерно с 5,5 месяцев, максимального веса петушки и куры этой породы достигают после года. У Барбёзьё примерно до 4&ndash;5 месяцев формируется костяк и только потом нарастает мышечная масса.</p>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section>
+                <header id="barnevelder" class="anchor">
+                    <h3 class="section-name text-center text-sm-left">Барневельдер</h3>
+                </header>
+                <div class="row">
+                    <div class="col-sm-5 col-md-4 col-lg-3 product-image">
+                        <a href="{{ path('media_album_kury') }}#barnevelder-chyorno-okajmlyonnyj" title="Посмотреть фотографии породы">
+                            <img class="img-thumbnail" src="{{ asset('build/images/static/nasha-produkciya-barnevelder_thumb.png') }}"
+                                 alt="Барневельдер">
+                        </a>
+                        <div class="text-center" style="text-align: center">
+                            <div class="product-price">
+                                <div><img src="{{ asset('build/images/static/icon-egg.png') }}" title="Инкубационное яйцо" alt=""></div>
+                                <div>100 руб.</div>
+                            </div>
+                            <div class="product-price">
+                                <div><img src="{{ asset('build/images/static/icon-chick.png') }}" title="Суточный цыплёнок" alt=""></div>
+                                <div>200 руб.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-7 col-md-8 col-lg-9 product-description">
+                        <p>Мясо-яичного направления. Родина Барневельдерских кур &ndash; Голландия. Они были выведены в 19-м веке с целью получения породы кур, способной нести яйца красивого тёмно-шоколадного цвета, так как такой оттенок пользовался в то время большим спросом на рынке. Правда, окончательно основной цели селекции добиться так и не удалось: Барневельдеры до сих пор продолжают нести и яйца с красноватым оттенком. Но зато куры получили необычное и яркое оперение с двойной окантовкой, что также стало причиной роста их популярности и ценности.</p>
+                        <p>Живой вес петухов 3&ndash;3,5 кг, куры в среднем 2,5 кг. Яйценоскость 200&ndash;240 яиц в год, при этом хорошо несётся даже в зимний период. Начинают нестись куры с 5,5 месяцев. Вес одного яйца &ndash; до 80 г.</p>
+                        <p>Выживаемость молодняка до 92 %, взрослой птицы около 87 %.</p>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section>
+                <header id="viandot" class="anchor">
+                    <h3 class="section-name text-center text-sm-left">Виандот</h3>
+                </header>
+                <div class="row">
+                    <div class="col-sm-5 col-md-4 col-lg-3 product-image">
+                        <a href="{{ path('media_album_kury') }}#viandot-standart" title="Посмотреть фотографии породы">
+                            <img class="img-thumbnail" src="{{ asset('build/images/static/nasha-produkciya-viandot_thumb.png') }}"
+                                 alt="Виандот">
+                        </a>
+                        <div class="text-center" style="text-align: center">
+                            <div class="product-price">
+                                <div><img src="{{ asset('build/images/static/icon-egg.png') }}" title="Инкубационное яйцо" alt=""></div>
+                                <div>120 руб.</div>
+                            </div>
+                            <div class="product-price">
+                                <div><img src="{{ asset('build/images/static/icon-chick.png') }}" title="Суточный цыплёнок" alt=""></div>
+                                <div>240 руб.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-7 col-md-8 col-lg-9 product-description">
+                        <p>Мясо-яичного направления. Начало новой породе кур было положено в середине 19-го века в Северной Америке. Название этим пернатым дали такое же, как у одного из северных индейских племён, чьи цвета преобладали в окрасе оперения птиц. Селекционная работа велась несколько десятилетий, и в 1883 году в стандарты была внесена порода кур Виандот серебристый.</p>
+                        <p>Живой вес петухов 3,5&ndash;4 кг, куры 3 кг. Яйценоскость 180&ndash;200 яиц в год. Начинают нестись куры с 6 месяцев. Цвет яиц  жёлто-коричневый. Средний вес яйца около 60 г.</p>
+                        <p>Мясо птицы очень вкусное и сочное (мраморное). Не рекомендуется держать более 2-х лет, так как снижается яйценоскость из-за склонности к ожирению.</p>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section>
+                <header id="faverol" class="anchor">
+                    <h3 class="section-name text-center text-sm-left">Фавероль</h3>
+                </header>
+                <div class="row">
+                    <div class="col-sm-5 col-md-4 col-lg-3 product-image">
+                        <a href="{{ path('media_album_kury') }}#faverol-belaya" title="Посмотреть фотографии породы">
+                            <img class="img-thumbnail" src="{{ asset('build/images/static/nasha-produkciya-faverol_thumb.png') }}"
+                                 alt="Фавероль">
+                        </a>
+                        <div class="text-center" style="text-align: center">
+                            <div class="product-price">
+                                <div><img src="{{ asset('build/images/static/icon-egg.png') }}" title="Инкубационное яйцо" alt=""></div>
+                                <div>120 руб.</div>
+                            </div>
+                            <div class="product-price">
+                                <div><img src="{{ asset('build/images/static/icon-chick.png') }}" title="Суточный цыплёнок" alt=""></div>
+                                <div>240 руб.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-7 col-md-8 col-lg-9 product-description">
+                        <p>Мясного направления. Порода кур Фавероль была выведена в маленьком французском городке ещё в 18 веке. Своё имя порода получила по названию этого городка Фавроль в 1866 году.</p>
+                        <p>Живой вес петухов до 5 кг, куры 3,5 кг. Яйценоскость 180 яиц в год. Начинают нестись куры с 6 месяцев. Вес яиц 55&ndash;60 граммов. Скорлупа жёлтая, розоватая или коричневая.</p>
+                        <p>Это крупные, скороспелые, быстро набирающие мышечную массу птицы. За счёт тонких костей и увеличенного размера грудной клетки и задней части содержание мяса в тушке увеличенное. Качество мяса повышается также за счёт отсутствия волосатости кожи: тушки кур Фавероль не требуют дополнительной обработки.</p>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section>
+                <header id="mekhelenskaya-kukushka" class="anchor">
+                    <h3 class="section-name text-center text-sm-left">Мехеленская кукушка</h3>
+                </header>
+                <div class="row">
+                    <div class="col-sm-5 col-md-4 col-lg-3 product-image">
+                        <a href="{{ path('media_album_kury') }}#mekhelenskaya-kukushka" title="Посмотреть фотографии породы">
+                            <img class="img-thumbnail" src="{{ asset('build/images/static/nasha-produkciya-mekhelenskaya-kukushka_thumb.png') }}"
+                                 alt="Мехеленская кукушка">
+                        </a>
+                        <div class="text-center" style="text-align: center">
+                            <div class="product-price">
+                                <div><img src="{{ asset('build/images/static/icon-egg.png') }}" title="Инкубационное яйцо" alt=""></div>
+                                <div>150 руб.</div>
+                            </div>
+                            <div class="product-price">
+                                <div><img src="{{ asset('build/images/static/icon-chick.png') }}" title="Суточный цыплёнок" alt=""></div>
+                                <div>300 руб.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-7 col-md-8 col-lg-9 product-description">
+                        <p>Мясного направления. Происходит из древнего одноимённого города в Бельгии. Его название на разных языках звучит по-разному. Поэтому куры этой породы имеют целый ряд имён. К примеру, в России до революции 17-го года её называли Куку де Малин. Сегодня от претенциозного имени осталось сокращенное &ndash; Малин, что не умаляет мясных достоинств петухов и кур породы.</p>
+                        <p>Живой вес петухов 5 кг, куры 4 кг. Не редки случаи получения особей ещё большей массы. Яйценоскость в среднем 160 яиц в год. Начинают нестись куры с 6&ndash;7 месяцев. Вес яиц 60 граммов. Скорлупа бежевого окраса.</p>
+                        <p>Мясо нежное, имеет деликатный вкус и тонковолокнистую структуру.</p>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section>
+                <header id="maran" class="anchor">
+                    <h3 class="section-name text-center text-sm-left">Маран</h3>
+                </header>
+                <div class="row">
+                    <div class="col-sm-5 col-md-4 col-lg-3 product-image">
+                        <a href="{{ path('media_album_kury') }}#maran-chyornyj-serebristogrivyj" title="Посмотреть фотографии породы">
+                            <img class="img-thumbnail" src="{{ asset('build/images/static/nasha-produkciya-maran_thumb.png') }}"
+                                 alt="Маран">
+                        </a>
+                        <div class="text-center" style="text-align: center">
+                            <div class="product-price">
+                                <div><img src="{{ asset('build/images/static/icon-egg.png') }}" title="Инкубационное яйцо" alt=""></div>
+                                <div>200 руб.</div>
+                            </div>
+                            <div class="product-price">
+                                <div><img src="{{ asset('build/images/static/icon-chick.png') }}" title="Суточный цыплёнок" alt=""></div>
+                                <div>400 руб.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-7 col-md-8 col-lg-9 product-description">
+                        <p>Мясо-яичного направления. Эта порода &ndash; результат французских селекционных работ, которые проводились в 1895 году в городе Маран. Выведенный штамм был удостоен золотой премии на выставке Ла-Рошель в 1914 году и с тех пор получил широкое распространение в Европе.</p>
+                        <p>Живой вес петухов 3,5&ndash;4 кг, куры 2,6&ndash;3,2 кг. Яйценоскость 180 яиц в год. Начинают нестись куры с 5&ndash;6 месяцев. Цвет яиц шоколадный с плотной скорлупой. Вес одного яйца до 85 г.</p>
+                        <p>Некоторые учёные утверждают, что сквозь толстую скорлупу в яйца не проникают болезнетворные бактерии. Вкус их считается самым лучшим. Опытные фермеры утверждают, что чем темнее яйца этих птиц окрашены, тем лучше и более выраженный их вкус. Мясо имеет отличные вкусовые качества.</p>
                     </div>
                 </div>
             </section>
         </article>
-        <header>
-            <h1>Племенной молодняк</h1>
-            <p class="text-muted" style="padding-bottom: 2rem">В данный момент нет в наличии.</p>
-        </header>
     </main>
 {% endblock %}

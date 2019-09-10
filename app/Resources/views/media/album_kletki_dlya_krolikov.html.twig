@@ -1,0 +1,50 @@
+{% extends "media/album.html.twig" %}
+
+{% set metaDesc = "Фотографии боксов для кур фермы «Сибирский ковчег»" %}
+{% set metaKey  = "" %}
+
+{% block title %} Клетки для кроликов своими руками фото {% endblock %}
+
+{% block content %}
+    <main class="content">
+        <header>
+            <h1 class="text-center">Клетки для кроликов</h1>
+        </header>
+        <article class="gallery" itemscope itemtype="https://schema.org/ImageGallery">
+            <div class="row">
+                <figure class="col-sm-6 col-md-4 col-lg-3" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                    <a href="{{ asset('build/images/static/kletki-dlya-krolikov-kg6sodvx4k.jpg') }}" class="album-item" itemprop="contentUrl" data-size="1002x750">
+                        <img class="img-thumbnail" src="{{ asset('build/images/static/kletki-dlya-krolikov-kg6sodvx4k_thumb.png') }}" itemprop="thumbnail" alt="Клетки для кроликов">
+                        <figcaption>Клетки для кроликов</figcaption>
+                    </a>
+                </figure>
+                <figure class="col-sm-6 col-md-4 col-lg-3" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                    <a href="{{ asset('build/images/static/kletki-dlya-krolikov-l2h3uo92c2.jpg') }}" class="album-item" itemprop="contentUrl" data-size="1002x750">
+                        <img class="img-thumbnail" src="{{ asset('build/images/static/kletki-dlya-krolikov-l2h3uo92c2_thumb.png') }}" itemprop="thumbnail" alt="Клетки для кроликов">
+                        <figcaption>Клетки для кроликов</figcaption>
+                    </a>
+                </figure>
+                <figure class="col-sm-6 col-md-4 col-lg-3" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                    <a href="{{ asset('build/images/static/kletki-dlya-krolikov-39dam3tixm.jpg') }}" class="album-item" itemprop="contentUrl" data-size="1002x750">
+                        <img class="img-thumbnail" src="{{ asset('build/images/static/kletki-dlya-krolikov-39dam3tixm_thumb.png') }}" itemprop="thumbnail" alt="Клетки для кроликов">
+                        <figcaption>Клетки для кроликов</figcaption>
+                    </a>
+                </figure>
+                <figure class="col-sm-6 col-md-4 col-lg-3" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                    <a href="{{ asset('build/images/static/kletki-dlya-krolikov-f6out2pae4.jpg') }}" class="album-item" itemprop="contentUrl" data-size="1002x750">
+                        <img class="img-thumbnail" src="{{ asset('build/images/static/kletki-dlya-krolikov-f6out2pae4_thumb.png') }}" itemprop="thumbnail" alt="Клетки для кроликов">
+                        <figcaption>Клетки для кроликов</figcaption>
+                    </a>
+                </figure>
+                <figure class="col-sm-6 col-md-4 col-lg-3" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                    <a href="{{ asset('build/images/static/kletki-dlya-krolikov-pjpgpydt0q.jpg') }}" class="album-item" itemprop="contentUrl" data-size="1002x750">
+                        <img class="img-thumbnail" src="{{ asset('build/images/static/kletki-dlya-krolikov-pjpgpydt0q_thumb.png') }}" itemprop="thumbnail" alt="Клетки для кроликов">
+                        <figcaption>Клетки для кроликов</figcaption>
+                    </a>
+                </figure>
+            </div>
+        </article>
+    </main>
+
+    {{ parent() }}
+{% endblock %}
