@@ -1,9 +1,9 @@
 {% extends "base.html.twig" %}
 
 {% set metaDesc = "Официальный сайты фермы «Сибирский ковчег»" %}
-{% set metaKey  = "продажа кроликов, инкубационное яйцо, породные куры, шкурки кролика" %}
+{% set metaKey  = "домашние сыры, йогурт, творог, козье молоко" %}
 
-{% block title %} Кролик рекс, инкубационное яйцо, кролики мясных пород {% endblock %}
+{% block title %} Купить домашние сыры, йогурт, творог, козье молоко в Новосибирске {% endblock %}
 
 {% block stylesheets %}
     {{ parent() }}
@@ -39,30 +39,22 @@
         </div>
         <h1 class="text-center">О нашей ферме</h1>
         <p class="no-padding-bottom">Ферма расположена вблизи с. Локти Мошковского района Новосибирской области, 25 км от Новосибирска.</p>
-        <p class="no-padding-bottom">Работа в хозяйстве ведётся по двум направлениям &mdash; кролиководство и птицеводство. Племенное ядро хозяйства состоит из 20 кролов-производителей и 60 кроликоматок пород <strong>рекс</strong> и <strong>серый великан</strong>. Хозяйство занимается разведением породных кур мясо-яичного направления:</p>
+        <p class="no-padding-bottom">Мы занимаемся разведением чистопородных козочек породы Ламанча. Козочки американской селекции (с документами), завезены с юга в 2018 году. У нас вы можете приобрести:</p>
         <div class="breed-list">
             <div class="row">
-                <ul class="col-sm-6 col-lg-5 offset-lg-1">
-                    <li><strong><a href="{{ path('product_index') }}#kuchinskaya_yubilejnaya">кучинская юбилейная</a></strong>,</li>
-                    <li><strong><a href="{{ path('product_index') }}#zagorskaya-lososevaya">загорская лососёвая</a></strong>,</li>
-                    <li><strong><a href="{{ path('product_index') }}#avstralorp-chyornyj">австралорп чёрный</a></strong>,</li>
-                    <li><strong><a href="{{ path('product_index') }}#susseks">суссекс колумбийский</a></strong>,</li>
-                    <li><strong><a href="{{ path('product_index') }}#pushkinskaya">пушкинская</a></strong>,</li>
-                    <li><strong><a href="{{ path('product_index') }}#ameraukana">амераукана</a></strong> (пасхальная курица),</li>
-                    <li><strong><a href="{{ path('product_index') }}#livenskaya-sittsevaya">ливенская ситцевая</a></strong>,</li>
-                </ul>
-                <ul class="col-sm-6">
-                    <li><strong><a href="{{ path('product_index') }}#barbyozyo">барбёзьё</a></strong>,</li>
-                    <li><strong><a href="{{ path('product_index') }}#barnevelder">барневельдер золотистый чёрно-окаймлённый</a></strong>,</li>
-                    <li><strong><a href="{{ path('product_index') }}#viandot">виандот серебристый чёрно-окаймлённый</a></strong> (стандарт),</li>
-                    <li><strong><a href="{{ path('product_index') }}#faverol">фавероль белая</a></strong>,</li>
-                    <li><strong><a href="{{ path('product_index') }}#mekhelenskaya-kukushka">мехеленская кукушка (малин)</a></strong>,</li>
-                    <li><strong><a href="{{ path('product_index') }}#maran">маран чёрный серебристогривый</a></strong>.</li>
+                <ul class="col-sm-12 col-md-11 offset-md-1">
+                    <li><strong>цельное козье молоко</strong>,</li>
+                    <li><strong>натуральный йогурт</strong>,</li>
+                    <li><strong>йогурт с добавлением ягод</strong> (виктория),</li>
+                    <li><strong>творог из цельного молока</strong> (жирность не менее 24%),</li>
+                    <li><strong>сыр Качотта классический</strong>,</li>
+                    <li><strong>сыр Маасдам</strong>,</li>
+                    <li><strong>сыр Гауда</strong>.</li>
                 </ul>
             </div>
         </div>
 
-        <p>Основная продукция хозяйства &mdash; племенной молодняк, мясо и выделанные шкурки кролика, инкубационное яйцо кур, гусей и уток.</p>
+        <p>Также на ферме ведётся работа по племенному птицеводству, в основе &ndash; мясо-яичные породы кур, гуси и утки.</p>
 
         <div class="image-aside">
             <img class="img-fluid" src="{{ asset('build/images/static/fedorov-igor-gennadevich.jpg') }}" alt="Федоров Игорь Геннадьевич">
