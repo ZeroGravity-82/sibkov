@@ -45,16 +45,6 @@ class MediaController extends Controller
     }
 
     /**
-     * @Route("/kletki-dlya-krolikov", name="media_album_kletki_dlya_krolikov")
-     *
-     * @return Response
-     */
-    public function showAlbumKletkiDlyaKrolikov()
-    {
-        return $this->render("media/album_kletki_dlya_krolikov.html.twig");
-    }
-
-    /**
      * @Route("/kury", name="media_album_kury")
      *
      * @return Response
