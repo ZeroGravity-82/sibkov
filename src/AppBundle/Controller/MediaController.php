@@ -55,6 +55,16 @@ class MediaController extends Controller
     }
 
     /**
+     * @Route("/ptitsa", name="media_album_ptitsa")
+     *
+     * @return Response
+     */
+    public function showAlbumPtitsaAction()
+    {
+        return $this->render("media/album_ptitsa.html.twig");
+    }
+
+    /**
      * @Route("/boksy-dlya-kur", name="media_album_boksy_dlya_kur")
      *
      * @return Response
