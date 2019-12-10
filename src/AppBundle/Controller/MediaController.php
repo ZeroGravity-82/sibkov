@@ -103,4 +103,14 @@ class MediaController extends Controller
     {
         return $this->render("media/album_korovy.html.twig");
     }
+
+    /**
+     * @Route("/ferma", name="media_album_ferma")
+     *
+     * @return Response
+     */
+    public function showAlbumFerma()
+    {
+        return $this->render("media/album_ferma.html.twig");
+    }
 }
