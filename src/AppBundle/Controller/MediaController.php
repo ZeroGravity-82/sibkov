@@ -95,7 +95,7 @@ class MediaController extends Controller
     }
 
     /**
-     * @Route("/koovy", name="media_album_korovy")
+     * @Route("/korovy", name="media_album_korovy")
      *
      * @return Response
      */
