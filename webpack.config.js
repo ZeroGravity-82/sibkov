@@ -8,7 +8,7 @@ Encore
     .cleanupOutputBeforeBuild()
     .copyFiles({
         from: './assets/images/static',
-        to: 'images/static/[path][name].[ext]'
+        to: 'images/static/[path][name].[hash:8].[ext]'
     })
     // only needed for CDN's or sub-directory deploy
     //.setManifestKeyPrefix('build/')
