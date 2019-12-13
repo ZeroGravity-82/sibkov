@@ -203,6 +203,25 @@ body {
 #navbar-toggle-cbox:checked ~ .navbar-section-title {		/* this selector is used when JS is disabled */
     color: rgba(217,178,130,0.5);							/* color #d9b282 */
 }
+.dropdown-menu {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    background-color: #593304;
+    border: none;
+    border-radius: 0;
+}
+.dropdown .nav-link[aria-expanded='true'] {
+    color: #593304;
+    background-color: rgba(217,178,130,0.75);							/* color #d9b282 */
+}
+.dropdown-toggle::after {
+    margin-bottom: -0.0625em;
+}
+.dropdown-menu .nav-link {
+    padding-left: 2rem!important;
+    padding-right: 1.5rem!important;
+}
 
 /* Footer */
 .footer {
