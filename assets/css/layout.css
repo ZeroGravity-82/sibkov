@@ -139,6 +139,11 @@ body {
 .nav-link.active,
 .nav-link:hover {
     color: #593304;
+}
+.nav-link:hover {
+    background-color: rgba(217,178,130,0.75);							/* color #d9b282 */
+}
+.nav-link.active {
     background-color: #d9b282;
 }
 #navbar-toggle-cbox {
