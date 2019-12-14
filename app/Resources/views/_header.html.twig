@@ -37,9 +37,16 @@
                     <a class="nav-link px-3 {% if sectionMediaActive %} active {% endif %}"
                        href="{{ path('media_index') }}"> {{ sectionMediaTitle }} </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link px-3 {% if sectionBookActive %} active {% endif %}"
-                       href="{{ path('book_index') }}"> {{ sectionBookTitle }} </a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link px-3 dropdown-toggle" href="{{ path('book_index') }}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {{ sectionBookTitle }}
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="nav-link {% if sectionBookActive %} active {% endif %}"
+                           href="{{ path('book_index') }}"> {{ subSectionBookPoultryTitle }} </a>
+                        <a class="nav-link {% if sectionBookActive %} active {% endif %}"
+                           href="{{ path('book_index') }}"> {{ subSectionBookCunicultureTitle }} </a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link px-3 {% if sectionOrderActive %} active {% endif %}"
