@@ -16,12 +16,14 @@
                data-target="#navbar-collapse-menu" aria-controls="navbar-collapse-menu" aria-expanded="false"
                aria-label="Управление навигацией"></label>
         <div class='navbar-section-title d-lg-none'>
-            {% if sectionHomepageActive %} {{ sectionHomepageTitle }} {% endif %}
-            {% if sectionProductActive %}  {{ sectionProductTitle }}  {% endif %}
-            {% if sectionMediaActive %}    {{ sectionMediaTitle }}    {% endif %}
-            {% if sectionBookActive %}     {{ sectionBookTitle }}     {% endif %}
-            {% if sectionOrderActive %}    {{ sectionOrderTitle }}    {% endif %}
-            {% if sectionContactActive %}  {{ sectionContactTitle }}  {% endif %}
+            {% if sectionHomepageActive %}        {{ sectionHomepageTitle }}           {% endif %}
+            {% if sectionProductActive %}         {{ sectionProductTitle }}            {% endif %}
+            {% if sectionMediaActive %}           {{ sectionMediaTitle }}              {% endif %}
+            {% if sectionBookIndexActive %}       {{ sectionBookTitle }}               {% endif %}
+            {% if sectionBookPoultryActive %}     {{ subSectionBookPoultryTitle }}     {% endif %}
+            {% if sectionBookCunicultureActive %} {{ subSectionBookCunicultureTitle }} {% endif %}
+            {% if sectionOrderActive %}           {{ sectionOrderTitle }}              {% endif %}
+            {% if sectionContactActive %}         {{ sectionContactTitle }}            {% endif %}
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse-menu">
             <ul class="navbar-nav">
@@ -38,14 +40,16 @@
                        href="{{ path('media_index') }}"> {{ sectionMediaTitle }} </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link px-3 dropdown-toggle" href="{{ path('book_index') }}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link px-3 dropdown-toggle {% if sectionBookActive %} active {% endif %}"
+                       href="{{ path('book_literatura_index') }}" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         {{ sectionBookTitle }}
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="nav-link {% if sectionBookActive %} active {% endif %}"
-                           href="{{ path('book_index') }}"> {{ subSectionBookPoultryTitle }} </a>
-                        <a class="nav-link {% if sectionBookActive %} active {% endif %}"
-                           href="{{ path('book_index') }}"> {{ subSectionBookCunicultureTitle }} </a>
+                        <a class="nav-link {% if sectionBookPoultryActive %} active {% endif %}"
+                           href="{{ path('book_ptitsevodstvo_index') }}"> {{ subSectionBookPoultryTitle }} </a>
+                        <a class="nav-link {% if sectionBookCunicultureActive %} active {% endif %}"
+                           href="{{ path('book_krolikovodstvo_index') }}"> {{ subSectionBookCunicultureTitle }} </a>
                     </div>
                 </li>
                 <li class="nav-item">

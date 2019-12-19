@@ -1,18 +1,21 @@
-{% set currentRoute = app.request.get("_route") %}
-{% set sectionHomepageActive = currentRoute starts with "homepage" %}
-{% set sectionProductActive  = currentRoute starts with "product" %}
-{% set sectionMediaActive    = currentRoute starts with "media" %}
-{% set sectionBookActive     = currentRoute starts with "book" %}
-{% set sectionOrderActive    = currentRoute starts with "order" %}
-{% set sectionContactActive  = currentRoute starts with "contact" %}
-{% set sectionHomepageTitle  = 'Главная' %}
-{% set sectionProductTitle   = 'Наша продукция' %}
-{% set sectionMediaTitle     = 'Фото и видео' %}
-{% set sectionBookTitle      = 'Литература' %}
-{% set sectionOrderTitle     = 'Как заказать' %}
-{% set sectionContactTitle   = 'Контакты' %}
+{% set currentRoute                   = app.request.get("_route") %}
+{% set sectionHomepageActive          = currentRoute starts with "homepage" %}
+{% set sectionProductActive           = currentRoute starts with "product" %}
+{% set sectionMediaActive             = currentRoute starts with "media" %}
+{% set sectionBookActive              = currentRoute starts with "book" %}
+{% set sectionBookIndexActive         = currentRoute == "book_literatura_index" %}
+{% set sectionBookPoultryActive       = currentRoute starts with "book" and "ptitsevodstvo"  in currentRoute %}
+{% set sectionBookCunicultureActive   = currentRoute starts with "book" and "krolikovodstvo" in currentRoute %}
+{% set sectionOrderActive             = currentRoute starts with "order" %}
+{% set sectionContactActive           = currentRoute starts with "contact" %}
+{% set sectionHomepageTitle           = 'Главная' %}
+{% set sectionProductTitle            = 'Наша продукция' %}
+{% set sectionMediaTitle              = 'Фото и видео' %}
+{% set sectionBookTitle               = 'Литература' %}
 {% set subSectionBookPoultryTitle     = 'Птицеводство' %}
 {% set subSectionBookCunicultureTitle = 'Кролиководство' %}
+{% set sectionOrderTitle              = 'Как заказать' %}
+{% set sectionContactTitle            = 'Контакты' %}
 
 <!DOCTYPE html>
 <html lang="ru">
