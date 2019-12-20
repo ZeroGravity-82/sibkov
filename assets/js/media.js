@@ -9,7 +9,7 @@ require('lg-video');
 
 $(document).ready(function() {
     $('#video-gallery').lightGallery({
-        selector: '.album-item',
+        selector: '.media-item',
         getCaptionFromTitleOrAlt: false,
         youtubePlayerParams: {
             modestbranding: 1,

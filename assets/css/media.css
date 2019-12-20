@@ -7,14 +7,14 @@
 .img-thumbnail + p span {
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
-.album-item {
+.media-item {
     display: block;
     position: relative;
     text-align: center;
     padding-top: 0.75rem;
     border-bottom-style: none;
 }
-.album-item:hover .img-thumbnail + p span,
-.album-item:focus .img-thumbnail + p span {
+.media-item:hover .img-thumbnail + p span,
+.media-item:focus .img-thumbnail + p span {
     border-bottom: 1px solid rgba(217,178,130,0.2);		/* Соответствует цвету #d9b282 */
 }
