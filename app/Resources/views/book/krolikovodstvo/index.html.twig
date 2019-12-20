@@ -1,0 +1,198 @@
+{% extends "base.html.twig" %}
+
+{% set metaDesc = "Литература по кролиководству" %}
+{% set metaKey  = "все про кролиководство, кролиководство книга" %}
+
+{% block title %} Кролиководство в домашних условиях, всё про кролиководство {% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+
+    {{ encore_entry_link_tags('book') }}
+{% endblock %}
+
+{% block content %}
+    <main class="content">
+        <header>
+            <h1 class="text-center">Кролиководство</h1>
+        </header>
+        <div class="row">
+            <div class="col-sm-4">
+                <img class="book-cover img-fluid"
+                     src="{{ asset('build/images/static/krolikovodstvo_oblozhka.jpg') }}"
+                     alt="Лапин Ю.А. Кролики. Описание. Разведение. Уход">
+                <p class="book-comment">
+                    Лапин Ю.А.<br>
+                    Кролики. Описание. Разведение. Уход.<br>
+                    Урожайкины. Школа фермера.<br>
+                    Эксмо, 320 стр., 2013 г.<br>
+                    ISBN 978-5-699-60457-9
+                </p>
+            </div>
+            <nav class="col-sm-8">
+                <ul class="table-of-contents">
+                    <li>
+                        <span OnClick="location.href='{{ path('book_krolikovodstvo_porody_krolikov') }}'">
+                            <a href="{{ path('book_krolikovodstvo_porody_krolikov') }}">Породы кроликов</a>
+                        </span>
+                        <ul>
+                            <li>
+                                <span OnClick="location.href='{{ path('book_krolikovodstvo_porody_krolikov') }}#myaso-shkurkovye'">
+                                    <a href="{{ path('book_krolikovodstvo_porody_krolikov') }}#myaso-shkurkovye">Мясо-шкурковые</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='{{ path('book_krolikovodstvo_porody_krolikov') }}#myasnye'">
+                                    <a href="{{ path('book_krolikovodstvo_porody_krolikov') }}#myasnye">Мясные</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span OnClick="location.href='{{ path('book_krolikovodstvo_soderzhanie_krolikov') }}#soderzhanie-krolikov'">
+                            <a href="{{ path('book_krolikovodstvo_soderzhanie_krolikov') }}#soderzhanie-krolikov">Содержание кроликов</a>
+                        </span>
+                        <ul>
+                            <li>
+                                <span OnClick="location.href='{{ path('book_krolikovodstvo_soderzhanie_krolikov') }}#sposoby-soderzhaniya'">
+                                    <a href="{{ path('book_krolikovodstvo_soderzhanie_krolikov') }}#sposoby-soderzhaniya">Способы содержания</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='{{ path('book_krolikovodstvo_soderzhanie_krolikov') }}#konstruktsii-kletok'">
+                                    <a href="{{ path('book_krolikovodstvo_soderzhanie_krolikov') }}#konstruktsii-kletok">Конструкции клеток</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='{{ path('book_krolikovodstvo_soderzhanie_krolikov') }}#dop-oborudovanie'">
+                                    <a href="{{ path('book_krolikovodstvo_soderzhanie_krolikov') }}#dop-oborudovanie">Дополнительное оборудование</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span OnClick="location.href='{{ path('book_krolikovodstvo_kormlenie_krolikov') }}#kormlenie-krolikov'">
+                            <a href="{{ path('book_krolikovodstvo_kormlenie_krolikov') }}#kormlenie-krolikov">Кормление кроликов</a>
+                        </span>
+                        <ul>
+                            <li>
+                                <span OnClick="location.href='{{ path('book_krolikovodstvo_kormlenie_krolikov') }}#korma'">
+                                    <a href="{{ path('book_krolikovodstvo_kormlenie_krolikov') }}#korma">Корма</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='{{ path('book_krolikovodstvo_kormlenie_krolikov') }}#ratsion'">
+                                    <a href="{{ path('book_krolikovodstvo_kormlenie_krolikov') }}#ratsion">Рацион кроликов</a>
+                                </span>
+                            </li>
+                            <li><span OnClick="location.href='{{ path('book_krolikovodstvo_kormlenie_krolikov') }}#v-period-pokoya'">
+                                    <a href="{{ path('book_krolikovodstvo_kormlenie_krolikov') }}#v-period-pokoya">Корма для самок и самцов-производителей в период покоя</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='{{ path('book_krolikovodstvo_kormlenie_krolikov') }}#vo-vremya-sluchki'">
+                                    <a href="{{ path('book_krolikovodstvo_kormlenie_krolikov') }}#vo-vremya-sluchki">Особенности кормления во время случки</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='{{ path('book_krolikovodstvo_kormlenie_krolikov') }}#sukrolnye-i-laktiruyushhie-samki'">
+                                    <a href="{{ path('book_krolikovodstvo_kormlenie_krolikov') }}#sukrolnye-i-laktiruyushhie-samki">Особенности кормления сукрольных и лактирующих самок</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='{{ path('book_krolikovodstvo_kormlenie_krolikov') }}#molodnyak'">
+                                    <a href="{{ path('book_krolikovodstvo_kormlenie_krolikov') }}#molodnyak">Особенности кормления молодняка</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span OnClick="location.href='{{ path('book_krolikovodstvo_razvedenie_krolikov') }}#razvedenie-krolikov'">
+                            <a href="{{ path('book_krolikovodstvo_razvedenie_krolikov') }}#razvedenie-krolikov">Разведение кроликов</a>
+                        </span>
+                        <ul>
+                            <li>
+                                <span OnClick="location.href='{{ path('book_krolikovodstvo_razvedenie_krolikov') }}#opredelenie-pola'">
+                                    <a href="{{ path('book_krolikovodstvo_razvedenie_krolikov') }}#opredelenie-pola">Определение пола</a>
+                                </span></li>
+                            <li>
+                                <span OnClick="location.href='{{ path('book_krolikovodstvo_razvedenie_krolikov') }}#razmnozhenie'">
+                                    <a href="{{ path('book_krolikovodstvo_razvedenie_krolikov') }}#razmnozhenie">Особенности размножения кроликов</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='{{ path('book_krolikovodstvo_razvedenie_krolikov') }}#sluchka'">
+                                    <a href="{{ path('book_krolikovodstvo_razvedenie_krolikov') }}#sluchka">Случка</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='{{ path('book_krolikovodstvo_razvedenie_krolikov') }}#ukhod-za-sukrolnymi-samkami'">
+                                    <a href="{{ path('book_krolikovodstvo_razvedenie_krolikov') }}#ukhod-za-sukrolnymi-samkami">Уход за сукрольными самками</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='{{ path('book_krolikovodstvo_razvedenie_krolikov') }}#okrol'">
+                                    <a href="{{ path('book_krolikovodstvo_razvedenie_krolikov') }}#okrol">Окрол</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='{{ path('book_krolikovodstvo_razvedenie_krolikov') }}#laktatsiya'">
+                                    <a href="{{ path('book_krolikovodstvo_razvedenie_krolikov') }}#laktatsiya">Лактация</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='{{ path('book_krolikovodstvo_razvedenie_krolikov') }}#ukhod-za-molodnyakom'">
+                                    <a href="{{ path('book_krolikovodstvo_razvedenie_krolikov') }}#ukhod-za-molodnyakom">Уход за молодняком</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='{{ path('book_krolikovodstvo_razvedenie_krolikov') }}#kastratsiya'">
+                                    <a href="{{ path('book_krolikovodstvo_razvedenie_krolikov') }}#kastratsiya">Кастрация кроликов</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span OnClick="location.href='{{ path('book_krolikovodstvo_profilaktika_i_lechenie') }}#profilaktika-i-lechenie'">
+                            <a href="{{ path('book_krolikovodstvo_profilaktika_i_lechenie') }}#profilaktika-i-lechenie">Профилактика и лечение заболеваний кроликов</a>
+                        </span>
+                        <ul>
+                            <li>
+                                <span OnClick="location.href='{{ path('book_krolikovodstvo_profilaktika_i_lechenie') }}#profilakticheskie-meropriyatiya'">
+                                    <a href="{{ path('book_krolikovodstvo_profilaktika_i_lechenie') }}#profilakticheskie-meropriyatiya">Профилактические мероприятия</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='{{ path('book_krolikovodstvo_profilaktika_i_lechenie') }}#nezaraznye-zabolevaniya'">
+                                    <a href="{{ path('book_krolikovodstvo_profilaktika_i_lechenie') }}#nezaraznye-zabolevaniya">Незаразные заболевания</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='{{ path('book_krolikovodstvo_profilaktika_i_lechenie') }}#zaraznye-zabolevaniya'">
+                                    <a href="{{ path('book_krolikovodstvo_profilaktika_i_lechenie') }}#zaraznye-zabolevaniya">Заразные заболевания</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span OnClick="location.href='{{ path('book_krolikovodstvo_pererabotka_produktov') }}#pererabotka-produktov'">
+                            <a href="{{ path('book_krolikovodstvo_pererabotka_produktov') }}#pererabotka-produktov">Переработка продуктов кролиководства</a>
+                        </span>
+                        <ul>
+                            <li>
+                                <span OnClick="location.href='{{ path('book_krolikovodstvo_pererabotka_produktov') }}#uboj-i-razdelka-tushki'">
+                                    <a href="{{ path('book_krolikovodstvo_pererabotka_produktov') }}#uboj-i-razdelka-tushki">Убой и разделка тушки</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span OnClick="location.href='{{ path('book_krolikovodstvo_pererabotka_produktov') }}#snyatie-i-vydelka-shkurok'">
+                                    <a href="{{ path('book_krolikovodstvo_pererabotka_produktov') }}#snyatie-i-vydelka-shkurok">Снятие и выделка кроличьих шкурок</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+{% endblock %}
