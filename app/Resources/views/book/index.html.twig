@@ -3,22 +3,29 @@
 {% set metaDesc = "" %}
 {% set metaKey  = "" %}
 
-{% block title %}  {% endblock %}
+{% block title %} Литература по птицеводству и кролиководству {% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+
+    {{ encore_entry_link_tags('media') }}
+{% endblock %}
 
 {% block content %}
     <main class="content">
+        <br>
         <nav class="row equal">
             <div class="col-sm-12 col-md-6 col-lg-4">
                 <a href="{{ path('book_ptitsevodstvo_index') }}" class="media-item">
-                    <img class="img-thumbnail" src="{{ asset('build/images/static/ptitsa_thumb.png') }}"
-                         alt="Фотоальбом «Гуси, утки, индейки»">
+                    <img class="img-thumbnail" src="{{ asset('build/images/static/ptitsevodstvo.jpg') }}"
+                         alt=Птицеводство>
                     <p><span>Птицеводство</span></p>
                 </a>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
                 <a href="{{ path('book_krolikovodstvo_index') }}" class="media-item">
-                    <img class="img-thumbnail" src="{{ asset('build/images/static/kury_thumb.png') }}"
-                         alt="Фотоальбом «Куры»">
+                    <img class="img-thumbnail" src="{{ asset('build/images/static/krolikovodstvo.jpg') }}"
+                         alt=Кролиководство>
                     <p><span>Кролиководство</span></p>
                 </a>
             </div>
