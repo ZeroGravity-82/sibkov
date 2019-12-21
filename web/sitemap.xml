@@ -9,102 +9,142 @@
 
 <url>
   <loc>https://sibkov.ru/</loc>
-  <lastmod>2019-12-10T08:41:22+00:00</lastmod>
+  <lastmod>2019-12-21T10:47:54+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://sibkov.ru/nasha-produkciya/</loc>
-  <lastmod>2019-12-10T08:41:22+00:00</lastmod>
+  <lastmod>2019-12-21T10:47:54+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sibkov.ru/foto-i-video/</loc>
-  <lastmod>2019-12-10T08:41:22+00:00</lastmod>
+  <lastmod>2019-12-21T10:47:54+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://sibkov.ru/ptitsevodstvo/</loc>
-  <lastmod>2019-12-10T08:41:22+00:00</lastmod>
+  <loc>https://sibkov.ru/literatura/</loc>
+  <lastmod>2019-12-21T10:47:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sibkov.ru/literatura/ptitsevodstvo/</loc>
+  <lastmod>2019-12-21T10:47:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sibkov.ru/literatura/krolikovodstvo/</loc>
+  <lastmod>2019-12-21T10:47:54+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sibkov.ru/kak-zakazat/</loc>
-  <lastmod>2019-12-10T08:41:22+00:00</lastmod>
+  <lastmod>2019-12-21T10:47:54+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sibkov.ru/kontakty/</loc>
-  <lastmod>2019-12-10T08:41:22+00:00</lastmod>
+  <lastmod>2019-12-21T10:47:54+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sibkov.ru/foto-i-video/ptitsa</loc>
-  <lastmod>2019-12-10T08:41:22+00:00</lastmod>
+  <lastmod>2019-12-21T10:47:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sibkov.ru/foto-i-video/kury</loc>
-  <lastmod>2019-12-10T08:41:22+00:00</lastmod>
+  <lastmod>2019-12-21T10:47:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sibkov.ru/foto-i-video/kozy</loc>
-  <lastmod>2019-12-10T08:41:22+00:00</lastmod>
+  <lastmod>2019-12-21T10:47:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sibkov.ru/foto-i-video/korovy</loc>
-  <lastmod>2019-12-10T08:41:22+00:00</lastmod>
+  <lastmod>2019-12-21T10:47:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sibkov.ru/foto-i-video/kroliki</loc>
-  <lastmod>2019-12-10T08:41:22+00:00</lastmod>
+  <lastmod>2019-12-21T10:47:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sibkov.ru/foto-i-video/ferma</loc>
-  <lastmod>2019-12-10T08:41:22+00:00</lastmod>
+  <lastmod>2019-12-21T10:47:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sibkov.ru/foto-i-video/shkurki</loc>
-  <lastmod>2019-12-10T08:41:22+00:00</lastmod>
+  <lastmod>2019-12-21T10:47:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sibkov.ru/foto-i-video/vystavki</loc>
-  <lastmod>2019-12-10T08:41:22+00:00</lastmod>
+  <lastmod>2019-12-21T10:47:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://sibkov.ru/ptitsevodstvo/porody-kur/</loc>
-  <lastmod>2019-12-10T08:41:22+00:00</lastmod>
+  <loc>https://sibkov.ru/literatura/ptitsevodstvo/porody-kur/</loc>
+  <lastmod>2019-12-21T10:47:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://sibkov.ru/ptitsevodstvo/soderzhanie-kur/</loc>
-  <lastmod>2019-12-10T08:41:22+00:00</lastmod>
+  <loc>https://sibkov.ru/literatura/ptitsevodstvo/soderzhanie-kur/</loc>
+  <lastmod>2019-12-21T10:47:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://sibkov.ru/ptitsevodstvo/kormlenie-kur/</loc>
-  <lastmod>2019-12-10T08:41:22+00:00</lastmod>
+  <loc>https://sibkov.ru/literatura/ptitsevodstvo/kormlenie-kur/</loc>
+  <lastmod>2019-12-21T10:47:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://sibkov.ru/ptitsevodstvo/razvedenie-kur/</loc>
-  <lastmod>2019-12-10T08:41:22+00:00</lastmod>
+  <loc>https://sibkov.ru/literatura/ptitsevodstvo/razvedenie-kur/</loc>
+  <lastmod>2019-12-21T10:47:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://sibkov.ru/ptitsevodstvo/profilaktika-i-lechenie/</loc>
-  <lastmod>2019-12-10T08:41:22+00:00</lastmod>
+  <loc>https://sibkov.ru/literatura/ptitsevodstvo/profilaktika-i-lechenie/</loc>
+  <lastmod>2019-12-21T10:47:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://sibkov.ru/ptitsevodstvo/pererabotka-produktov/</loc>
-  <lastmod>2019-12-10T08:41:22+00:00</lastmod>
+  <loc>https://sibkov.ru/literatura/ptitsevodstvo/pererabotka-produktov/</loc>
+  <lastmod>2019-12-21T10:47:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sibkov.ru/literatura/krolikovodstvo/porody-krolikov/</loc>
+  <lastmod>2019-12-21T10:47:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sibkov.ru/literatura/krolikovodstvo/soderzhanie-krolikov/</loc>
+  <lastmod>2019-12-21T10:47:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sibkov.ru/literatura/krolikovodstvo/kormlenie-krolikov/</loc>
+  <lastmod>2019-12-21T10:47:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sibkov.ru/literatura/krolikovodstvo/razvedenie-krolikov/</loc>
+  <lastmod>2019-12-21T10:47:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sibkov.ru/literatura/krolikovodstvo/profilaktika-i-lechenie/</loc>
+  <lastmod>2019-12-21T10:47:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sibkov.ru/literatura/krolikovodstvo/pererabotka-produktov/</loc>
+  <lastmod>2019-12-21T10:47:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
