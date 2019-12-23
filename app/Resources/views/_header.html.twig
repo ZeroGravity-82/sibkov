@@ -24,6 +24,7 @@
             {% if sectionBookCunicultureActive %} {{ subSectionBookCunicultureTitle }} {% endif %}
             {% if sectionOrderActive %}           {{ sectionOrderTitle }}              {% endif %}
             {% if sectionContactActive %}         {{ sectionContactTitle }}            {% endif %}
+            {% if sectionDocumentsActive %}       {{ sectionDocumentsTitle }}          {% endif %}
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse-menu">
             <ul class="navbar-nav">
@@ -55,6 +56,10 @@
                 <li class="nav-item">
                     <a class="nav-link px-3 {% if sectionOrderActive %} active {% endif %}"
                        href="{{ path('order_index') }}"> {{ sectionOrderTitle }} </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3 {% if sectionDocumentsActive %} active {% endif %}"
+                       href="{{ path('documents_index') }}"> {{ sectionDocumentsTitle }} </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link px-3 {% if sectionContactActive %} active {% endif %}"
