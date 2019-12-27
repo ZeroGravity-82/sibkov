@@ -5,7 +5,136 @@
 
 {% block title %} Документы {% endblock %}
 
+{% block stylesheets %}
+    {{ parent() }}
+
+    {{ encore_entry_link_tags('album') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    {{ encore_entry_script_tags('album') }}
+{% endblock %}
+
 {% block content %}
     <main class="content">
+        <header>
+            <h1 class="text-center d-none">Документы</h1>
+        </header>
+        <article>
+            <section class="gallery" itemscope itemtype="https://schema.org/ImageGallery">
+                <header>
+                    <h2 class="section-name text-center text-sm-left">Диплом о высшем образовании</h2>
+                </header>
+                <div class="row">
+                    <figure class="col-sm-12 col-md-6 col-lg-4" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                        <a href="{{ asset('build/images/static/dokumenty-diplom-07tjbcugn7.jpg') }}" class="media-item" itemprop="contentUrl" data-size="1267x898">
+                            <img class="img-thumbnail" src="{{ asset('build/images/static/dokumenty-diplom-07tjbcugn7_thumb.png') }}" itemprop="thumbnail" alt="Диплом о высшем образовании Федоров И.Г.">
+                            <figcaption>Диплом о высшем образовании Федоров И.Г.</figcaption>
+                        </a>
+                    </figure>
+                    <figure class="col-sm-12 col-md-6 col-lg-4" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                        <a href="{{ asset('build/images/static/dokumenty-diplom-imeaap0rqz.jpg') }}" class="media-item" itemprop="contentUrl" data-size="635x898">
+                            <img class="img-thumbnail" src="{{ asset('build/images/static/dokumenty-diplom-imeaap0rqz_thumb.png') }}" itemprop="thumbnail" alt="Диплом о высшем образовании Федоров И.Г.">
+                            <figcaption>Диплом о высшем образовании Федоров И.Г.</figcaption>
+                        </a>
+                    </figure>
+                </div>
+            </section>
+            <hr>
+            <section class="gallery" itemscope itemtype="https://schema.org/ImageGallery">
+                <header>
+                    <h2 class="section-name text-center text-sm-left">Ветеринарные справки</h2>
+                </header>
+                <div class="row">
+                    <figure class="col-sm-12 col-md-6 col-lg-4" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                        <a href="{{ asset('build/images/static/dokumenty-vetspravka-cg0v5mitx6.jpg') }}" class="media-item" itemprop="contentUrl" data-size="635x898">
+                            <img class="img-thumbnail" src="{{ asset('build/images/static/dokumenty-vetspravka-cg0v5mitx6_thumb.png') }}" itemprop="thumbnail" alt="Справка о состоянии хозяйства">
+                            <figcaption>Справка о состоянии хозяйства</figcaption>
+                        </a>
+                    </figure>
+                </div>
+            </section>
+            <hr>
+            <section class="gallery" itemscope itemtype="https://schema.org/ImageGallery">
+                <header>
+                    <h2 class="section-name text-center text-sm-left">Документы «Генофонд» ВНИИГРЖ (Санкт-Петербург &ndash; Пушкин)</h2>
+                </header>
+                <div class="row">
+                    <figure class="col-sm-12 col-md-6 col-lg-4" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                        <a href="{{ asset('build/images/static/dokumenty-kury-gzhkfgz473.jpg') }}" class="media-item" itemprop="contentUrl" data-size="621x898">
+                            <img class="img-thumbnail" src="{{ asset('build/images/static/dokumenty-kury-gzhkfgz473_thumb.png') }}" itemprop="thumbnail" alt="Накладная на инкубационное яйцо">
+                            <figcaption>Накладная на инкубационное яйцо</figcaption>
+                        </a>
+                    </figure>
+                </div>
+            </section>
+            <hr>
+            <section class="gallery" itemscope itemtype="https://schema.org/ImageGallery">
+                <header>
+                    <h2 class="section-name text-center text-sm-left">Экспертная оценка кроликов</h2>
+                </header>
+                <div class="row">
+                    <figure class="col-sm-12 col-md-6 col-lg-4" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                        <a href="{{ asset('build/images/static/dokumenty-kroliki-2csqwc3ryy.jpg') }}" class="media-item" itemprop="contentUrl" data-size="635x898">
+                            <img class="img-thumbnail" src="{{ asset('build/images/static/dokumenty-kroliki-2csqwc3ryy_thumb.png') }}" itemprop="thumbnail" alt="Сибирская агропромышленная неделя 2014">
+                            <figcaption>Сибирская агропромышленная неделя 2014</figcaption>
+                        </a>
+                    </figure>
+                    <figure class="col-sm-12 col-md-6 col-lg-4" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                        <a href="{{ asset('build/images/static/dokumenty-kroliki-5z5k1otgp7.jpg') }}" class="media-item" itemprop="contentUrl" data-size="635x898">
+                            <img class="img-thumbnail" src="{{ asset('build/images/static/dokumenty-kroliki-5z5k1otgp7_thumb.png') }}" itemprop="thumbnail" alt="Сибирская агропромышленная неделя 2014">
+                            <figcaption>Сибирская агропромышленная неделя 2014</figcaption>
+                        </a>
+                    </figure>
+                    <figure class="col-sm-12 col-md-6 col-lg-4" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                        <a href="{{ asset('build/images/static/dokumenty-kroliki-6elepdva64.jpg') }}" class="media-item" itemprop="contentUrl" data-size="635x898">
+                            <img class="img-thumbnail" src="{{ asset('build/images/static/dokumenty-kroliki-6elepdva64_thumb.png') }}" itemprop="thumbnail" alt="Сибирская агропромышленная неделя 2014">
+                            <figcaption>Сибирская агропромышленная неделя 2014</figcaption>
+                        </a>
+                    </figure>
+                    <figure class="col-sm-12 col-md-6 col-lg-4" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                        <a href="{{ asset('build/images/static/dokumenty-kroliki-8dwtt0oba5.jpg') }}" class="media-item" itemprop="contentUrl" data-size="635x898">
+                            <img class="img-thumbnail" src="{{ asset('build/images/static/dokumenty-kroliki-8dwtt0oba5_thumb.png') }}" itemprop="thumbnail" alt="Сибирская агропромышленная неделя 2014">
+                            <figcaption>Сибирская агропромышленная неделя 2014</figcaption>
+                        </a>
+                    </figure>
+                    <figure class="col-sm-12 col-md-6 col-lg-4" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                        <a href="{{ asset('build/images/static/dokumenty-kroliki-gdwzq4pu5f.jpg') }}" class="media-item" itemprop="contentUrl" data-size="635x898">
+                            <img class="img-thumbnail" src="{{ asset('build/images/static/dokumenty-kroliki-gdwzq4pu5f_thumb.png') }}" itemprop="thumbnail" alt="Сибирская агропромышленная неделя 2014">
+                            <figcaption>Сибирская агропромышленная неделя 2014</figcaption>
+                        </a>
+                    </figure>
+                    <figure class="col-sm-12 col-md-6 col-lg-4" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                        <a href="{{ asset('build/images/static/dokumenty-kroliki-fj4896wzxw.jpg') }}" class="media-item" itemprop="contentUrl" data-size="1200x898">
+                            <img class="img-thumbnail" src="{{ asset('build/images/static/dokumenty-kroliki-fj4896wzxw_thumb.png') }}" itemprop="thumbnail" alt="Сибирская агропромышленная неделя 2014">
+                            <figcaption>Сибирская агропромышленная неделя 2014</figcaption>
+                        </a>
+                    </figure>
+                    <figure class="col-sm-12 col-md-6 col-lg-4" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                        <a href="{{ asset('build/images/static/dokumenty-kroliki-hlondiiifx.jpg') }}" class="media-item" itemprop="contentUrl" data-size="635x898">
+                            <img class="img-thumbnail" src="{{ asset('build/images/static/dokumenty-kroliki-hlondiiifx_thumb.png') }}" itemprop="thumbnail" alt="ЗооМагия 2014">
+                            <figcaption>ЗооМагия 2014</figcaption>
+                        </a>
+                    </figure>
+                    <figure class="col-sm-12 col-md-6 col-lg-4" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                        <a href="{{ asset('build/images/static/dokumenty-kroliki-psa3ljvlt9.jpg') }}" class="media-item" itemprop="contentUrl" data-size="635x898">
+                            <img class="img-thumbnail" src="{{ asset('build/images/static/dokumenty-kroliki-psa3ljvlt9_thumb.png') }}" itemprop="thumbnail" alt="ЗооМагия 2014">
+                            <figcaption>ЗооМагия 2014</figcaption>
+                        </a>
+                    </figure>
+                    <figure class="col-sm-12 col-md-6 col-lg-4" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                        <a href="{{ asset('build/images/static/dokumenty-kroliki-wrxbqmpzc0.jpg') }}" class="media-item" itemprop="contentUrl" data-size="635x898">
+                            <img class="img-thumbnail" src="{{ asset('build/images/static/dokumenty-kroliki-wrxbqmpzc0_thumb.png') }}" itemprop="thumbnail" alt="ЗооМагия 2014">
+                            <figcaption>ЗооМагия 2014</figcaption>
+                        </a>
+                    </figure>
+                </div>
+            </section>
+            <hr>
+        </article>
     </main>
+
+    {{ include('_photoswipe.html.twig') }}
 {% endblock %}
