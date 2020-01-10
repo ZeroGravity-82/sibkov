@@ -38,21 +38,6 @@
 .slick-next {
     right: 0.75rem;
 }
-div.breed-list {
-    padding-left: 1.2rem;
-    padding-right: 1.2rem;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
-}
-div.breed-list ul {
-    margin-bottom: 0.5rem;
-}
-div.breed-list li:first-child {
-    margin-top: 0;
-}
-div.breed-list li:last-child {
-    margin-bottom: 0;
-}
 .slider {
     width: 100%;
     box-shadow: 1px 1px 7px #593304;
@@ -62,29 +47,4 @@ div.breed-list li:last-child {
 }
 .slider img[src=''] {
     display: none;
-}
-.image-aside {
-    display: block;
-    width: 100%;
-    margin-bottom: 1rem;
-}
-.image-aside img {
-    margin: auto;
-    box-shadow: 1px 1px 7px #593304;
-}
-@media only screen and (min-width: 768px) {
-    .image-aside {
-        max-width: 50%!important;
-        margin-left: 1rem;
-        float: right;
-    }
-}
-@media only screen and (min-width: 1200px) {
-    .image-aside img {
-        margin-left: 1rem;
-    }
-}
-.image-aside a:hover img,
-.image-aside a:focus img {
-    box-shadow: 1px 1px 16px #593304;
 }
