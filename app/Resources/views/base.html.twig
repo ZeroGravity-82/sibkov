@@ -1,5 +1,6 @@
 {% set currentRoute                   = app.request.get("_route") %}
 {% set sectionHomepageActive          = currentRoute starts with "homepage" %}
+{% set sectionAboutActive             = currentRoute starts with "about" %}
 {% set sectionProductActive           = currentRoute starts with "product" %}
 {% set sectionMediaActive             = currentRoute starts with "media" %}
 {% set sectionBookActive              = currentRoute starts with "book" %}
@@ -10,6 +11,7 @@
 {% set sectionDocumentsActive         = currentRoute starts with "documents" %}
 {% set sectionContactActive           = currentRoute starts with "contact" %}
 {% set sectionHomepageTitle           = 'Главная' %}
+{% set sectionAboutTitle              = 'О ферме' %}
 {% set sectionProductTitle            = 'Наша продукция' %}
 {% set sectionMediaTitle              = 'Фото и видео' %}
 {% set sectionBookTitle               = 'Литература' %}

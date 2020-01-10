@@ -1,0 +1,25 @@
+.image-aside {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.image-aside img {
+    margin: auto;
+    box-shadow: 1px 1px 7px #593304;
+}
+@media only screen and (min-width: 768px) {
+    .image-aside {
+        max-width: 50%!important;
+        margin-left: 1rem;
+        float: right;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .image-aside img {
+        margin-left: 1rem;
+    }
+}
+.image-aside a:hover img,
+.image-aside a:focus img {
+    box-shadow: 1px 1px 16px #593304;
+}

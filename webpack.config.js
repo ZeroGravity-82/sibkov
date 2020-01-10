@@ -28,6 +28,7 @@ Encore
     .addEntry('media',    './assets/js/media.js')
     .addEntry('album',    './assets/js/album.js')
     .addEntry('book',     './assets/js/book.js')
+    .addEntry('about',    './assets/js/about.js')
     .addEntry('contact',  './assets/js/contact.js')
     .splitEntryChunks()
 

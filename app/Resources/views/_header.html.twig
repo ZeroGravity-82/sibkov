@@ -17,6 +17,7 @@
                aria-label="Управление навигацией"></label>
         <div class='navbar-section-title d-lg-none'>
             {% if sectionHomepageActive %}        {{ sectionHomepageTitle }}           {% endif %}
+            {% if sectionAboutActive %}           {{ sectionAboutTitle }}              {% endif %}
             {% if sectionProductActive %}         {{ sectionProductTitle }}            {% endif %}
             {% if sectionMediaActive %}           {{ sectionMediaTitle }}              {% endif %}
             {% if sectionBookIndexActive %}       {{ sectionBookTitle }}               {% endif %}
@@ -31,6 +32,10 @@
                 <li class="nav-item">
                     <a class="nav-link px-3 {% if sectionHomepageActive %} active {% endif %}"
                        href="{{ path('homepage') }}"> {{ sectionHomepageTitle }} </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3 {% if sectionAboutActive %} active {% endif %}"
+                       href="{{ path('about_index') }}"> {{ sectionAboutTitle }} </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link px-3 {% if sectionProductActive %} active {% endif %}"
