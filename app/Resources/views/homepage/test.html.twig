@@ -1,0 +1,119 @@
+{% extends "base.html.twig" %}
+
+{% set metaDesc = "Официальный сайт фермы «Сибирский ковчег»" %}
+{% set metaKey  = "домашние сыры, йогурт, творог, козье молоко" %}
+
+{% block title %} Купить домашние сыры, йогурт, творог, козье молоко в Новосибирске {% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+
+    {{ encore_entry_link_tags('homepage') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    {{ encore_entry_script_tags('homepage') }}
+{% endblock %}
+
+{% block content %}
+    <main class="content">
+        <div class="slider-wrapper">
+            <aside class="slider d-none d-md-block">
+                <div class="js-slider">
+                    <img src="{{ asset('build/images/static/slider-7ajkqr0xqe.jpg') }}" alt="">
+                    <img src="" data-lazy="{{ asset('build/images/static/slider-5fr2g8ivxv.jpg') }}" alt="">
+                    <img src="" data-lazy="{{ asset('build/images/static/slider-erw4dtsqt4.jpg') }}" alt="">
+                    <img src="" data-lazy="{{ asset('build/images/static/slider-f6boy63lvi.jpg') }}" alt="">
+                    <img src="" data-lazy="{{ asset('build/images/static/slider-guf3wdr02s.jpg') }}" alt="">
+                    <img src="" data-lazy="{{ asset('build/images/static/slider-husj8u2k2j.jpg') }}" alt="">
+                    <img src="" data-lazy="{{ asset('build/images/static/slider-djjpa6zjmd.jpg') }}" alt="">
+                    <img src="" data-lazy="{{ asset('build/images/static/slider-s6y4mtd0lh.jpg') }}" alt="">
+                    <img src="" data-lazy="{{ asset('build/images/static/slider-y2b5w79oot.jpg') }}" alt="">
+                    <img src="" data-lazy="{{ asset('build/images/static/slider-uvywzg5yyj.jpg') }}" alt="">
+                    <img src="" data-lazy="{{ asset('build/images/static/slider-ua011d3hsd.jpg') }}" alt="">
+                    <img src="" data-lazy="{{ asset('build/images/static/slider-use9mspvrw.jpg') }}" alt="">
+                </div>
+            </aside>
+        </div>
+        <header>
+            <h1 class="d-none">Главная</h1>
+        </header>
+        <article>
+            <section>
+{#                <h2 class="text-left" style="margin-top: 0.75em;">О ферме</h2>#}
+                <h2 class="text-left">&nbsp;</h2>
+                <p class="no-padding-bottom">Наша ферма расположена вдали от населённых пунктов и окружена лугами. Именно здесь произрастает множество трав, которые положительно влияют на здоровье животных, а также улучшают качество и вкус продукции. Концентрированные корма (зерновые) приобретаются только у проверенных фермеров, которые выращивают их без использования химикатов. В хозяйстве проводится тщательный селекционный отбор высокопродуктивных животных и птицы. Содержание и уход ведутся на высшем уровне - к каждому животному у нас индивидуальный подход.</p>
+                <p class="no-padding-bottom">Приобретая нашу продукцию, вы всегда можете быть уверены в её высоком качестве.</p>
+            </section>
+            <section>
+{#                <h2 class="text-left" style="margin-top: 0.75em;">Наша продукция</h2>#}
+                <h2 class="text-left">&nbsp;</h2>
+                <div class="row">
+                    <div class="col-6"><img src="{{ asset('build/images/static/glavnaya-produkty-pitaniya.jpg') }}" style="width: 100%;" alt="Продукты питания"></div>
+                    <div class="col-6">
+                        <h2 style="color: #651b00;">Продукты питания</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at finibus ligula. Fusce quis dignissim tortor. Nulla elementum massa sapien, sed euismod tortor accumsan sit amet. Nulla purus erat, lacinia non sollicitudin at, scelerisque in velit. Nam congue, nunc sit amet blandit venenatis, est justo maximus risus, faucibus cursus metus turpis a ex. Praesent venenatis, dolor ut rutrum feugiat, lacus velit aliquam magna, in luctus velit urna ut libero. Phasellus ut condimentum nulla, in cursus velit. Ut ac libero sem.</p>
+                        <p>Suspendisse consectetur lacinia vehicula. Cras sagittis est finibus lacinia hendrerit. Donec vel aliquet arcu. Cras congue nisl quam, eget pellentesque dui sagittis nec. Aenean tempor mattis velit, in venenatis ipsum dignissim sed. Integer magna felis, malesuada eget eros quis, ultricies lobortis lectus. Aenean sit amet ex at lectus aliquam venenatis id sit amet eros. Morbi ligula mauris, tempus at dolor vel, scelerisque suscipit ex.</p>
+                        <p>
+                            <a href="#"
+                               class="btn"
+                               style="color: #651b00; background-color: #d9b282; border-color: #d9b282; padding: 0.375em 1em;">
+                                Перейти в раздел >
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-6">
+                        <h2 style="color: #651b00;">Племенной молодняк</h2>
+                        <p>Aliquam nulla tortor, congue sed sapien id, laoreet tincidunt velit. Mauris dictum diam mattis mollis mollis. Duis mattis consequat urna at vehicula. Pellentesque vulputate lacinia ligula ac hendrerit. Praesent vehicula magna eu ligula laoreet eleifend. Fusce non porttitor ligula. Aliquam fringilla metus erat, non fermentum libero aliquet ac. Maecenas auctor, sapien sit amet facilisis interdum, velit quam varius nisl, non faucibus sem mauris dapibus neque. Praesent at quam tortor. Praesent eget aliquam tortor.</p>
+                        <p>Integer eu porttitor quam. Nulla ipsum enim, fringilla sit amet dignissim quis, sollicitudin at odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut nisl in leo dictum sollicitudin vel volutpat odio. Cras sed rutrum arcu, sed efficitur mauris. Duis luctus rutrum nisl id auctor. Ut vulputate, orci sed lacinia accumsan, augue arcu vehicula mauris, sed suscipit sapien orci vitae tortor. Maecenas vel dolor vel metus varius commodo ut tincidunt nibh. Sed et enim bibendum, ullamcorper nulla sit amet, eleifend ligula. Nunc massa odio, molestie ac commodo ultrices, sollicitudin rhoncus nisi. Fusce feugiat risus eget neque laoreet, luctus interdum nunc pulvinar. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque a urna urna.</p>
+                        <p>
+                            <a href="#"
+                               class="btn"
+                               style="color: #651b00; background-color: #d9b282; border-color: #d9b282; padding: 0.375em 1em;">
+                                Перейти в раздел >
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-6"><img src="{{ asset('build/images/static/glavnaya-plemennoj-molodnyak.jpg') }}" style="width: 100%;" alt="Племенной молодняк"></div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-6"><img src="{{ asset('build/images/static/glavnaya-inkubatsionnoe-yajtso-ptitsy.jpg') }}" style="width: 100%;" alt="Инкубационное яйцо птицы"></div>
+                    <div class="col-6">
+                        <h2 style="color: #651b00;">Инкубационное яйцо птицы</h2>
+                        <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec mattis ligula eu nisi egestas bibendum. Ut sit amet est ante. Mauris commodo quam id felis malesuada, ac varius purus pretium. Nulla et sapien sed ipsum sodales consectetur. Nunc id sapien eu quam tincidunt sagittis. Nullam efficitur arcu cursus nisl interdum, non feugiat sem elementum. Fusce non facilisis augue. Duis interdum augue id ultricies lacinia. Sed hendrerit nisl at magna gravida, sed hendrerit nulla pharetra. Nam augue mi, euismod at enim eleifend, egestas posuere nibh. Donec egestas finibus lacus a pharetra. Proin finibus leo id volutpat mollis.</p>
+                        <p>Duis eget libero eget felis varius volutpat nec in ligula. Aenean mollis neque quis nisi condimentum consectetur. Nam sollicitudin elementum nisl convallis iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus lobortis nisi eu nulla pharetra iaculis. Vivamus varius ante at nisi cursus dapibus. Cras hendrerit tellus velit, in convallis sapien convallis et. Maecenas a tellus in augue maximus pellentesque. Ut euismod mauris diam, non sagittis ipsum vehicula at. Morbi et semper dui.</p>
+                        <p>
+                            <a href="#"
+                               class="btn"
+                               style="color: #651b00; background-color: #d9b282; border-color: #d9b282; padding: 0.375em 1em;">
+                                Перейти в раздел >
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-6">
+                        <h2 style="color: #651b00;">Шкурки кролика Рекс</h2>
+                        <p>Etiam mollis mauris et eros sagittis fringilla. Ut nec dignissim nisl. Vivamus ac lacinia ligula. Donec rhoncus tincidunt ante non lacinia. Proin laoreet ultricies ex, ac vehicula ligula egestas sed. Duis maximus erat elit, id mollis dui cursus ut. Etiam sed magna at neque tempus dictum id sit amet eros. Nulla consequat malesuada lorem ac sagittis.</p>
+                        <p>Morbi vel elit diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum vitae congue metus, sed rutrum ante. Suspendisse et dolor eros. Curabitur sollicitudin vulputate lacus vitae rutrum. Vestibulum vel ultrices orci, id consequat lectus. Sed euismod laoreet mauris, vel consequat felis lacinia sit amet. Vivamus sit amet ornare enim, ut dapibus dui.</p>
+                        <p>
+                            <a href="#"
+                               class="btn"
+                               style="color: #651b00; background-color: #d9b282; border-color: #d9b282; padding: 0.375em 1em;">
+                                Перейти в раздел >
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-6"><img src="{{ asset('build/images/static/glavnaya-shkurki-krolika-reks.jpg') }}" style="width: 100%;" alt="Шкурки кролика Рекс"></div>
+                </div>
+            </section>
+        </article>
+    </main>
+{% endblock %}

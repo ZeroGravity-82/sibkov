@@ -21,4 +21,14 @@ class HomepageController extends Controller
     {
         return $this->render("homepage/index.html.twig");
     }
+
+    /**
+     * @Route("/test", name="test")
+     *
+     * @return Response
+     */
+    public function testAction()
+    {
+        return $this->render("homepage/test.html.twig");
+    }
 }
