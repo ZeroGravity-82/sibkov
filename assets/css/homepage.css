@@ -42,9 +42,25 @@
     width: 100%;
     box-shadow: 1px 1px 7px #593304;
 }
-.slider-wrapper {
-    padding-top: 1.25em;
+@media only screen and (min-width: 768px) {
+    .slider-wrapper {
+        padding-top: 1.25em;
+    }
 }
 .slider img[src=''] {
     display: none;
+}
+h1, h2 {
+    color: #651b00;
+}
+.intro {
+    margin-bottom: 2em;
+}
+@media only screen and (min-width: 768px) {
+    .intro p {
+        margin: 0 3em;
+    }
+}
+.homepage-image {
+    width: 100%;
 }
