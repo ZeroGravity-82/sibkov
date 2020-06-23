@@ -2,8 +2,8 @@
 
 // TODO: refactor all code
 
-require('../css/components/loading.spinner.css');
-require('../css/contact.css');
+import '../css/components/loading.spinner.css';
+import '../css/contact.css';
 
 import ymaps from 'ymaps';
 

@@ -2,10 +2,10 @@
 
 // TODO: refactor all code
 
-require('photoswipe/dist/photoswipe.css');
-require('photoswipe/dist/default-skin/default-skin.css');
-require('../css/media.css');
-require('../css/album.css');
+import 'photoswipe/dist/photoswipe.css';
+import 'photoswipe/dist/default-skin/default-skin.css';
+import '../css/media.css';
+import '../css/album.css';
 
 var $ = require('jquery');
 var PhotoSwipe = require('photoswipe');

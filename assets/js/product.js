@@ -1,3 +1,3 @@
 'use strict';
 
-require('../css/product.css');
+import '../css/product.css';

@@ -1,11 +1,11 @@
 'use strict';
 
-require('lightgallery/dist/css/lightgallery.css');
-require('../css/media.css');
+import 'lightgallery/dist/css/lightgallery.css';
+import '../css/media.css';
 
-const $ = require('jquery');
-require('lightgallery');
-require('lg-video');
+import $ from 'jquery';
+import 'lightgallery';
+import 'lg-video';
 
 $(document).ready(function() {
     $('#video-gallery').lightGallery({

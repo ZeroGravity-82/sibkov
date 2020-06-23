@@ -1,8 +1,8 @@
 'use strict';
 
-require('bootstrap/dist/css/bootstrap.css');
-require('../css/layout.css');
-require('../css/yandex.metrika.css');
+import 'bootstrap/dist/css/bootstrap.css';
+import '../css/layout.css';
+import '../css/yandex.metrika.css';
 
-require('bootstrap');
-require('./yandex.metrika.js');
+import 'bootstrap';
+import './yandex.metrika.js';
