@@ -85,16 +85,6 @@ class MediaController extends Controller
     }
 
     /**
-     * @Route("/korovy", name="media_album_korovy")
-     *
-     * @return Response
-     */
-    public function showAlbumKorovy()
-    {
-        return $this->render("media/album_korovy.html.twig");
-    }
-
-    /**
      * @Route("/ferma", name="media_album_ferma")
      *
      * @return Response
