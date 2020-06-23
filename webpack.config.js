@@ -30,11 +30,10 @@ Encore
     .addEntry('book',     './assets/js/book.js')
     .addEntry('about',    './assets/js/about.js')
     .addEntry('contact',  './assets/js/contact.js')
-    .splitEntryChunks()
+    .enableSingleRuntimeChunk()
 
     .enableBuildNotifications()
     .enableSourceMaps(!Encore.isProduction())
-    .enableSassLoader()
     .enableVersioning()
 ;
 
