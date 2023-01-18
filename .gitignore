@@ -1,37 +1,16 @@
-# PhpStorm
 /.idea/
 
-# Parameters
+/.env.local
+/.env.local.php
+/.env.*.local
+
 /app/config/parameters.yml
-
-// PHPUnit
-/phpunit.xml
-
-# Cache, session files and logs
-/var/cache/*
-/var/logs/*
-/var/sessions/*
-!var/cache/.gitkeep
-!var/logs/.gitkeep
-!var/sessions/.gitkeep
-
-# Managed by Composer
-/var/bootstrap.php.cache
-!var/SymfonyRequirements.php
+/node_modules/
+/var/
 /vendor/
-
-# Assets and user uploads
 /web/bundles/
 /web/uploads/
-
-# Build data
 /web/build/
 
-# Backup entities generated with doctrine:generate:entities command
-**/Entity/*~
-
-# Embedded web-server pid file
-/.web-server-pid
-
-# Managed by NodeJS
-/node_modules/
+.phpunit.result.cache
+/phpunit.xml
