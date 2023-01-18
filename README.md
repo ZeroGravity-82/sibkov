@@ -12,6 +12,7 @@ Run the following console commands before starting local development:
 ```bash
 make init
 ```
+Provide a value for Symfony "secret" parameter during initialization: <https://symfony.com/doc/current/reference/configuration/framework.html#secret>
 
 CLI tools
 ---------
