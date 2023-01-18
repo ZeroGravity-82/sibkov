@@ -4,11 +4,13 @@ services:
     build:
       context: .
       dockerfile: ./docker/php-cli/Dockerfile
+    ports:
+      - '${PHP_CLI_XDEBUG_HOST_PORT}:9003'
     volumes:
       - .:/app
       - composer:/root/.composer/cache
     environment:
-      PHP_IDE_CONFIG: 'serverName=crk-sibkov.docker'
+      PHP_IDE_CONFIG: 'serverName=sibkov.docker'
     extra_hosts:
       - 'host.docker.internal:host-gateway'
     profiles:
