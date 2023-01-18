@@ -1,0 +1,10 @@
+# Ignore everything
+**
+
+# ... except for PHP config files
+!./docker/php-cli/*
+!./docker/nginx/*
+
+# ... except for Node.js files
+node_modules
+npm-debug.log
