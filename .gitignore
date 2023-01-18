@@ -4,9 +4,11 @@
 /.env.local.php
 /.env.*.local
 
+/app/bootstrap.php.cache
 /app/config/parameters.yml
 /node_modules/
 /var/
+!var/.gitkeep
 /vendor/
 /web/bundles/
 /web/uploads/
