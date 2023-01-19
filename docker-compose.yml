@@ -35,10 +35,10 @@ services:
         - GID=${FID:-1000}
     volumes:
       - .:/app
-  sibkov-node:
+  sibkov-nodejs-cli:
     build:
       context: .
-      dockerfile: docker/node/Dockerfile
+      dockerfile: docker/nodejs-cli/Dockerfile
     volumes:
       - .:/app
     profiles:

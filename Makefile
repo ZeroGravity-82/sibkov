@@ -1,6 +1,6 @@
 DOCKER_COMPOSE = docker compose
 PHP_CLI        = $(DOCKER_COMPOSE) run --rm sibkov-php-cli
-NODE           = $(DOCKER_COMPOSE) run --rm sibkov-node
+NODEJS_CLI     = $(DOCKER_COMPOSE) run --rm sibkov-nodejs-cli
 SYMFONY        = $(PHP_CLI) symfony
 
 getargs    = $(wordlist 2,$(words $(MAKECMDGOALS)),$(MAKECMDGOALS))
@@ -33,11 +33,11 @@ composer-update:
 composer-dumpautoload:
 	$(PHP_CLI) composer dumpautoload -o
 yarn-install:
-	$(NODE) yarn install
+	$(NODEJS_CLI) yarn install
 yarn-dev:
-	$(NODE) yarn dev
+	$(NODEJS_CLI) yarn dev
 yarn-build:
-	$(NODE) yarn build
+	$(NODEJS_CLI) yarn build
 
 ##
 ## Run PHP CLI command ("make -- php-cli ls -laF /app")
@@ -62,12 +62,12 @@ sf:
 	$(SYMFONY) $(SYMFONY_ARGS) $(-*-command-variables-*-)
 
 ##
-## Run Node.js CLI command ("make node yarn install" or "make -- node node -v")
-## ----------------------------------------------------------------------------
+## Run Node.js CLI command ("make nodejs-cli yarn install" or "make -- nodejs-cli node -v")
+## ----------------------------------------------------------------------------------------
 ifeq (node,$(firstword $(MAKECMDGOALS)))
-    NODE_ARGS         := $(call getargs)
-    NODE_ARGS_ESCAPED := $(call escapeagrs, $(NODE_ARGS))
-    $(eval $(NODE_ARGS_ESCAPED):dummy;@:)
+    NODEJS_CLI_ARGS         := $(call getargs)
+    NODEJS_CLI_ARGS_ESCAPED := $(call escapeagrs, $(NODEJS_CLI_ARGS))
+    $(eval $(NODEJS_CLI_ARGS_ESCAPED):dummy;@:)
 endif
 node:
-	$(NODE) $(NODE_ARGS) $(-*-command-variables-*-)
+	$(NODEJS_CLI) $(NODEJS_CLI_ARGS) $(-*-command-variables-*-)
