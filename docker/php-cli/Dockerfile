@@ -15,12 +15,12 @@ COPY --from=ghcr.io/symfony-cli/symfony-cli:5.4.21 /usr/local/bin/symfony /usr/l
 COPY ./docker/php-cli/conf.d /usr/local/etc/php/conf.d
 
 # Create user for container
-ARG UID
-ARG GID
-ENV UID=${UID}
-ENV GID=${GID}
-RUN addgroup --system --gid ${GID} symfony
-RUN adduser --system --shell /bin/sh --uid ${UID} --gid ${GID} --disabled-password symfony
-USER symfony
+ARG HOST_USER_UID
+ARG HOST_USER_GID
+ENV HOST_USER_UID=${HOST_USER_UID}
+ENV HOST_USER_GID=${HOST_USER_GID}
+RUN addgroup --system --gid ${HOST_USER_GID} notroot
+RUN adduser --system --shell /bin/sh --uid ${HOST_USER_UID} --gid ${HOST_USER_GID} --disabled-password notroot
+USER notroot
 
 WORKDIR /app

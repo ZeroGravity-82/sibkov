@@ -5,8 +5,8 @@ services:
       context: .
       dockerfile: ./docker/php-cli/Dockerfile
       args:
-        - UID=${UID:-1000}
-        - GID=${FID:-1000}
+        - HOST_USER_UID=${HOST_USER_UID}
+        - HOST_USER_GID=${HOST_USER_GID}
     ports:
       - '${PHP_CLI_XDEBUG_HOST_PORT}:9003'
     volumes:
@@ -31,14 +31,17 @@ services:
       context: .
       dockerfile: ./docker/php-fpm/Dockerfile
       args:
-        - UID=${UID:-1000}
-        - GID=${FID:-1000}
+        - HOST_USER_UID=${HOST_USER_UID}
+        - HOST_USER_GID=${HOST_USER_GID}
     volumes:
       - .:/app
   sibkov-nodejs-cli:
     build:
       context: .
       dockerfile: docker/nodejs-cli/Dockerfile
+      args:
+        - HOST_USER_UID=${HOST_USER_UID}
+        - HOST_USER_GID=${HOST_USER_GID}
     volumes:
       - .:/app
     profiles:
