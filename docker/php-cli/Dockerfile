@@ -6,12 +6,10 @@ RUN apt-get update && apt-get install -y unzip git \
     && docker-php-ext-install opcache \
     # extension required for XDebug
     && pecl install xdebug-3.1.0 && rm -rf /tmp/pear && docker-php-ext-enable xdebug
+RUN apt-get clean && rm -rf /var/lib/apt/lists
 
 # Install Symfony CLI
 COPY --from=ghcr.io/symfony-cli/symfony-cli:5.4.21 /usr/local/bin/symfony /usr/local/bin/symfony
-
-ENV WORKDIR /app/
-WORKDIR ${WORKDIR}
 
 # PHP configuration
 COPY ./docker/php-cli/conf.d /usr/local/etc/php/conf.d
@@ -23,8 +21,6 @@ ENV UID=${UID}
 ENV GID=${GID}
 RUN addgroup --system --gid ${GID} symfony
 RUN adduser --system --shell /bin/sh --uid ${UID} --gid ${GID} --disabled-password symfony
-
-# Clean the APT cache
-RUN apt-get clean && rm -rf /var/lib/apt/lists
-
 USER symfony
+
+WORKDIR /app
