@@ -11,5 +11,3 @@ RUN sed -i "s/user = www-data/user = symfony/g" /usr/local/etc/php-fpm.d/www.con
 RUN sed -i "s/group = www-data/group = symfony/g" /usr/local/etc/php-fpm.d/www.conf
 
 WORKDIR /app
-
-USER symfony
