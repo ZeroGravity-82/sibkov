@@ -16,5 +16,15 @@ WORKDIR ${WORKDIR}
 # PHP configuration
 COPY ./docker/php-cli/conf.d /usr/local/etc/php/conf.d
 
+# Create user for container
+ARG UID
+ARG GID
+ENV UID=${UID}
+ENV GID=${GID}
+RUN addgroup --system --gid ${GID} symfony
+RUN adduser --system --shell /bin/sh --uid ${UID} --gid ${GID} --disabled-password symfony
+
 # Clean the APT cache
 RUN apt-get clean && rm -rf /var/lib/apt/lists
+
+USER symfony

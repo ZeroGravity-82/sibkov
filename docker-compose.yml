@@ -4,6 +4,9 @@ services:
     build:
       context: .
       dockerfile: ./docker/php-cli/Dockerfile
+      args:
+        - UID=${UID:-1000}
+        - GID=${FID:-1000}
     ports:
       - '${PHP_CLI_XDEBUG_HOST_PORT}:9003'
     volumes:
@@ -27,6 +30,9 @@ services:
     build:
       context: .
       dockerfile: ./docker/php-fpm/Dockerfile
+      args:
+        - UID=${UID:-1000}
+        - GID=${FID:-1000}
     volumes:
       - .:/app
   sibkov-node:
