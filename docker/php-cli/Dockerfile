@@ -12,7 +12,7 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists
 COPY --from=ghcr.io/symfony-cli/symfony-cli:5.4.21 /usr/local/bin/symfony /usr/local/bin/symfony
 
 # PHP configuration
-COPY ./docker/php-cli/conf.d /usr/local/etc/php/conf.d
+COPY conf.d /usr/local/etc/php/conf.d
 
 # Create user for container
 ARG HOST_USER_UID
