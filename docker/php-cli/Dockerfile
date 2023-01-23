@@ -14,13 +14,13 @@ COPY --from=ghcr.io/symfony-cli/symfony-cli:5.4.21 /usr/local/bin/symfony /usr/l
 # PHP configuration
 COPY conf.d /usr/local/etc/php/conf.d
 
-# Create user for container
+# Create non-root user for container
 ARG HOST_USER_UID
 ARG HOST_USER_GID
 ENV HOST_USER_UID=${HOST_USER_UID}
 ENV HOST_USER_GID=${HOST_USER_GID}
-RUN addgroup --system --gid ${HOST_USER_GID} notroot
-RUN adduser --system --shell /bin/sh --uid ${HOST_USER_UID} --gid ${HOST_USER_GID} --disabled-password notroot
-USER notroot
+RUN addgroup --system --gid ${HOST_USER_GID} nonroot
+RUN adduser --system --shell /bin/sh --uid ${HOST_USER_UID} --gid ${HOST_USER_GID} --disabled-password nonroot
+USER nonroot
 
 WORKDIR /app
