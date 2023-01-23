@@ -8,13 +8,13 @@
 /app/config/parameters.yml
 /node_modules/
 /var/
-!var/.gitkeep
+!/var/.gitkeep
 /vendor/
 /web/bundles/
 /web/uploads/
 /web/build/
 
-.phpunit.result.cache
+/.phpunit.result.cache
 /phpunit.xml
 
 /yarn-error.log
