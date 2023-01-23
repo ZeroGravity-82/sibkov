@@ -60,8 +60,8 @@ sf:
 	$(SYMFONY) $(SYMFONY_ARGS) $(-*-command-variables-*-)
 
 ##
-## Run Node.js CLI command ("make nodejs-cli yarn install" or "make -- nodejs-cli node -v")
-## ----------------------------------------------------------------------------------------
+## Run Node.js CLI command ("make nodejs-cli yarn install" or "make -- nodejs-cli node --version")
+## -----------------------------------------------------------------------------------------------
 ifeq (nodejs-cli,$(firstword $(MAKECMDGOALS)))
     NODEJS_CLI_ARGS         := $(call getargs)
     NODEJS_CLI_ARGS_ESCAPED := $(call escapeagrs, $(NODEJS_CLI_ARGS))
