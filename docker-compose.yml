@@ -47,7 +47,11 @@ services:
         - HOST_USER_GID=${HOST_USER_GID}
     volumes:
       - .:/app
+      - npm:/tmp/npm-cache
+      - yarn:/tmp/yarn-cache
     profiles:
       - 'cli-tools'        # the profile is needed in order not to start this service with "docker compose up" command
 volumes:
   composer:
+  npm:
+  yarn:
