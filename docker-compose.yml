@@ -11,7 +11,7 @@ services:
       - '${PHP_CLI_XDEBUG_HOST_PORT}:9003'
     volumes:
       - .:/app
-      - composer:/root/.composer/cache
+      - composer:/tmp/composer-cache
     environment:
       PHP_IDE_CONFIG: 'serverName=sibkov.docker'
     extra_hosts:

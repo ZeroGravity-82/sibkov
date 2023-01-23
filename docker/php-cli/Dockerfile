@@ -23,4 +23,8 @@ RUN addgroup --system --gid ${HOST_USER_GID} nonroot
 RUN adduser --system --shell /bin/sh --uid ${HOST_USER_UID} --gid ${HOST_USER_GID} --disabled-password nonroot
 USER nonroot
 
+# Change the cache path for Composer to be able to set volume for it
+RUN mkdir /tmp/composer-cache
+ENV COMPOSER_CACHE_DIR=/tmp/composer-cache
+
 WORKDIR /app
