@@ -62,10 +62,10 @@ sf:
 ##
 ## Run Node.js CLI command ("make nodejs-cli yarn install" or "make -- nodejs-cli node -v")
 ## ----------------------------------------------------------------------------------------
-ifeq (node,$(firstword $(MAKECMDGOALS)))
+ifeq (nodejs-cli,$(firstword $(MAKECMDGOALS)))
     NODEJS_CLI_ARGS         := $(call getargs)
     NODEJS_CLI_ARGS_ESCAPED := $(call escapeagrs, $(NODEJS_CLI_ARGS))
     $(eval $(NODEJS_CLI_ARGS_ESCAPED):dummy;@:)
 endif
-node:
+nodejs-cli:
 	$(NODEJS_CLI) $(NODEJS_CLI_ARGS) $(-*-command-variables-*-)
