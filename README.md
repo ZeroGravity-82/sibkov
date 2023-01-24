@@ -11,10 +11,12 @@ This project requires the Docker Compose plugin to be installed: <https://docs.d
 
 Run the following console commands before starting local development:
 ```bash
-export HOST_USER_UID=$(id -u) && export HOST_USER_GID=$(id -g);
+export HOST_USER_UID=$(id -u) && export HOST_USER_GID=$(id -g)
 make init
 ```
-Provide a value for Symfony "secret" parameter during initialization: <https://symfony.com/doc/current/reference/configuration/framework.html#secret>
+**Tip**: To avoid manually creating the HOST_USER_UID and HOST_USER_GID variables each time, just add their creation to the ~/.bashrc file.
+
+During the first initialization, you will need to set a value for Symfony "secret" parameter: <https://symfony.com/doc/current/reference/configuration/framework.html#secret>
 
 CLI tools
 ---------
