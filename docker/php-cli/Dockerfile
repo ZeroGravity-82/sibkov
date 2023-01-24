@@ -6,13 +6,15 @@ RUN apt-get update && apt-get install -y unzip git \
     && docker-php-ext-install opcache \
     # extension required for XDebug
     && pecl install xdebug-3.1.0 && rm -rf /tmp/pear && docker-php-ext-enable xdebug
-RUN apt-get clean && rm -rf /var/lib/apt/lists
 
 # Install Symfony CLI
 COPY --from=ghcr.io/symfony-cli/symfony-cli:5.4.21 /usr/local/bin/symfony /usr/local/bin/symfony
 
 # PHP configuration
 COPY conf.d /usr/local/etc/php/conf.d
+
+# Clear APT cache
+RUN apt-get clean && rm -rf /var/lib/apt/lists
 
 # Create non-root user for container
 ARG HOST_USER_UID
