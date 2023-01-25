@@ -49,8 +49,8 @@ php-cli:
 	$(PHP_CLI) $(PHP_CLI_ARGS) $(-*-command-variables-*-)
 
 ##
-## Run Symfony CLI ("make sf security:check" or "make sf console debug:router")
-## ----------------------------------------------------------------------------
+## Run Symfony CLI ("make sf security:check" or "make -- sf console cache:clear --env=dev")
+## ----------------------------------------------------------------------------------------
 ifeq (sf,$(firstword $(MAKECMDGOALS)))
     SYMFONY_ARGS         := $(call getargs)
     SYMFONY_ARGS_ESCAPED := $(call escapeagrs, $(SYMFONY_ARGS))
