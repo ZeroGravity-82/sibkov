@@ -6,7 +6,7 @@ SYMFONY        = $(PHP_CLI) symfony
 getargs    = $(wordlist 2,$(words $(MAKECMDGOALS)),$(MAKECMDGOALS))
 escapeagrs = $(subst :,\:,$(1))
 
-.PHONY: dummy
+.PHONY: dummy tests
 
 ##
 ## Project maintenance ("make init", "make composer-install" or "make docker-up")
