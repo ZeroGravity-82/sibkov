@@ -8,8 +8,8 @@ ARG HOST_USER_UID
 ARG HOST_USER_GID
 ENV HOST_USER_UID=${HOST_USER_UID}
 ENV HOST_USER_GID=${HOST_USER_GID}
-RUN addgroup -S -g ${HOST_USER_GID} nonroot \
-    && adduser -S -s /bin/sh -u ${HOST_USER_UID} -G nonroot -D nonroot
+RUN addgroup -S -g ${HOST_USER_GID} nonroot
+RUN adduser -S -s /bin/sh -u ${HOST_USER_UID} -G nonroot -D nonroot
 USER nonroot
 
 # Change the cache path for npm and Yarn to be able to set volumes for them
